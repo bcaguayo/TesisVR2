@@ -5,31 +5,15 @@ using UnityEngine;
 public class BoxCollision : MonoBehaviour
 {
     [SerializeField] private GameObject box;
-	[SerializeField] private Texture red, green;
     [SerializeField] private bool chosen;
+    public roomReset room;
 	private Renderer boxRenderer;
-    private bool discovered;
-    private int score;
+    // public bool discovered;
 
     void OnCollisionEnter(Collision collisionInfo) {
-        if (!discovered) {
-            if (collisionInfo.collider.name == "glove_left" || 
-            collisionInfo.collider.name == "glove_right") {
-                Debug.Log("Collision");
-                boxRenderer = box.GetComponent<Renderer>();
-                if(chosen) {
-                    boxRenderer.material.mainTexture = green;
-                    score++;
-                    Debug.Log("Score: " + score);
-                } else {
-                    boxRenderer.material.mainTexture = red;
-                }                
-		    // gameObject.GetComponent<Button>().OnClick.AddListener(ChangeBoxTexture);
-        }
-        }
-        if (score >= 5) {
-            
-        }        
+        string collider = collisionInfo.collider.name;
+        boxRenderer = box.GetComponent<Renderer>();
+        room.Collision(collider, boxRenderer, chosen);    
     }
 
     /*
