@@ -5,7 +5,7 @@ using UnityEngine;
 public class BoxCollision : MonoBehaviour
 {
     [SerializeField] private GameObject box;
-    [SerializeField] private bool chosen;
+    [SerializeField] public bool pick;
     public roomReset room;
 	private Renderer boxRenderer;
     // public bool discovered;
@@ -13,7 +13,16 @@ public class BoxCollision : MonoBehaviour
     void OnCollisionEnter(Collision collisionInfo) {
         string collider = collisionInfo.collider.name;
         // boxboxRenderer = GetComponent<Renderer>();
-        room.Collision(collider, box, chosen);    
+        room.Collision(collider, box, pick);    
+    }
+
+    public bool getPick() {
+        bool p = pick;
+        return p;
+    }
+
+    public void changePick(bool p) {
+        pick = p;
     }
 
     /*
