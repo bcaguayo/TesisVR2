@@ -38,12 +38,12 @@
   <ItemGroup>
      <Compile Include="Assets\Presents\textures\ChangeTexture.cs" />
      <Compile Include="Assets\ActionsTest.cs" />
+     <Compile Include="Assets\roomReset.cs" />
      <Compile Include="Assets\Scripts\ActionsTest.cs" />
      <Compile Include="Assets\Player\Movement.cs" />
      <Compile Include="Assets\ControllerGrab.cs" />
      <Compile Include="Assets\Player\MouseLook.cs" />
      <Compile Include="Assets\BoxCollision.cs" />
-     <Compile Include="Assets\roomReset.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -770,10 +770,6 @@
       <Project>{0d7d7286-449e-5298-0fc3-05ac11558dd6}</Project>
       <Name>SteamVR_Input_Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{1be5b8a5-d0e9-282d-b26e-0b9f887e7673}</Project>
-      <Name>SteamVR_Actions</Name>
-    </ProjectReference>
     <ProjectReference Include="SteamVR.csproj">
       <Project>{5f8f462c-8f31-1202-b995-2f547b942e44}</Project>
       <Name>SteamVR</Name>
@@ -785,6 +781,10 @@
     <ProjectReference Include="SteamVR_Editor.csproj">
       <Project>{e3dbe6ee-0fe6-27dc-2181-3002a78be072}</Project>
       <Name>SteamVR_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{1be5b8a5-d0e9-282d-b26e-0b9f887e7673}</Project>
+      <Name>SteamVR_Actions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

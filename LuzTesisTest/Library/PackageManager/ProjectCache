@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637751714126030051
-    m_Hash: 3441283771
+      ticks: 637752736689358963
+    m_Hash: 2739698245
   m_LockFileStatus:
     m_FilePath: C:/Users/RMS VR/Documents/GitHub/TesisVR2/LuzTesisTest/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637751714126040031
-    m_Hash: 3354088391
+      ticks: 637752736689418797
+    m_Hash: 344249032
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -31,7 +31,7 @@ m_LocalPackages:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637751714027359746
+      ticks: 637497179250000000
     m_Hash: 2919789393
 m_ProjectPath: C:/Users/RMS VR/Documents/GitHub/TesisVR2/LuzTesisTest/Packages
 m_EditorVersion: 2021.2.5f1 (4ec9a5e799f5)
@@ -917,7 +917,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.1.4
   source: 6
-  resolvedPath: C:\Users\RMS VR\Documents\GitHub\TesisVR2\LuzTesisTest\Library\PackageCache\com.valvesoftware.unity.openvr@bef1232f95ab-1639574602736
+  resolvedPath: C:\Users\RMS VR\Documents\GitHub\TesisVR2\LuzTesisTest\Library\PackageCache\com.valvesoftware.unity.openvr@bef1232f95ab-1614121125000
   assetPath: Packages/com.valvesoftware.unity.openvr
   name: com.valvesoftware.unity.openvr
   displayName: OpenVR XR Plugin
