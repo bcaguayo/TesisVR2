@@ -359,6 +359,7 @@
 "Assets/Player/MouseLook.cs"
 "Assets/Player/Movement.cs"
 "Assets/Presents/textures/ChangeTexture.cs"
+"Assets/roomReset.cs"
 "Assets/Scripts/ActionsTest.cs"
 -langversion:9.0
 
