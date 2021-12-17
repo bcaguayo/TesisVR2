@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\roomReset.cs" />
      <Compile Include="Assets\BoxCollision.cs" />
+     <Compile Include="Assets\ConfigMaster.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
