@@ -369,6 +369,7 @@
 "Assets/BoxCollision.cs"
 "Assets/ConfigMaster.cs"
 "Assets/roomReset.cs"
+"Assets/Typewriter.cs"
 -langversion:9.0
 
 /deterministic
