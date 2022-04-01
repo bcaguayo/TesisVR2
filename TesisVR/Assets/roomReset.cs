@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// FIX BOX ROTATION WITH BOX CONFIG
+
+
 public class roomReset : MonoBehaviour
 {
     [SerializeField] private GameObject room;
@@ -56,9 +60,18 @@ public class roomReset : MonoBehaviour
                                   box16, box17, box18, box19, box20,
                                   box21, box22, box23, box24, box25};
         // Set the boxes according to 0 degrees
+        BoxConfig.Init();
         config = Random.Range(1, 4);
+<<<<<<< Updated upstream
         Debug.Log(config);
         setBoxes(0, config);
+=======
+        // Debug.Log("Config: " + config);
+        setBoxes(0, config);
+        
+        // ----------------- on excel
+        Typewriter.Reset();
+>>>>>>> Stashed changes
     }
 
     void Start() {        
@@ -79,6 +92,7 @@ public class roomReset : MonoBehaviour
         }
 
         // When 5 boxes are found
+<<<<<<< Updated upstream
         if (score >= 5) {
             StartCoroutine(WaitForBox());
             rounds++;            
@@ -86,6 +100,35 @@ public class roomReset : MonoBehaviour
             // WIP: Display on Canvas instead
             Debug.Log("Rounds: " + rounds + ", Timer: " + timer + 
                       ", FTimer: " + ftimer);
+=======
+        if (score >= 5)
+        {
+
+            // Wait 2 seconds before reset
+            if (waiting)
+            {
+                if (roundTimer >= waitLimit)
+                {
+                    /// WAIT OVER, RESET          
+                    waitLimit = -1;  // reset waiters
+                    waiting = false;
+
+                    Typewriter.Write(roundTimer, roundDistance, roundErrors);
+                    Reset();
+                }
+            }
+
+            // Not waiting, set to wait and the limit to 2
+            // Using float Timer (ftimer) as base
+            else
+            {
+                waiting = true;
+                waitLimit = roundTimer + 2.0f;
+            }
+
+            // StartCoroutine(WaitForBox());
+
+>>>>>>> Stashed changes
         }
     }
 
@@ -119,8 +162,20 @@ public class roomReset : MonoBehaviour
     }
 
     // Once per Loop, resets the state of the room
+<<<<<<< Updated upstream
     void Reset() {
         StartCoroutine(WaitForBox());
+=======
+    void Reset()
+    {
+        // Per round values
+        rounds++;
+        roundErrors = 0;
+        roundTimer = 0f;
+        roundDistance = 0f;
+        prevPos = new Vector2(-10.0f, -10.0f);
+
+>>>>>>> Stashed changes
         // for every box
         foreach(GameObject box in boxes) {
                 // 1. Turn yellow
@@ -352,6 +407,68 @@ public class roomReset : MonoBehaviour
                 box.name == "box (24)") {
                 pickBox(box);
             }                    
+        }
+    }
+
+    // Config Z    
+    private void setBoxesZ(int degree)
+    {
+        int[] boxList = new int[5] {1, 10, 14, 17, 23};
+        int[] list90 = new int[5];
+        int[] list180 = new int[5];
+        int[] list270 = new int[5];
+
+        for (int i = 0; i < 5; i++)
+        {
+            list90[i] = BoxConfig.rotateClockwise(boxList[i]);
+            list180[i] = BoxConfig.flip(boxList[i]);
+            list270[i] = BoxConfig.rotateCounterClockwise(boxList[i]);
+        }
+
+        foreach (GameObject box in boxes)
+        {
+            switch(degree) {            
+
+                // 0 degrees: 01, 10, 14, 17, 23
+                case 0:
+                    string s = box.name;
+                    int boxIndex = int.Parse(s.Substring(s.IndexOf("(") + 1, s.IndexOf(")")));
+                    // WIP WIP WIP WIP
+                    // int  =  
+                    foreach (int i in boxList) {
+                        if (i == boxIndex) pickBox(box); 
+                    }
+                    break;
+                // 90 degrees: 02, 08, 15, 19, 21
+                case 90:
+                    if (box.name == "box (2)" || box.name == "box (8)" ||
+                        box.name == "box (15)" || box.name == "box (19)" ||
+                        box.name == "box (21)")
+                    {
+                        pickBox(box);
+                    }
+
+                    break;
+                // 180 degrees: 03, 09, 12, 16, 25
+                case 180:
+                    if (box.name == "box (3)" || box.name == "box (9)" ||
+                        box.name == "box (12)" || box.name == "box (16)" ||
+                        box.name == "box (25)")
+                    {
+                        pickBox(box);
+                    }
+
+                    break;
+                // 270 degrees: 05, 07, 11, 18, 24
+                case 270:
+                    if (box.name == "box (5)" || box.name == "box (7)" ||
+                        box.name == "box (11)" || box.name == "box (18)" ||
+                        box.name == "box (24)")
+                    {
+                        pickBox(box);
+                    }
+                    break;
+            }
         }
     }
 }
