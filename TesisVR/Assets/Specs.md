@@ -26,6 +26,7 @@
 - Iniciar (play button): calls OnStart()
 - Restart (return button): Stops Run, Erases Data and calls OnStart()
 - Cerrar (x button): calls Export() and then Quit()
+- Test Round, Round Time, Round Number, End
 
 # On Start():
 1. Render
