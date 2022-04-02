@@ -61,17 +61,28 @@ public class roomReset : MonoBehaviour
                                   box21, box22, box23, box24, box25};
         // Set the boxes according to 0 degrees
         BoxConfig.Init();
-        config = Random.Range(1, 4);
-<<<<<<< Updated upstream
-        Debug.Log(config);
-        setBoxes(0, config);
-=======
-        // Debug.Log("Config: " + config);
-        setBoxes(0, config);
+        /* config = Random.Range(1, 4);
+
+        // For selecting random boxes
+        int[] randomBoxes = new int[];
+        int added = 0;
+
+        // For 5 boxes
+        while (added <= 5) {
+            Random r = new Random();
+            int rdm = r.Next(1, 25);
+            if (!randomBoxes.Contains(rdm)) {
+                randomBoxes[added] = rdm;
+                added++;
+            }
+        }
+        */
+
+        // degree = 0, config = 5
+        setBoxes(0, 5);
         
         // ----------------- on excel
         Typewriter.Reset();
->>>>>>> Stashed changes
     }
 
     void Start() {        
@@ -92,15 +103,6 @@ public class roomReset : MonoBehaviour
         }
 
         // When 5 boxes are found
-<<<<<<< Updated upstream
-        if (score >= 5) {
-            StartCoroutine(WaitForBox());
-            rounds++;            
-            Reset();
-            // WIP: Display on Canvas instead
-            Debug.Log("Rounds: " + rounds + ", Timer: " + timer + 
-                      ", FTimer: " + ftimer);
-=======
         if (score >= 5)
         {
 
@@ -128,7 +130,6 @@ public class roomReset : MonoBehaviour
 
             // StartCoroutine(WaitForBox());
 
->>>>>>> Stashed changes
         }
     }
 
@@ -145,7 +146,7 @@ public class roomReset : MonoBehaviour
             // Not discovered yet
             if (!discovered.Contains(box.name)) {
                 // If green (prize) box
-                if(pick) {
+                if (pick) {
                     boxRenderer.material.mainTexture = green;   
                     correct.Play();                     
                     score++;
@@ -162,10 +163,6 @@ public class roomReset : MonoBehaviour
     }
 
     // Once per Loop, resets the state of the room
-<<<<<<< Updated upstream
-    void Reset() {
-        StartCoroutine(WaitForBox());
-=======
     void Reset()
     {
         // Per round values
@@ -175,7 +172,6 @@ public class roomReset : MonoBehaviour
         roundDistance = 0f;
         prevPos = new Vector2(-10.0f, -10.0f);
 
->>>>>>> Stashed changes
         // for every box
         foreach(GameObject box in boxes) {
                 // 1. Turn yellow
@@ -220,23 +216,16 @@ public class roomReset : MonoBehaviour
     // Sets which Boxes are chosen based on degree of rotation
     private void setBoxes(int degree, int config) {
         // Invalid degree
-        if(degree != 0 && degree != 90 && degree != 180 && degree != 270) {
+        if (degree != 0 && degree != 90 && degree != 180 && degree != 270) {
             throw new System.Exception("Wrong Rotation Degree: SetBoxes");
         }
-        
-        // Symmetrical Configuration
-        if(config == 4) {
-            setBoxesS();
-            return;
-        }
+
         // Invalid Config number
-        if(config < 1 || config > 4) {
+        if(config < 1 || config > 5) {
             throw new System.Exception("Out of Bounds Configuration: SetBoxes");
         }
 
-        // this configuration
-        // HashSet<string>[] local = new HashSet<string>[4];
-
+        // Send to SetBoxes method based on random config
         switch (config) {
             case 1 : 
                 setBoxesA(degree);
@@ -249,7 +238,16 @@ public class roomReset : MonoBehaviour
             case 3 :  
                 setBoxesC(degree);
                 // local = configC;
-                break;                
+                break; 
+            case 4 :
+                // Symmetrical Configuration
+                setBoxesS(degree);
+                // local = configC;
+                break;
+            case 5 :  
+                setBoxesZ(degree);
+                // local = configC;
+                break;               
         }
 
         /*
@@ -410,65 +408,46 @@ public class roomReset : MonoBehaviour
         }
     }
 
-    // Config Z    
+    // Config Z    WIP : TRY
     private void setBoxesZ(int degree)
     {
+        // Selected boxes at degree 0
         int[] boxList = new int[5] {1, 10, 14, 17, 23};
+        // at 90, 180 and 270 degrees
         int[] list90 = new int[5];
         int[] list180 = new int[5];
         int[] list270 = new int[5];
 
-        for (int i = 0; i < 5; i++)
+        // Setup rotated arrays with selected boxes' indexes
+        for (int i = 0; i < boxList.length; i++)
         {
             list90[i] = BoxConfig.rotateClockwise(boxList[i]);
             list180[i] = BoxConfig.flip(boxList[i]);
             list270[i] = BoxConfig.rotateCounterClockwise(boxList[i]);
         }
 
-        foreach (GameObject box in boxes)
+        // Set list of selected boxes based on rotation
+        int[] degreeList;
+        switch(degree) {
+            case 0 : 
+                degreeList = boxList;
+                break;
+            case 90 : break;
+                degreeList = list90;
+                break;
+            case 180 : break;
+                degreeList = list180;
+                break;
+            case 270 : break;
+                degreeList = list270;
+                break;
+        }
+
+        // Set box to marked
+        foreach (int i in degreeList)
         {
-            switch(degree) {            
-
-                // 0 degrees: 01, 10, 14, 17, 23
-                case 0:
-                    string s = box.name;
-                    int boxIndex = int.Parse(s.Substring(s.IndexOf("(") + 1, s.IndexOf(")")));
-                    // WIP WIP WIP WIP
-                    // int  =  
-                    foreach (int i in boxList) {
-                        if (i == boxIndex) pickBox(box); 
-                    }
-                    break;
-                // 90 degrees: 02, 08, 15, 19, 21
-                case 90:
-                    if (box.name == "box (2)" || box.name == "box (8)" ||
-                        box.name == "box (15)" || box.name == "box (19)" ||
-                        box.name == "box (21)")
-                    {
-                        pickBox(box);
-                    }
-
-                    break;
-                // 180 degrees: 03, 09, 12, 16, 25
-                case 180:
-                    if (box.name == "box (3)" || box.name == "box (9)" ||
-                        box.name == "box (12)" || box.name == "box (16)" ||
-                        box.name == "box (25)")
-                    {
-                        pickBox(box);
-                    }
-
-                    break;
-                // 270 degrees: 05, 07, 11, 18, 24
-                case 270:
-                    if (box.name == "box (5)" || box.name == "box (7)" ||
-                        box.name == "box (11)" || box.name == "box (18)" ||
-                        box.name == "box (24)")
-                    {
-                        pickBox(box);
-                    }
-                    break;
-            }
+            // Index in List is box number - 1
+            pickBox(boxes[i - 1]);
         }
     }
 }
