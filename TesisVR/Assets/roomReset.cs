@@ -62,7 +62,9 @@ public class roomReset : MonoBehaviour
         // Set the boxes according to 0 degrees
         BoxConfig.Init();
         config = 5;
-        setupBoxesZ(config);
+
+        // Box Configuration
+        setupBoxesZ(new int[5] {04, 06, 15, 18, 22});
         setBoxes(0, config);
 
         /* config = Random.Range(1, 4);
@@ -162,10 +164,10 @@ public class roomReset : MonoBehaviour
         }        
 
         // Pick a rotation degree
-        int degree = Random.Range(0, 3) * 90;
+        int degree = Random.Range(0, 4) * 90;
         // if no rotation, pick a new Random
         if (degree == prevDegree) {
-            degree += Random.Range(1, 3) * 90;
+            degree += Random.Range(1, 4) * 90;
         }
         // Crop over angle
         if (degree > 270) degree -= 360;
@@ -182,7 +184,6 @@ public class roomReset : MonoBehaviour
         int dif = degree - prevDegree;
         room.transform.Rotate(0f, dif, 0f, Space.Self);
         prevDegree = degree;
-        Debug.Log("Room Rotated: " + dif + ", on: " + degree);
     }
 
     // Changes Box setup
@@ -391,16 +392,9 @@ public class roomReset : MonoBehaviour
     int[] list180 = new int[5];
     int[] list270 = new int[5];
 
-    private void setupBoxesZ(int config) {
-        // switch (config)
-        switch (config) {
-            case 5 :                
-                list0 = new int[5] {3, 6, 15, 17, 24};
-                break;
-            default :
-                list0 = new int[5] {1, 10, 14, 17, 23};
-                break;
-        }
+    private void setupBoxesZ(int[] indexSet) {
+        list0 = indexSet;
+
         // Setup rotated arrays with selected boxes' indexes
         for (int i = 0; i < list0.Length; i++)
         {
@@ -409,21 +403,19 @@ public class roomReset : MonoBehaviour
             list270[i] = BoxConfig.rotateCounterClockwise(list0[i]);
         }
 
-        // Debug 
-        /*
-        for (int i = 0; i < list0.Length; i++)
-        {
-            Debug.Log(list0[i].ToString() + " ; " + list90[i].ToString() + " ; "
-                    + list180[i].ToString() + " ; " + list270[i].ToString() + " ;");
-        }
-        */
+        // Debug
+        Debug.Log("Config90: " + list90[0] + ", " + list90[1] + ", " 
+                  + list90[2] + ", " + list90[3] + ", " + list90[4]);
+        Debug.Log("Config180: " + list180[0] + ", " + list180[1] + ", " 
+                  + list180[2] + ", " + list180[3] + ", " + list180[4]);
+        Debug.Log("Config270: " + list270[0] + ", " + list270[1] + ", " 
+                  + list270[2] + ", " + list270[3] + ", " + list270[4]);
     }
 
 
     // Config Z    WIP : TRY
     int[] degreeList;
-    private void setBoxesZ(int degree) {             
-
+    private void setBoxesZ(int degree) {   
         // Set list of selected boxes based on rotation
         switch(degree) {
             case 0 : 
@@ -431,6 +423,7 @@ public class roomReset : MonoBehaviour
                 break;
             case 90 :
                 degreeList = list90;
+
                 break;
             case 180 :
                 degreeList = list180;
@@ -442,11 +435,13 @@ public class roomReset : MonoBehaviour
                 break;
         }
 
+        Debug.Log("Config: " + degreeList[0] + ", " + degreeList[1] + ", " 
+                  + degreeList[2] + ", " + degreeList[3] + ", " + degreeList[4]);
+
         // Set box to marked
         foreach (int i in degreeList)
         {
             // Index in List is box number - 1
-            Debug.Log("Picked: " + i);
             pickBox(boxes[i - 1]);
         }
     }

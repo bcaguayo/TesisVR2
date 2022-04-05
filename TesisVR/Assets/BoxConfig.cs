@@ -39,7 +39,7 @@ public static class BoxConfig {
     }
 
     static Vector2 rotateClockwise(Vector2 v) {        
-        return new Vector2(-v.y, v.x);
+        return new Vector2(v.y, -v.x);
     }
 
     static Vector2 flip(Vector2 v) {        
@@ -47,7 +47,7 @@ public static class BoxConfig {
     }
 
     static Vector2 rotateCounterClockwise(Vector2 v) {
-        return new Vector2(v.y, -v.x);
+        return new Vector2(-v.y, v.x);
     }
 
     public static int rotateClockwise(int i) {
