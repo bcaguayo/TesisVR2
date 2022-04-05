@@ -61,8 +61,8 @@ public class roomReset : MonoBehaviour
                                   box21, box22, box23, box24, box25};
         // Set the boxes according to 0 degrees
         BoxConfig.Init();
-        config = 1;
-        // setupBoxesZ(config);
+        config = 5;
+        setupBoxesZ(config);
         setBoxes(0, config);
 
         /* config = Random.Range(1, 4);
@@ -393,7 +393,14 @@ public class roomReset : MonoBehaviour
 
     private void setupBoxesZ(int config) {
         // switch (config)
-        list0 = new int[5] {1, 10, 14, 17, 23};
+        switch (config) {
+            case 5 :                
+                list0 = new int[5] {3, 6, 15, 17, 24};
+                break;
+            default :
+                list0 = new int[5] {1, 10, 14, 17, 23};
+                break;
+        }
         // Setup rotated arrays with selected boxes' indexes
         for (int i = 0; i < list0.Length; i++)
         {
@@ -415,36 +422,21 @@ public class roomReset : MonoBehaviour
 
     // Config Z    WIP : TRY
     int[] degreeList;
-    private void setBoxesZ(int degree) {     
-        
+    private void setBoxesZ(int degree) {             
 
         // Set list of selected boxes based on rotation
-        Debug.Log("Degree: " + degree);
-
         switch(degree) {
             case 0 : 
                 degreeList = list0;
-                for (int i = 0; i < degreeList.Length; i++) {
-                    Debug.Log("case: " + degreeList[i].ToString());
-                }
                 break;
             case 90 :
                 degreeList = list90;
-                for (int i = 0; i < degreeList.Length; i++) {
-                    Debug.Log("case: " + degreeList[i].ToString());
-                }
                 break;
             case 180 :
                 degreeList = list180;
-                for (int i = 0; i < degreeList.Length; i++) {
-                    Debug.Log("case: " + degreeList[i].ToString());
-                }
                 break;
             case 270 :
                 degreeList = list270;
-                for (int i = 0; i < degreeList.Length; i++) {
-                    Debug.Log("case: " + degreeList[i].ToString());
-                }
                 break;
             default :
                 break;
