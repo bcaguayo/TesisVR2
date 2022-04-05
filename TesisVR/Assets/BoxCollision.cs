@@ -14,6 +14,7 @@ public class BoxCollision : MonoBehaviour
         string collider = collisionInfo.collider.name;
         // boxboxRenderer = GetComponent<Renderer>();
         room.Collision(collider, box, pick);    
+        // Debug.Log("name: " + box.name);
     }
 
     public bool getPick() {
