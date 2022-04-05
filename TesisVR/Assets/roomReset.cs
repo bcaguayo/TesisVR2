@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// FIX BOX ROTATION WITH BOX CONFIG
+
+
 public class roomReset : MonoBehaviour
 {
     [SerializeField] private GameObject room;
@@ -12,6 +16,7 @@ public class roomReset : MonoBehaviour
                                     box11, box12, box13, box14, box15,
                                     box16, box17, box18, box19, box20,
                                     box21, box22, box23, box24, box25;
+    [SerializeField] private GameObject playerTracker;
 
     // TODO Configurations
                                             /*
@@ -36,16 +41,15 @@ public class roomReset : MonoBehaviour
     // Timer measures frames, fTimer measures seconds
     // Config stores the disposition of the boxes
     // PrevDegree is used to rotate the room
-    private int score, rounds, timer, config, prevDegree;
-    private float ftimer;
+    private int score, rounds, roundErrors, config, prevDegree;
+    private float roundTimer, roundDistance;
+    private Vector2 prevPos = new Vector2(-10.0f, -10.0f);
 
     // Boxes stores the GameObjects
     private GameObject[] boxes;
 
     // Discovered stores which boxes have been discovered
     private HashSet<string> discovered = new HashSet<string>();
-
-
 
     void Awake()
     {
@@ -56,145 +60,169 @@ public class roomReset : MonoBehaviour
                                   box16, box17, box18, box19, box20,
                                   box21, box22, box23, box24, box25};
         // Set the boxes according to 0 degrees
-        config = Random.Range(1, 4);
-        Debug.Log(config);
+        BoxConfig.Init();
+        config = 5;
+
+        // Box Configuration
+        setupBoxesZ(new int[5] {04, 06, 15, 18, 22});
         setBoxes(0, config);
+
+        /* config = Random.Range(1, 4);
+
+        // For selecting random boxes
+        int[] randomBoxes = new int[];
+        int added = 0;
+
+        // For 5 boxes
+        while (added <= 5) {
+            Random r = new Random();
+            int rdm = r.Next(1, 25);
+            if (!randomBoxes.Contains(rdm)) {
+                randomBoxes[added] = rdm;
+                added++;
+            }
+        }
+        */
+
+        // degree = 0, config = 5
+        
+        // ----------------- on excel
+        Typewriter.Reset();
     }
 
-    void Start() {        
-    }
+    void Start() {}
 
+    // For spacing rounds
+    private bool waiting;
+    private float waitLimit = -1f;
     // Update is called once per frame
     void Update()
     {
-        // or time++
-        timer++;
-        ftimer += Time.deltaTime;
+        // Clock
+        roundTimer += Time.deltaTime;
+
+        // Distance
+        Vector2 currPos = new Vector2(playerTracker.transform.position.x, 
+                                      playerTracker.transform.position.z);
+        if (!prevPos.Equals(new Vector2(-10.0f, -10.0f))) {
+            roundDistance += Vector2.Distance(currPos, prevPos);
+        }
+        prevPos = currPos;
         // ftimer = (int)(ftimer * 100) / 100;
-        // When round limit is reached
+
+        // Round limit is reached
         if (rounds >= 10) {
-            // Quit app
             // TODO
             Application.Quit();
         }
 
         // When 5 boxes are found
         if (score >= 5) {
-            StartCoroutine(WaitForBox());
-            rounds++;            
-            Reset();
-            // WIP: Display on Canvas instead
-            Debug.Log("Rounds: " + rounds + ", Timer: " + timer + 
-                      ", FTimer: " + ftimer);
-        }
-    }
+            // Wait 2 seconds before reset
+            if (waiting) {
+                if (roundTimer >= waitLimit) {
+                    /// WAIT OVER, RESET          
+                    waitLimit = -1;  // reset waiters
+                    waiting = false;
 
-    // Wait after last Box found
-    IEnumerator WaitForBox() {
-        yield return new WaitForSeconds(500);
-    }
-
-    // Detects controller collision with Box
-    public void Collision(string collider, GameObject box, bool pick) {        
-        if (collider == "Controller (left)" || collider == "Controller (right)") { 
-            // Get the box's renderer
-            Renderer boxRenderer = box.GetComponent<Renderer>(); 
-            // Not discovered yet
-            if (!discovered.Contains(box.name)) {
-                // If green (prize) box
-                if(pick) {
-                    boxRenderer.material.mainTexture = green;   
-                    correct.Play();                     
-                    score++;
-                } 
-                // If red (no prize) box
-                else {
-                    boxRenderer.material.mainTexture = red;
-                    incorrect.Play();
+                    Typewriter.Write(roundTimer, roundDistance, roundErrors);                    
+                    Reset();
                 }
-                // add to discovered
-                discovered.Add(box.name);
-            }                
+            }
+
+            // Not waiting, set to wait and the limit to 2
+            // Using float Timer (ftimer) as base
+            else
+            {
+                waiting = true;
+                waitLimit = roundTimer + 2.5f;
+            }
         }
     }
-
+    
     // Once per Loop, resets the state of the room
     void Reset() {
-        StartCoroutine(WaitForBox());
-        // for every box
-        foreach(GameObject box in boxes) {
-                // 1. Turn yellow
-                Renderer renderer = box.GetComponent<Renderer>();
-                renderer.material.mainTexture = yellow;
-                // 2. Set not chosen
-                BoxCollision b = box.GetComponent<BoxCollision>();
-                b.changePick(false);
-            }
-            // Clear the discovered array
-            discovered = new HashSet<string>();
-            // Clear Score
-            score = 0;
+        // Per round values
+        rounds++;
+        score = 0;
+        roundErrors = 0;
+        roundTimer = 0f;
+        roundDistance = 0f;
+        prevPos = new Vector2(-10.0f, -10.0f);
 
-            // Pick a rotation degree
-            int degree = Random.Range(0, 3) * 90;
-            // if no rotation, pick a new Random
-            if (degree == prevDegree) {
-                degree += Random.Range(1, 3) * 90;
-            }
-            // Crop over angle
-            if (degree > 270) degree -= 360;
-            // Debug.Log("Random: " + degree);
-            // Rotate the Room
-            Rotate(degree);
-            // Pick the Boxes
-            setBoxes(degree, config);
+        // Clear the discovered array
+        discovered = new HashSet<string>();
+
+        // Reset every box
+        foreach(GameObject box in boxes) {
+            // 1. Turn yellow
+            Renderer renderer = box.GetComponent<Renderer>();
+            renderer.material.mainTexture = yellow;
+            // 2. Set not chosen
+            BoxCollision b = box.GetComponent<BoxCollision>();
+            b.changePick(false);
+        }        
+
+        // Pick a rotation degree
+        int degree = Random.Range(0, 4) * 90;
+        // if no rotation, pick a new Random
+        if (degree == prevDegree) {
+            degree += Random.Range(1, 4) * 90;
+        }
+        // Crop over angle
+        if (degree > 270) degree -= 360;
+        // Rotate the Room
+        Rotate(degree);
+        // Pick the Boxes
+        setBoxes(degree, config);
     }
 
     // Rotates the Room
-    void Rotate(float degree) {
+    void Rotate(int degree) {
         // Degree is with respect to 0
         // Rotates by the difference with the prev rotation
-        int dif = (int) degree - prevDegree;
+        int dif = degree - prevDegree;
         room.transform.Rotate(0f, dif, 0f, Space.Self);
-        prevDegree = (int) degree;
+        prevDegree = degree;
     }
-    
-    // ConfigMaster.WakeUp();
-    // ConfigMaster.Add(configA);
+
+    // Changes Box setup
+    void pickBox(GameObject box) {
+        box.GetComponent<BoxCollision>().changePick(true);
+    }
 
     // Sets which Boxes are chosen based on degree of rotation
     private void setBoxes(int degree, int config) {
         // Invalid degree
-        if(degree != 0 && degree != 90 && degree != 180 && degree != 270) {
+        if (degree != 0 && degree != 90 && degree != 180 && degree != 270) {
             throw new System.Exception("Wrong Rotation Degree: SetBoxes");
         }
-        
-        // Symmetrical Configuration
-        if(config == 4) {
-            setBoxesS();
-            return;
-        }
+
         // Invalid Config number
-        if(config < 1 || config > 4) {
+        if(config < 1 || config > 5) {
             throw new System.Exception("Out of Bounds Configuration: SetBoxes");
         }
-
-        // this configuration
-        // HashSet<string>[] local = new HashSet<string>[4];
-
+    
+        // Send to SetBoxes method based on random config
         switch (config) {
             case 1 : 
                 setBoxesA(degree);
-                // local = configA;
                 break;
             case 2 : 
                 setBoxesB(degree);
-                // local = configB;
                 break;
             case 3 :  
                 setBoxesC(degree);
-                // local = configC;
-                break;                
+                break; 
+            case 4 :
+                // Symmetrical Configuration
+                setBoxesS();
+                break;
+            case 5 :
+                setBoxesZ(degree);
+                break;
+            default : 
+                throw new System.Exception("Out of Bounds Configuration: SetBoxes");
         }
 
         /*
@@ -216,13 +244,12 @@ public class roomReset : MonoBehaviour
         */
     }
 
-    void pickBox(GameObject box) {
-        box.GetComponent<BoxCollision>().changePick(true);
-    }
+    
 
     
     private void setBoxesA(int degree) {
         foreach(GameObject box in boxes) {
+            Debug.Log("Boxes rotated: " + degree);
             switch (degree) {
                 // 0 degrees: 03, 06, 15, 17, 24
                 case 0 :                    
@@ -304,9 +331,11 @@ public class roomReset : MonoBehaviour
     // Config 3
     private void setBoxesC(int degree) {
         foreach(GameObject box in boxes) {
+            Debug.Log("Degree 1: " + degree);
             switch (degree) {
-            // 0 degrees: 01, 10, 14, 17, 23
-                case 0 :                    
+                // 0 degrees: 01, 10, 14, 17, 23
+                case 0 :           
+                    Debug.Log("Degree 2: 0");         
                     if (box.name == "box (1)" || box.name == "box (10)" ||
                         box.name == "box (14)"|| box.name == "box (17)" || 
                         box.name == "box (23)") {
@@ -316,24 +345,25 @@ public class roomReset : MonoBehaviour
                     break;
                 // 90 degrees: 02, 08, 15, 19, 21
                 case 90 :
+                    Debug.Log("Degree 2: 90");   
                     if (box.name == "box (2)" || box.name == "box (8)" ||
                         box.name == "box (15)"|| box.name == "box (19)" || 
                         box.name == "box (21)") {
                         pickBox(box);
-                    }                    
-                    
+                    }                                        
                     break;
                 // 180 degrees: 03, 09, 12, 16, 25
-                case 180 :
+                case 180 : 
+                    Debug.Log("Degree 2: 180");   
                     if (box.name == "box (3)" || box.name == "box (9)" ||
                         box.name == "box (12)"|| box.name == "box (16)" || 
                         box.name == "box (25)") {
                         pickBox(box);
-                    }                    
-                    
+                    }                                        
                     break;
                 // 270 degrees: 05, 07, 11, 18, 24
                 case 270 :
+                    Debug.Log("Degree 2: 270");   
                     if (box.name == "box (5)" || box.name == "box (7)" ||
                         box.name == "box (11)"|| box.name == "box (18)" || 
                         box.name == "box (24)") {
@@ -352,6 +382,92 @@ public class roomReset : MonoBehaviour
                 box.name == "box (24)") {
                 pickBox(box);
             }                    
+        }
+    }
+
+    // Selected boxes at degree 0
+    int[] list0 = new int[5];
+    // at 90, 180 and 270 degrees
+    int[] list90 = new int[5];
+    int[] list180 = new int[5];
+    int[] list270 = new int[5];
+
+    private void setupBoxesZ(int[] indexSet) {
+        list0 = indexSet;
+
+        // Setup rotated arrays with selected boxes' indexes
+        for (int i = 0; i < list0.Length; i++)
+        {
+            list90[i] = BoxConfig.rotateClockwise(list0[i]);
+            list180[i] = BoxConfig.flip(list0[i]);
+            list270[i] = BoxConfig.rotateCounterClockwise(list0[i]);
+        }
+
+        // Debug
+        Debug.Log("Config90: " + list90[0] + ", " + list90[1] + ", " 
+                  + list90[2] + ", " + list90[3] + ", " + list90[4]);
+        Debug.Log("Config180: " + list180[0] + ", " + list180[1] + ", " 
+                  + list180[2] + ", " + list180[3] + ", " + list180[4]);
+        Debug.Log("Config270: " + list270[0] + ", " + list270[1] + ", " 
+                  + list270[2] + ", " + list270[3] + ", " + list270[4]);
+    }
+
+
+    // Config Z    WIP : TRY
+    int[] degreeList;
+    private void setBoxesZ(int degree) {   
+        // Set list of selected boxes based on rotation
+        switch(degree) {
+            case 0 : 
+                degreeList = list0;
+                break;
+            case 90 :
+                degreeList = list90;
+
+                break;
+            case 180 :
+                degreeList = list180;
+                break;
+            case 270 :
+                degreeList = list270;
+                break;
+            default :
+                break;
+        }
+
+        Debug.Log("Config: " + degreeList[0] + ", " + degreeList[1] + ", " 
+                  + degreeList[2] + ", " + degreeList[3] + ", " + degreeList[4]);
+
+        // Set box to marked
+        foreach (int i in degreeList)
+        {
+            // Index in List is box number - 1
+            pickBox(boxes[i - 1]);
+        }
+    }
+
+    // Detects controller collision with Box
+    public void Collision(string collider, GameObject box, bool pick) {      
+        if (collider == "Controller (left)" || collider == "Controller (right)") { 
+            // Get the box's renderer
+            Renderer boxRenderer = box.GetComponent<Renderer>(); 
+            // Not discovered yet
+            if (!discovered.Contains(box.name)) {
+                // If green (prize) box
+                if (pick) {                    
+                    score++;
+                    boxRenderer.material.mainTexture = green;   
+                    correct.Play(); 
+                } 
+                // If red (no prize) box
+                else {
+                    roundErrors++;
+                    boxRenderer.material.mainTexture = red;
+                    incorrect.Play();
+                }
+                // add to discovered
+                discovered.Add(box.name);
+            }                
         }
     }
 }

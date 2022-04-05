@@ -367,8 +367,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 "Assets/BoxCollision.cs"
+"Assets/BoxConfig.cs"
 "Assets/ConfigMaster.cs"
 "Assets/roomReset.cs"
+"Assets/Typewriter.cs"
 -langversion:9.0
 
 /deterministic
