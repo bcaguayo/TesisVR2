@@ -6,7 +6,7 @@
 # 17/12
 4. Make game end (Build and Run)
 5. Make Sound (DONE)
-6. Delay after 5 box found 
+6. Delay after 5 box found (DONE)
 7. Config 2, 3, 4, 5 (DONE)
 8. Display Score and Rounds 
 9. Display White Screen after game end / with data
@@ -14,12 +14,13 @@
 11. Write puntero (DONE)
 
 # FUTURE
-12. Pick Boxes Custom Editor Window (Set Boxes Rewrite) [Vector Based]
-13. Export data (excell)
+12. Vector Based Pick Boxes (DONE)
+13. Custom Editor Window (Set Boxes Rewrite)
+14. Export data (excell) (DONE)
 	13.1 Time
 	13.2 Distance
 	13.3 Tries (errors)
-14. Add Furniture
+15. Add Furniture
 
 
 # Interfaz:
