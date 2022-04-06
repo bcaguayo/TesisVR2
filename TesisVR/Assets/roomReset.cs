@@ -2,10 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-// FIX BOX ROTATION WITH BOX CONFIG
-
-
 public class roomReset : MonoBehaviour
 {
     [SerializeField] private GameObject room;
@@ -17,24 +13,6 @@ public class roomReset : MonoBehaviour
                                     box16, box17, box18, box19, box20,
                                     box21, box22, box23, box24, box25;
     [SerializeField] private GameObject playerTracker;
-
-    // TODO Configurations
-                                            /*
-        int[,] configA = {{3, 6, 15, 17, 24}, {15, 04, 23, 07, 16}, 
-                      {23, 20, 11, 09, 02}, {11, 22, 03, 19, 10}};
-        int[,] configB = {{3, 6, 15, 17, 24}, {15, 04, 23, 07, 16},
-                      {23, 20, 11, 09, 02}, {11, 22, 03, 19, 10}};
-                      
-
-    int[] numbers = {3, 6, 15, 17, 24};
-    LinkedList<HashSet<int>>[] configA = new LinkedList<HashSet<int>>[4];
-    new HashSet<int>().Add(3);
-
-    
-    // configA[0] = new HashSet<int>(numbers); 
-    private HashSet<int>[] configB = new HashSet<int>[4];
-    private HashSet<int>[] configC = new HashSet<int>[4];
-    */
 
     /* Rounds measures how many loops completed
     roundScore measures the amount of green boxes touched
@@ -95,8 +73,8 @@ public class roomReset : MonoBehaviour
 
         // Box Configuration
 
-        setupBoxesZ(randomBoxes);
-        setBoxes(0);
+        SetupBoxes(randomBoxes);
+        SetBoxes(0);
         
         // ----------------- on excel
         Typewriter.Reset();
@@ -110,8 +88,9 @@ public class roomReset : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Clock
+        // Timer and Display
         roundTimer += Time.deltaTime;
+        Screenwriter.WriteTime(roundTimer);
 
         // Distance
         Vector2 currPos = new Vector2(playerTracker.transform.position.x, 
@@ -156,6 +135,7 @@ public class roomReset : MonoBehaviour
     void Reset() {
         // Per round values
         rounds++;
+        Screenwriter.Round(); // Display one more round, reset errors
         roundScore = 0;
         roundErrors = 0;
         roundTimer = 0f;
@@ -184,13 +164,13 @@ public class roomReset : MonoBehaviour
         // Crop over angle
         if (degree > 270) degree -= 360;
         // Rotate the Room
-        Rotate(degree);
+        RotateRoom(degree);
         // Pick the Boxes
-        setBoxes(degree);
+        SetBoxes(degree);
     }
 
     // Rotates the Room
-    void Rotate(int degree) {
+    void RotateRoom(int degree) {
         // Degree is with respect to 0
         // Rotates by the difference with the prev rotation
         int dif = degree - prevDegree;
@@ -203,46 +183,27 @@ public class roomReset : MonoBehaviour
         box.GetComponent<BoxCollision>().changePick(true);
     }
 
-
-
-    // Sets which Boxes are chosen based on degree of rotation
-    private void setBoxes(int degree) {
-        // Invalid degree
-        if (degree != 0 && degree != 90 && degree != 180 && degree != 270) {
-            throw new System.Exception("Wrong Rotation Degree: SetBoxes");
-        }
-
-        setBoxesZ(degree);        
-    }    
-
-    private void setupBoxesZ(int[] indexSet) {
-
+    private void SetupBoxes(int[] indexSet) {
         list0 = indexSet;
 
         // Setup rotated arrays with selected boxes' indexes
         for (int i = 0; i < list0.Length; i++)
         {
-            list90[i] = BoxConfig.rotateClockwise(list0[i]);
+            list90[i] = BoxConfig.rotateCounterClockwise(list0[i]);
             list180[i] = BoxConfig.flip(list0[i]);
-            list270[i] = BoxConfig.rotateCounterClockwise(list0[i]);
+            list270[i] = BoxConfig.rotateClockwise(list0[i]);
         }
-
-        // Debug
-        /*
-        Debug.Log("Config90: " + list90[0] + ", " + list90[1] + ", " 
-                  + list90[2] + ", " + list90[3] + ", " + list90[4]);
-        Debug.Log("Config180: " + list180[0] + ", " + list180[1] + ", " 
-                  + list180[2] + ", " + list180[3] + ", " + list180[4]);
-        Debug.Log("Config270: " + list270[0] + ", " + list270[1] + ", " 
-                  + list270[2] + ", " + list270[3] + ", " + list270[4]);
-        */
     }
 
+    // Sets which Boxes are chosen based on degree of rotation
+    private void SetBoxes(int degree) {
+        // Invalid degree
+        if (degree != 0 && degree != 90 && degree != 180 && degree != 270) {
+            throw new System.Exception("Wrong Rotation Degree: SetBoxes");
+        }
 
-    // Config Z
-    private void setBoxesZ(int degree) {   
-        int[] degreeList = new int[5];
         // Set list of selected boxes based on rotation
+        int[] degreeList = new int[5];        
         switch(degree) {
             case 0 : 
                 degreeList = list0;
@@ -259,17 +220,12 @@ public class roomReset : MonoBehaviour
                 break;
         }
 
-        /*
-        Debug.Log("Config: " + degreeList[0] + ", " + degreeList[1] + ", " 
-                  + degreeList[2] + ", " + degreeList[3] + ", " + degreeList[4]);
-        */
-
         // Set box to marked
         foreach (int i in degreeList)
         {
             // Index in List is box number - 1
             pickBox(boxes[i - 1]);
-        }
+        }    
     }
 
     // Detects controller collision with Box
@@ -289,6 +245,7 @@ public class roomReset : MonoBehaviour
                 // If red (no prize) box
                 else {
                     roundErrors++;
+                    Screenwriter.Error();
                     boxRenderer.material.mainTexture = red;
                     incorrect.Play();
                 }
