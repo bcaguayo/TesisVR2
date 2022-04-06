@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BoxCollision
+    - Organizer
     - roomReset
     SteamVR.dll:
     - Valve.VR.SteamVR_Behaviour_Pose
@@ -14,12 +15,25 @@ ScriptsOnlyBuild:
     - Valve.VR.SteamVR_Settings
     - Valve.VR.SteamVR_Skeleton_Pose
     - Valve.VR.SteamVR_Skeleton_Poser
+    SteamVR_Editor.dll:
+    - Valve.VR.SteamVR_UnitySettingsWindow
+    Unity.CollabProxy.Editor.dll:
+    - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.InputActionAsset
+    - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
+    - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
@@ -50,6 +64,11 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -69,6 +88,8 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
@@ -97,36 +118,72 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1700}
+      Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1926}
+      Script: {instanceID: 1730}
     - Class: 114
-      Script: {instanceID: 2222}
+      Script: {instanceID: 1956}
     - Class: 114
-      Script: {instanceID: 3058}
+      Script: {instanceID: 2252}
     - Class: 114
-      Script: {instanceID: 3798}
+      Script: {instanceID: 2426}
     - Class: 114
-      Script: {instanceID: 4336}
+      Script: {instanceID: 2960}
     - Class: 114
-      Script: {instanceID: 5212}
+      Script: {instanceID: 3088}
     - Class: 114
-      Script: {instanceID: 5298}
+      Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 6390}
+      Script: {instanceID: 3828}
     - Class: 114
-      Script: {instanceID: 8002}
+      Script: {instanceID: 4348}
     - Class: 114
-      Script: {instanceID: 8334}
+      Script: {instanceID: 4366}
     - Class: 114
-      Script: {instanceID: 8620}
+      Script: {instanceID: 4840}
+    - Class: 114
+      Script: {instanceID: 5164}
+    - Class: 114
+      Script: {instanceID: 5242}
+    - Class: 114
+      Script: {instanceID: 5328}
+    - Class: 114
+      Script: {instanceID: 6048}
+    - Class: 114
+      Script: {instanceID: 6422}
+    - Class: 114
+      Script: {instanceID: 6736}
+    - Class: 114
+      Script: {instanceID: 6922}
+    - Class: 114
+      Script: {instanceID: 7828}
+    - Class: 114
+      Script: {instanceID: 8038}
+    - Class: 114
+      Script: {instanceID: 8372}
+    - Class: 114
+      Script: {instanceID: 8658}
+    - Class: 114
+      Script: {instanceID: 8694}
+    - Class: 114
+      Script: {instanceID: 8846}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -173,7 +230,7 @@ ScriptsOnlyBuild:
     className: Hand
   - hash:
       serializedVersion: 2
-      Hash: 259f727d65f00e78e1fc7fa033d526f4
+      Hash: 35dfd3f7c3bf08ea1d04700e054c6927
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: roomReset
@@ -1835,6 +1892,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: cdf7daf654eba6c71d9b5a3193276951
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Organizer
+  - hash:
+      serializedVersion: 2
       Hash: 9fc3f19334d5c8086a3c31c922c8a827
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR.InteractionSystem
@@ -2022,4 +2085,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/RMS VR/Documents/GitHub/TesisVR2/TesisVR/TesisVR.exe
+  playerPath: C:/Users/RMS VR/Desktop/VRBuilds/TesisVR.exe
