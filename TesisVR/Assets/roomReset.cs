@@ -18,13 +18,11 @@ public class roomReset : MonoBehaviour
     roundScore measures the amount of green boxes touched
     roundErrors measures the amount of green boxes touched
     prevDegree is used to rotate the room
-    
-    // 
     */
     private int rounds, roundScore, roundErrors, prevDegree;
     /* roundTimer measures seconds passed
     roundDistance measures distance traveled in meters 
-    
+    prevPos stores the latest position
     */
     private float roundTimer, roundDistance;
     private Vector2 prevPos = new Vector2(-10.0f, -10.0f);
@@ -32,15 +30,11 @@ public class roomReset : MonoBehaviour
     // Boxes stores the GameObjects
     private GameObject[] boxes;
 
-    // at 90, 180 and 270 degrees
-    private int[] list0 = new int[5];
-    private int[] list90 = new int[5];
-    private int[] list180 = new int[5];
-    private int[] list270 = new int[5];
+    /*  BoxRotation is a jagged array that contains the indexes of the picked boxes 
+        for each 5-number configuration on: 0°, 90°, 180, 270°
+        Access a Config with boxRotation[degree / 90][number space] */
+    private int[][] boxRotation = new int[4][];
 
-    // WIP local[degree / 90][config numbers] 
-    // instead of list0, list90... list[][]
-    int[][] boxRotation = new int[4][];
 
     // Discovered stores which boxes have been discovered
     private HashSet<string> discovered = new HashSet<string>();
@@ -53,44 +47,51 @@ public class roomReset : MonoBehaviour
                                   box11, box12, box13, box14, box15,
                                   box16, box17, box18, box19, box20,
                                   box21, box22, box23, box24, box25};
-        // Set the boxes according to 0 degrees
+        
+        // Set the box vectors according to 0 degrees
         BoxConfig.Init();
+    }
 
+    void Start() {
         // Choose 5 random boxes
         int[] randomBoxes = new int[5];
         int added = 0;
 
         while (added < 5) {
             int r = Random.Range(1, 25);
+            bool repeat = false;
             foreach (int i in randomBoxes) {
-                if (i == r) {
-                    continue;
+                if (r == i) {
+                    repeat = true;
                 }
             }
-            randomBoxes[added] = r;
-            added++;
+            if (repeat) continue;
+            else {
+                randomBoxes[added] = r;
+                added++;
+            }
         }
 
         // Box Configuration
-
         SetupBoxes(randomBoxes);
         SetBoxes(0);
-        
-        // ----------------- on excel
-        Typewriter.Reset();
     }
-
-    void Start() {}
 
     // For spacing rounds
     private bool waiting;
     private float waitLimit = -1f;
     // Update is called once per frame
+
+    void DisableBoxes() {
+        foreach (GameObject box in boxes) {
+            discovered.Add(box.name);
+        }
+    }
+
     void Update()
     {
-        // Timer and Display
+        // Timer
         roundTimer += Time.deltaTime;
-        Screenwriter.WriteTime(roundTimer);
 
         // Distance
         Vector2 currPos = new Vector2(playerTracker.transform.position.x, 
@@ -99,12 +100,26 @@ public class roomReset : MonoBehaviour
             roundDistance += Vector2.Distance(currPos, prevPos);
         }
         prevPos = currPos;
-        // ftimer = (int)(ftimer * 100) / 100;
 
         // Round limit is reached
         if (rounds >= 10) {
-            // TODO
-            Application.Quit();
+            // Black end screen
+            Organizer.End();
+            DisableBoxes();
+
+            if (waiting) {
+                if (roundTimer >= waitLimit) {
+                    /// WAIT OVER, QUIT          
+                    Application.Quit(); // Quit
+                }
+            }
+            // Not waiting, set to wait and the limit to 2
+            // Using float Timer (ftimer) as base
+            else
+            {
+                waiting = true;
+                waitLimit = roundTimer + 5f;
+            }            
         }
 
         // When 5 boxes are found
@@ -116,7 +131,7 @@ public class roomReset : MonoBehaviour
                     waitLimit = -1;  // reset waiters
                     waiting = false;
 
-                    Typewriter.Write(roundTimer, roundDistance, roundErrors);                    
+                    Organizer.Write(roundTimer, roundDistance, roundErrors);                    
                     Reset();
                 }
             }
@@ -135,7 +150,7 @@ public class roomReset : MonoBehaviour
     void Reset() {
         // Per round values
         rounds++;
-        Screenwriter.Round(); // Display one more round, reset errors
+        Organizer.Round(); // Display one more round, reset errors
         roundScore = 0;
         roundErrors = 0;
         roundTimer = 0f;
@@ -184,15 +199,12 @@ public class roomReset : MonoBehaviour
     }
 
     private void SetupBoxes(int[] indexSet) {
-        list0 = indexSet;
-
-        // Setup rotated arrays with selected boxes' indexes
-        for (int i = 0; i < list0.Length; i++)
-        {
-            list90[i] = BoxConfig.rotateCounterClockwise(list0[i]);
-            list180[i] = BoxConfig.flip(list0[i]);
-            list270[i] = BoxConfig.rotateClockwise(list0[i]);
-        }
+        // [0] : 0 degrees, [1] : 90 degrees.
+        // [2] : 180 degrees, [3] : 270 degrees.
+        boxRotation[0] = indexSet;
+        boxRotation[1] = BoxConfig.rotateCounterClockwise(indexSet);
+        boxRotation[2] = BoxConfig.flip(indexSet);
+        boxRotation[3] = BoxConfig.rotateClockwise(indexSet);
     }
 
     // Sets which Boxes are chosen based on degree of rotation
@@ -206,17 +218,16 @@ public class roomReset : MonoBehaviour
         int[] degreeList = new int[5];        
         switch(degree) {
             case 0 : 
-                degreeList = list0;
+                degreeList = boxRotation[0];
                 break;
             case 90 :
-                degreeList = list90;
-
+                degreeList = boxRotation[1];
                 break;
             case 180 :
-                degreeList = list180;
+                degreeList = boxRotation[2];
                 break;
             case 270 :
-                degreeList = list270;
+                degreeList = boxRotation[3];
                 break;
         }
 
@@ -245,7 +256,7 @@ public class roomReset : MonoBehaviour
                 // If red (no prize) box
                 else {
                     roundErrors++;
-                    Screenwriter.Error();
+                    Organizer.Error();
                     boxRenderer.material.mainTexture = red;
                     incorrect.Play();
                 }

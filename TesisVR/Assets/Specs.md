@@ -4,23 +4,35 @@
 3. Make boxes switch color (DONE)
 
 # 17/12
-4. Make game end (Build and Run)
+4. Make game end (Build and Run) -moved-
 5. Make Sound (DONE)
 6. Delay after 5 box found (DONE)
 7. Config 2, 3, 4, 5 (DONE)
-8. Display Score and Rounds 
-9. Display White Screen after game end / with data
-10. Test Round
+8. Display Score and Rounds (DONE)
+9. Display White Screen after game end / with data 
+10. Test Round -moved-
 11. Write puntero (DONE)
 
 # FUTURE
 12. Vector Based Pick Boxes (DONE)
 13. Custom Editor Window (Set Boxes Rewrite)
 14. Export data (excell) (DONE)
-	13.1 Time
-	13.2 Distance
-	13.3 Tries (errors)
+	14.1 Time
+	14.2 Distance
+	14.3 Tries (errors)
 15. Add Furniture
+	15.1 Ground Lamp
+	15.2 Painting
+	15.3 Different Wall Texture
+	15.5 Door and Window Frame
+16. Test Round Functionality
+1 descubre cajas tocandolas
+2 rotar cuarto 
+3 encuentra 5 cajas
+fix very dif vs very easy config
+
+17. Test Round Tutorial
+
 
 
 # Interfaz:
@@ -34,7 +46,6 @@
 2. RunTestRound()
 3. RunGame()
 
-
 # RunTestRun():
 - Toast: 	Find the green boxes as fast as you can
 			Encuentre las cajas verdes lo más rapido posible
@@ -42,7 +53,6 @@
 - no rotation
 - boxes interactable
 - orientation and controlls
-
 
 # RunGame():
 - fields:

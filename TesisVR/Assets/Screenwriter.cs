@@ -1,29 +1,73 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.UI;
 using TMPro;
 
-public class Screenwriter : MonoBehaviour
-{
-    public TextMeshProUGUI Rounds, Time, Errors;
-    private static int rounds, timeMin, timeSec, roundErrors;
-
-    // Start is called before the first frame update
-    void Start() {
-        Reset();
+public static class Screenwriter {
+    static TextMeshProUGUI Rounds, Timer, Errors;
+    static GameObject EndPanel;
+    private static int rounds, timeMin, roundErrors;
+    private static float timeSec;
+    
+    public static void Start(TextMeshProUGUI r, TextMeshProUGUI t, TextMeshProUGUI e, GameObject p) {
+        Rounds = r;
+        Timer = t;
+        Errors = e;
+        EndPanel = p;
     }
 
+    // Hide End Panel on Start
+    public static void HidePanel() {
+        EndPanel.gameObject.SetActive(false);
+    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        string min = "" + timeMin;
+    // On Start: Initialize all variables
+    public static void Reset() {
+        rounds = 0;
+        timeMin = 0;
+        timeSec = 0;
+        roundErrors = 0;
+        Rounds.text = "Rondas: 00";
+        Timer.text = "00:00";
+        Errors.text = "Errores: 00";
+    }   
+
+    // On Update
+    public static void Loop() {
         Rounds.text = "Rondas: " + stringT(rounds);
-        Time.text = stringT(timeMin) + ":" + stringT(timeSec);
+        Timer.text = stringT(timeMin) + ":" + stringT(timeSec);
         Errors.text = "Errores: " + stringT(roundErrors);
     }
+    
+    public static void ShowPanel() {
+        EndPanel.gameObject.SetActive(true);
+    }
 
-    string stringT(int number) {
+    public static void End() {
+        Rounds.gameObject.SetActive(false);
+        Timer.gameObject.SetActive(false);
+        Errors.gameObject.SetActive(false);
+        ShowPanel();
+    }   
+    
+    public static void Round() {
+        rounds++;
+        roundErrors = 0;
+    }
+
+    public static void AddTime(float newTime) {
+        float total = timeMin * 60 + timeSec + newTime;
+        timeMin = (int) total / 60;
+        timeSec = total % 60;
+    }
+
+    public static void Error() {
+        roundErrors++;
+    }
+
+    // Helpers
+    private static string stringT(int number) {
         string n = number.ToString();
         if (n.Length < 2) {
             n = "0" + n;
@@ -31,41 +75,8 @@ public class Screenwriter : MonoBehaviour
         return n;
     }
 
-    public static void Write(int round, float time, int err) {
-        WriteRounds(round);
-        WriteTime(time);
-        WriteErrors(err);
+    private static string stringT(float number) {
+        int n = (int) (number * 100) / 100;
+        return stringT(n);
     }
-    public static void WriteRounds(int round) {
-        rounds = round;
-    }
-
-    public static void WriteTime(float time) {
-        timeMin = (int) time / 60;
-        timeSec = (int) time % 60;
-    }
-
-    public static void WriteErrors(int err) {
-        roundErrors = err;
-    }
-
-    public static void Round() {
-        rounds++;
-        roundErrors = 0;
-    }
-
-    public static void Error() {
-        roundErrors++;
-    }
-
-    private void Reset() {
-        rounds = 0;
-        timeMin = 0;
-        timeSec = 0;
-        roundErrors = 0;
-        Rounds.text = "Rondas: 00";
-        Time.text = "00:00";
-        Errors.text = "Errores: 00";
-    }
-
 }

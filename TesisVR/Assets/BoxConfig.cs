@@ -64,4 +64,31 @@ public static class BoxConfig {
         Vector2 v = IndexToCoor(i);
         return CoorToIndex(rotateCounterClockwise(v));
     }
+
+    public static int[] rotateClockwise(int[] list) {
+        int[] r = new int[list.Length];
+        for (int i = 0; i < list.Length; i++) {
+            Vector2 v = IndexToCoor(list[i]);
+            r[i] = CoorToIndex(rotateClockwise(v));
+        }        
+        return r;
+    }
+    
+    public static int[] flip(int[] list) {
+        int[] r = new int[list.Length];
+        for (int i = 0; i < list.Length; i++) {
+            Vector2 v = IndexToCoor(list[i]);
+            r[i] = CoorToIndex(flip(v));
+        }        
+        return r;
+    }
+    
+    public static int[] rotateCounterClockwise(int[] list) {
+        int[] r = new int[list.Length];
+        for (int i = 0; i < list.Length; i++) {
+            Vector2 v = IndexToCoor(list[i]);
+            r[i] = CoorToIndex(rotateCounterClockwise(v));
+        }        
+        return r;
+    }
 }

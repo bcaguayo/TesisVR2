@@ -42,6 +42,7 @@
      <Compile Include="Assets\BoxConfig.cs" />
      <Compile Include="Assets\ConfigMaster.cs" />
      <Compile Include="Assets\BoxCollision.cs" />
+     <Compile Include="Assets\Organizer.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
