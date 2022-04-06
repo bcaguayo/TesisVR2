@@ -39,7 +39,7 @@ public static class BoxConfig {
     }
 
     static Vector2 rotateClockwise(Vector2 v) {        
-        return new Vector2(v.y, -v.x);
+        return new Vector2(-v.y, v.x);
     }
 
     static Vector2 flip(Vector2 v) {        
@@ -47,7 +47,7 @@ public static class BoxConfig {
     }
 
     static Vector2 rotateCounterClockwise(Vector2 v) {
-        return new Vector2(-v.y, v.x);
+        return new Vector2(v.y, -v.x);
     }
 
     public static int rotateClockwise(int i) {
@@ -64,28 +64,31 @@ public static class BoxConfig {
         Vector2 v = IndexToCoor(i);
         return CoorToIndex(rotateCounterClockwise(v));
     }
+
+    public static int[] rotateClockwise(int[] list) {
+        int[] r = new int[list.Length];
+        for (int i = 0; i < list.Length; i++) {
+            Vector2 v = IndexToCoor(list[i]);
+            r[i] = CoorToIndex(rotateClockwise(v));
+        }        
+        return r;
+    }
+    
+    public static int[] flip(int[] list) {
+        int[] r = new int[list.Length];
+        for (int i = 0; i < list.Length; i++) {
+            Vector2 v = IndexToCoor(list[i]);
+            r[i] = CoorToIndex(flip(v));
+        }        
+        return r;
+    }
+    
+    public static int[] rotateCounterClockwise(int[] list) {
+        int[] r = new int[list.Length];
+        for (int i = 0; i < list.Length; i++) {
+            Vector2 v = IndexToCoor(list[i]);
+            r[i] = CoorToIndex(rotateCounterClockwise(v));
+        }        
+        return r;
+    }
 }
-
-
-/*
-A
-    0 degrees: 03, 06, 15, 17, 24
-    90 degrees: 15, 04, 23, 07, 16
-    180 degrees: 23, 20, 11, 09, 02
-    270 degrees: 11, 22, 03, 19, 10
-
-B
-    0 degrees: 04, 06, 15, 18, 22
-    90 degrees: 03, 06, 14, 20, 22
-    180 degrees: 04, 08, 11, 20, 22
-    270 degrees: 04, 06, 12, 20, 23
-
-C
-    0 degrees: 01, 10, 14, 17, 23
-    90 degrees: 02, 08, 15, 19, 21
-    180 degrees: 03, 09, 12, 16, 25
-    270 degrees: 05, 07, 11, 18, 24
-
-S
-    All: 2, 10, 13, 16, 24 
-*/

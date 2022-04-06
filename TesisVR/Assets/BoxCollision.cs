@@ -25,18 +25,4 @@ public class BoxCollision : MonoBehaviour
     public void changePick(bool p) {
         pick = p;
     }
-
-    /*
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    */
 }

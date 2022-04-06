@@ -369,7 +369,9 @@
 "Assets/BoxCollision.cs"
 "Assets/BoxConfig.cs"
 "Assets/ConfigMaster.cs"
+"Assets/Organizer.cs"
 "Assets/roomReset.cs"
+"Assets/Screenwriter.cs"
 "Assets/Typewriter.cs"
 -langversion:9.0
 
