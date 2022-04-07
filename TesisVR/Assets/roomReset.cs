@@ -72,6 +72,9 @@ public class roomReset : MonoBehaviour
             }
         }
 
+        // Start at Round 1
+        rounds = 1;
+
         // Box Configuration
         SetupBoxes(randomBoxes);
         SetBoxes(0);
@@ -102,7 +105,7 @@ public class roomReset : MonoBehaviour
         prevPos = currPos;
 
         // Round limit is reached
-        if (rounds >= 10) {
+        if (rounds > 10) {
             // Black end screen
             Organizer.End();
             DisableBoxes();
@@ -141,7 +144,11 @@ public class roomReset : MonoBehaviour
             else
             {
                 waiting = true;
-                waitLimit = roundTimer + 2.5f;
+                if (rounds == 1) {
+                    waitLimit = roundTimer + 5f;
+                } else {
+                    waitLimit = roundTimer + 3.5f;
+                }
             }
         }
     }
@@ -250,6 +257,7 @@ public class roomReset : MonoBehaviour
                 // If green (prize) box
                 if (pick) {                    
                     roundScore++;
+                    Organizer.Success();
                     boxRenderer.material.mainTexture = green;   
                     correct.Play(); 
                 } 

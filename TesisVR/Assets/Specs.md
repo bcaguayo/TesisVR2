@@ -13,27 +13,44 @@
 10. Test Round -moved-
 11. Write puntero (DONE)
 
-# FUTURE
+# 2022
 12. Vector Based Pick Boxes (DONE)
-13. Custom Editor Window (Set Boxes Rewrite)
+13. Custom Editor Window (Set Boxes Rewrite) (DEPRECATED)
 14. Export data (excell) (DONE)
 	14.1 Time
 	14.2 Distance
 	14.3 Tries (errors)
+
+# WORKING
 15. Add Furniture
 	15.1 Ground Lamp
 	15.2 Painting
 	15.3 Different Wall Texture
 	15.5 Door and Window Frame
+	15.6 Shelf with Ball and Plushie
+	OSO PARDO
+
 16. Test Round Functionality
-1 descubre cajas tocandolas
-2 rotar cuarto 
-3 encuentra 5 cajas
-fix very dif vs very easy config
-
+	16.1 Discovering boxes
+	16.2 25 Grid
+	16.3 Room Rotation
+	16.4 Scoreboard
+	16.5 End
 17. Test Round Tutorial
+	17.1 Additional Assets
+	17.2 Narration
+	17.3 Presentation
 
+18. Documentation
+	18.1 Concept Art
+	18.2 Classes Schema
+	18.3 Scenes Description
+	18.4 Functionality (Basic Scene and Controls)
+	18.5 Screencaps
+	18.6 Any extras required
 
+19. Fix Markers to display successes / errors (DONE)
+20. Fix very easy vs. very difficult configurations 
 
 # Interfaz:
 - Iniciar (play button): calls OnStart()

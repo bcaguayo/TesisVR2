@@ -6,18 +6,17 @@ using TMPro;
 public class Organizer : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] TextMeshProUGUI Rounds, Timer, Errors;
+    [SerializeField] TextMeshProUGUI Rounds, Timer, Sucess, Errors;
     [SerializeField] GameObject EndPanel;    
 
     void Awake()
     {
-        Screenwriter.Start(Rounds, Timer, Errors, EndPanel);
-        Screenwriter.Reset();
-        Screenwriter.HidePanel();        
-        //Typewriter.Reset();
+        Screenwriter.Start(Rounds, Timer, Sucess, Errors, EndPanel);             
     }
 
     void Start() {
+        Screenwriter.Reset();
+        Screenwriter.HidePanel();   
         Typewriter.Reset();
     }
 
@@ -34,6 +33,10 @@ public class Organizer : MonoBehaviour
     
     public static void Round() {
         Screenwriter.Round();
+    }
+
+    public static void Success() {
+        Screenwriter.Success();
     }
 
     public static void Error() {
