@@ -25,7 +25,7 @@ public static class Screenwriter {
 
     // On Start: Initialize all variables
     public static void Reset() {
-        rounds = 0;
+        rounds = 1;
         timeMin = 0;
         timeSec = 0;
         roundErrors = 0;

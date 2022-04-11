@@ -46,7 +46,6 @@ public class BoxManager : MonoBehaviour
         */
         if (score >= maxScore || discovered >= boxesTotal) {
             ResetScene();
-            Debug.Log("Load Scene");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
@@ -57,7 +56,7 @@ public class BoxManager : MonoBehaviour
         }
     }
 
-    private void ResetScene() {
+    public void ResetScene() {
         score = 0;
         discovered = 0;
         switch (part) {
@@ -71,4 +70,6 @@ public class BoxManager : MonoBehaviour
                 break;
         }
     }
+
+
 }

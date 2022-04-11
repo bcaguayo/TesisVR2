@@ -36,19 +36,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\roomReset.cs" />
+     <Compile Include="Assets\RoomManager.cs" />
+     <Compile Include="Assets\MiniCollision.cs" />
+     <Compile Include="Assets\BoxManager.cs" />
+     <Compile Include="Assets\Tutorial_2.cs" />
      <Compile Include="Assets\Typewriter.cs" />
      <Compile Include="Assets\Screenwriter.cs" />
      <Compile Include="Assets\BoxConfig.cs" />
      <Compile Include="Assets\ConfigMaster.cs" />
      <Compile Include="Assets\BoxCollision.cs" />
      <Compile Include="Assets\Organizer.cs" />
-     <Compile Include="Assets\MiniCollision.cs" />
-     <Compile Include="Assets\BoxManager.cs" />
-     <Compile Include="Assets\Tutorial_2.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\Custom\Get Ball from Unity Assets.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />

@@ -38,15 +38,15 @@ public static class BoxConfig {
         return -1;
     }
 
-    static Vector2 rotateClockwise(Vector2 v) {        
+    public static Vector2 rotateClockwise(Vector2 v) {        
         return new Vector2(-v.y, v.x);
     }
 
-    static Vector2 flip(Vector2 v) {        
+    public static Vector2 flip(Vector2 v) {        
         return new Vector2(-v.x, -v.y);
     }
 
-    static Vector2 rotateCounterClockwise(Vector2 v) {
+    public static Vector2 rotateCounterClockwise(Vector2 v) {
         return new Vector2(v.y, -v.x);
     }
 

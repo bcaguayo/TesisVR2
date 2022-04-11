@@ -23,11 +23,11 @@
 
 # WORKING
 15. Add Furniture
-	15.1 Ground Lamp
-	15.2 Painting
+	15.1 Ground Rack (DONE, fix needed)
+	15.2 Painting (DONE)
 	15.3 Different Wall Texture
-	15.5 Door and Window Frame
-	15.6 Shelf with Ball and Plushie
+	15.5 Door and Window Frame (DONE)
+	15.6 Shelf with Ball and Plushie (DONE)
 	OSO PARDO
 
 16. Test Round Functionality
@@ -51,6 +51,9 @@
 
 19. Fix Markers to display successes / errors (DONE)
 20. Fix very easy vs. very difficult configurations 
+
+21. Fix Rack (delete history)
+22. Fix Room Texturing (symmetrical)
 
 # Interfaz:
 - Iniciar (play button): calls OnStart()
