@@ -21,8 +21,7 @@ public class MiniCollision : MonoBehaviour
             && discovered == false) { 
             if (pick) {
                 BoxManager.scorrect.Play();
-                boxRenderer.material.mainTexture = BoxManager.sgreen;
-                
+                boxRenderer.material.mainTexture = BoxManager.sgreen;                
             } else {
                 BoxManager.sincorrect.Play();
                 boxRenderer.material.mainTexture = BoxManager.sred;
@@ -34,8 +33,11 @@ public class MiniCollision : MonoBehaviour
 
     public void Reset() {
         boxRenderer.material.mainTexture = BoxManager.syellow;
-        pick = false;
         discovered = false;
+    }
+
+    public void Discover() {
+        discovered = true;
     }
 
     public void Pick() {
