@@ -4,14 +4,16 @@ using UnityEngine;
 using TMPro;
 
 public static class Screenwriter {
-    static TextMeshProUGUI Rounds, Timer, Errors;
+    static TextMeshProUGUI Rounds, Timer, Sucess, Errors;
     static GameObject EndPanel;
-    private static int rounds, timeMin, roundErrors;
+    private static int rounds, timeMin, roundSuccess, roundErrors;
     private static float timeSec;
     
-    public static void Start(TextMeshProUGUI r, TextMeshProUGUI t, TextMeshProUGUI e, GameObject p) {
+    public static void Start(TextMeshProUGUI r, TextMeshProUGUI t, TextMeshProUGUI s
+                           , TextMeshProUGUI e, GameObject p) {
         Rounds = r;
         Timer = t;
+        Sucess = s;
         Errors = e;
         EndPanel = p;
     }
@@ -23,20 +25,23 @@ public static class Screenwriter {
 
     // On Start: Initialize all variables
     public static void Reset() {
-        rounds = 0;
+        rounds = 1;
         timeMin = 0;
         timeSec = 0;
         roundErrors = 0;
+        roundSuccess = 0;
         Rounds.text = "Rondas: 00";
         Timer.text = "00:00";
-        Errors.text = "Errores: 00";
+        Sucess.text = "00 / ";
+        Errors.text = "00";
     }   
 
     // On Update
     public static void Loop() {
         Rounds.text = "Rondas: " + stringT(rounds);
         Timer.text = stringT(timeMin) + ":" + stringT(timeSec);
-        Errors.text = "Errores: " + stringT(roundErrors);
+        Sucess.text = stringT(roundSuccess) + " / ";
+        Errors.text = stringT(roundErrors);
     }
     
     public static void ShowPanel() {
@@ -46,6 +51,7 @@ public static class Screenwriter {
     public static void End() {
         Rounds.gameObject.SetActive(false);
         Timer.gameObject.SetActive(false);
+        Sucess.gameObject.SetActive(false);
         Errors.gameObject.SetActive(false);
         ShowPanel();
     }   
@@ -53,12 +59,17 @@ public static class Screenwriter {
     public static void Round() {
         rounds++;
         roundErrors = 0;
+        roundSuccess = 0;
     }
 
     public static void AddTime(float newTime) {
         float total = timeMin * 60 + timeSec + newTime;
         timeMin = (int) total / 60;
         timeSec = total % 60;
+    }
+
+    public static void Success() {
+        roundSuccess++;
     }
 
     public static void Error() {

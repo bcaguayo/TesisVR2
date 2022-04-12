@@ -36,16 +36,24 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\roomReset.cs" />
+     <Compile Include="Assets\RoomManager.cs" />
+     <Compile Include="Assets\Arrow\Scripts\WaypointController.cs" />
+     <Compile Include="Assets\MiniCollision.cs" />
+     <Compile Include="Assets\Arrow\Scripts\Waypoint.cs" />
+     <Compile Include="Assets\BoxManager.cs" />
+     <Compile Include="Assets\Tutorial_2.cs" />
+     <Compile Include="Assets\BoxMultiManager.cs" />
      <Compile Include="Assets\Typewriter.cs" />
      <Compile Include="Assets\Screenwriter.cs" />
      <Compile Include="Assets\BoxConfig.cs" />
      <Compile Include="Assets\ConfigMaster.cs" />
      <Compile Include="Assets\BoxCollision.cs" />
+     <Compile Include="Assets\BoxMiniManager.cs" />
      <Compile Include="Assets\Organizer.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\Custom\Get Ball from Unity Assets.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -53,6 +61,7 @@
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\Arrow\Read Me.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
