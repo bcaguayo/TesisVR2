@@ -55,9 +55,8 @@
 21. Fix Rack (delete history) (DONE)
 22. Fix Room Texturing (symmetrical) (DONE)
 
-23. Are arrows really necessary?
-24. Fix waiting time
-
+23. Are arrows really necessary? (DONE)
+24. Fix waiting time (DONE)
 
 # Interfaz:
 - Iniciar (play button): calls OnStart()

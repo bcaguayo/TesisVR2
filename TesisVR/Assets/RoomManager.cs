@@ -53,8 +53,19 @@ public class RoomManager : MonoBehaviour
     void Start() {
         // Choose 5 random boxes
         boxConfig = new int[5];
-        int added = 0;
 
+        ChooseConfig();        
+        
+        // Set up Box Configuration
+        foreach (int i in boxConfig) {
+            // Index in List is box number - 1
+            boxes[i - 1].GetComponent<BoxCollision>().Pick();
+        }
+    }
+
+    // Box Configuration based on Randomness
+    void ChooseRandom() {
+        int added = 0;
         while (added < 5) {
             int r = Random.Range(1, 25);
             bool repeat = false;
@@ -69,12 +80,13 @@ public class RoomManager : MonoBehaviour
                 added++;
             }
         }
-        
-        // Set up Box Configuration
-        foreach (int i in boxConfig) {
-            // Index in List is box number - 1
-            boxes[i - 1].GetComponent<BoxCollision>().Pick();
-        }
+    }
+
+    // Box Configuration on chosen boxes {4, 7, 15, 18, 21}
+    // Todo FLIP (4 config)
+    void ChooseConfig() {
+        int[] config = new int[]{4, 7, 15, 18, 21};
+        boxConfig = config;
     }
 
     // For spacing rounds

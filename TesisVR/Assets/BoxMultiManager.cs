@@ -57,6 +57,7 @@ public class BoxMultiManager : BoxManager
                         rig.transform.Rotate(0f, 90f, 0f, Space.Self);
                         part = 2;                    
                     } else {
+                        DisableBoxes();
                         // Show the UI tutorial
                         ShowUI();
                         part = 3;
