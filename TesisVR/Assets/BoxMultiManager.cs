@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class BoxMultiManager : BoxManager
 {
     // Room Asset, to allow rotation. Helper arrows. 
-    // Two tutorial panels. One UI panel
-    [SerializeField] private GameObject rig, arrows, panel1, panel2, panel3;
+    // Two tutorial panels. One UI panel. One End instructions panel
+    [SerializeField] private GameObject rig, arrows, panel1, panel2, panel3, panel4;
 
     // Boxes (for Reset)
     [SerializeField] GameObject[] boxes;
@@ -24,11 +24,12 @@ public class BoxMultiManager : BoxManager
         part = 1;
         maxScore = 5;
         boxesTotal = 25;
+
         ShowFirstPanel();
     }
 
     private float timer, waitLimit;
-    private bool waiting;
+    private bool waiting, uiwaiting;
     // Update is called once per frame
     void Update() {        
         // Clock
@@ -38,6 +39,7 @@ public class BoxMultiManager : BoxManager
 
             // Wait a bit
             if (waiting) {
+                Debug.Log("Waiting 1");
                 if (timer >= waitLimit) {
                     waitLimit = -1f;
                     waiting = false;
@@ -53,44 +55,31 @@ public class BoxMultiManager : BoxManager
                         ShowSecondPanel();
                         // Rotate the Room
                         rig.transform.Rotate(0f, 90f, 0f, Space.Self);
-                        part = 2;
-                    } else if (part == 2) {
-
+                        part = 2;                    
+                    } else {
                         // Show the UI tutorial
                         ShowUI();
-                        // Wait a bit more
-                    } else {
-                        // Application.Quit();
-                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                        part = 3;
+                        // Wait a bit more | Second Waiter 
+                        uiwaiting = true;
+                        waitLimit = timer + 12f;                
                     }
                 }
             } else {
-                waiting = true;
-                waitLimit = timer + 3f;
-                return;
-            }           
-
-            if (part == 1) {
-                // Reset the Room
-                ResetScene();
-                // Return to yellow boxes
-                ResetBoxes();
-                // Hide the Hint Arrows
-                HideArrows();
-                // Show next tutorial
-                ShowSecondPanel();
-                // Rotate the Room
-                rig.transform.Rotate(0f, 90f, 0f, Space.Self);
-                part = 2;
-            } else if (part == 2) {
-
-                // Show the UI tutorial
-                ShowUI();
-                // Wait a bit more
-            } else {
-                Application.Quit();
-                // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }                  
+                if (uiwaiting) {
+                    if (timer >= waitLimit) {      
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                    } else if (timer >= waitLimit - 4) {
+                        ShowEndScreen();
+                    } else {
+                        return;
+                    }
+                } else {
+                    // First Waiter
+                    waiting = true;
+                    waitLimit = timer + 3f;
+                }
+            }                
         }
     }
 
@@ -98,10 +87,15 @@ public class BoxMultiManager : BoxManager
         yield return new WaitForSeconds(4f);
     }
 
-    public void ShowFirstPanel() {
-        panel1.gameObject.SetActive(true);        
-        panel2.gameObject.SetActive(false);      
+    public void HidePanels() {
+        panel1.gameObject.SetActive(false);
+        panel2.gameObject.SetActive(false);
         panel3.gameObject.SetActive(false);
+        panel4.gameObject.SetActive(false);
+    }
+
+    public void ShowFirstPanel() {
+        panel1.gameObject.SetActive(true);
     }
 
     public void ShowSecondPanel() {
@@ -110,9 +104,13 @@ public class BoxMultiManager : BoxManager
     }
 
     public void ShowUI() {
-        panel1.gameObject.SetActive(false);
         panel2.gameObject.SetActive(false);
         panel3.gameObject.SetActive(true);
+    }
+
+    public void ShowEndScreen() {
+        panel3.gameObject.SetActive(false);
+        panel4.gameObject.SetActive(true);
     }
 
     public void ResetScene() {

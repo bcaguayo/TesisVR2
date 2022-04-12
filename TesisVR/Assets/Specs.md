@@ -22,26 +22,26 @@
 	14.3 Tries (errors)
 
 # WORKING
-15. Add Furniture
-	15.1 Ground Rack (DONE, fix needed)
+15. Add Furniture (DONE)
+	15.1 Ground Rack (DONE)
 	15.2 Painting (DONE)
-	15.3 Different Wall Texture
+	15.3 Different Wall Texture (DONE)
 	15.5 Door and Window Frame (DONE)
 	15.6 Shelf with Ball and Plushie (DONE)
 	OSO PARDO
 
 16. Test Round Functionality
-	16.1 Discovering boxes
-	16.2 25 Grid
-	16.3 Room Rotation
+	16.1 Discovering boxes (DONE)
+	16.2 25 Grid (DONE, arrows?)
+	16.3 Room Rotation (fix waiting)
 	16.4 Scoreboard
 	16.5 End
 17. Test Round Tutorial
-	17.1 Additional Assets
-	17.2 Narration
+	17.1 Additional Assets (DONE)
+	17.2 Narration 
 	17.3 Presentation
 
-18. Documentation
+18. Documentation (?ASK) 
 	18.1 Concept Art
 	18.2 Classes Schema
 	18.3 Scenes Description
@@ -50,10 +50,14 @@
 	18.6 Any extras required
 
 19. Fix Markers to display successes / errors (DONE)
-20. Fix very easy vs. very difficult configurations 
+20. Fix very easy vs. very difficult configurations (?Ask)
 
-21. Fix Rack (delete history)
-22. Fix Room Texturing (symmetrical)
+21. Fix Rack (delete history) (DONE)
+22. Fix Room Texturing (symmetrical) (DONE)
+
+23. Are arrows really necessary?
+24. Fix waiting time
+
 
 # Interfaz:
 - Iniciar (play button): calls OnStart()

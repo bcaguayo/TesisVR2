@@ -6,26 +6,39 @@ using UnityEngine.SceneManagement;
 public class BoxMiniManager : BoxManager
 {
     // Maximum amount of green boxes, Total amount of boxes on scene
-    private int maxScore, boxesTotal;  
+    private int boxesTotal;  
 
     // Start is called before the first frame update
     void Start() {
-        maxScore = 2;
         boxesTotal = 2;
     }
 
+    private float waitLimit, timer;
+    private bool waiting = false;
     // Update is called once per frame
     void Update() {
-        if (score >= maxScore || discovered >= boxesTotal) {
-            ResetScene();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // Clock
+        timer += Time.deltaTime;
+        // Discoverd all boxes
+        if (discovered >= boxesTotal) {
+            // Wait for 3 seconds
+            if (!waiting) {
+                waiting = true;
+                waitLimit = timer + 3f;
+                return;
+            } else {
+                if (timer > waitLimit) {
+                    waiting = false;
+                    // Next Scene
+                    ResetScene();
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
+            }            
         }
     }
-
     public void ResetScene() {
         score = 0;
         discovered = 0;
-        maxScore = 2;
         boxesTotal = 2;
     }
 }

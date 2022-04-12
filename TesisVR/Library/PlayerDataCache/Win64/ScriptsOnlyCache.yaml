@@ -2,10 +2,13 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BoxCollision
-    - BoxManager
+    - BoxMiniManager
+    - BoxMultiManager
     - MiniCollision
     - Organizer
-    - roomReset
+    - RoomManager
+    - TurnTheGameOn.ArrowWaypointer.Waypoint
+    - TurnTheGameOn.ArrowWaypointer.WaypointController
     SteamVR.dll:
     - Valve.VR.SteamVR_Behaviour_Pose
     - Valve.VR.SteamVR_Behaviour_Skeleton
@@ -17,8 +20,6 @@ ScriptsOnlyBuild:
     - Valve.VR.SteamVR_Settings
     - Valve.VR.SteamVR_Skeleton_Pose
     - Valve.VR.SteamVR_Skeleton_Poser
-    Unity.CollabProxy.Editor.dll:
-    - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
@@ -69,6 +70,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
   sceneClasses:
     Assets/Scenes/VRPrep[1].unity:
     - Class: 1
@@ -118,46 +120,70 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1690}
+    - Class: 114
       Script: {instanceID: 1954}
     - Class: 114
       Script: {instanceID: 2250}
     - Class: 114
       Script: {instanceID: 2424}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 3826}
+      Script: {instanceID: 2622}
     - Class: 114
-      Script: {instanceID: 4364}
+      Script: {instanceID: 2976}
     - Class: 114
-      Script: {instanceID: 4838}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 5162}
+      Script: {instanceID: 3218}
     - Class: 114
-      Script: {instanceID: 5240}
+      Script: {instanceID: 3670}
     - Class: 114
-      Script: {instanceID: 5326}
+      Script: {instanceID: 3834}
     - Class: 114
-      Script: {instanceID: 6046}
+      Script: {instanceID: 4374}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 4852}
     - Class: 114
-      Script: {instanceID: 8036}
+      Script: {instanceID: 5176}
     - Class: 114
-      Script: {instanceID: 8370}
+      Script: {instanceID: 5254}
     - Class: 114
-      Script: {instanceID: 27978}
+      Script: {instanceID: 5340}
     - Class: 114
-      Script: {instanceID: 29794}
+      Script: {instanceID: 6060}
+    - Class: 114
+      Script: {instanceID: 6434}
+    - Class: 114
+      Script: {instanceID: 6748}
+    - Class: 114
+      Script: {instanceID: 6934}
+    - Class: 114
+      Script: {instanceID: 8050}
+    - Class: 114
+      Script: {instanceID: 8384}
+    - Class: 114
+      Script: {instanceID: 8798}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/VRPrep[2].unity:
     - Class: 1
@@ -197,81 +223,56 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1954}
-    - Class: 114
-      Script: {instanceID: 2250}
-    - Class: 114
-      Script: {instanceID: 5240}
-    - Class: 114
-      Script: {instanceID: 6420}
-    - Class: 114
-      Script: {instanceID: 8036}
-    - Class: 114
-      Script: {instanceID: 27978}
-    - Class: 114
-      Script: {instanceID: 29794}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    Assets/Scenes/VRPrep[3].unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
+      Script: {instanceID: 1690}
     - Class: 114
       Script: {instanceID: 1954}
     - Class: 114
       Script: {instanceID: 2250}
     - Class: 114
-      Script: {instanceID: 5240}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 2962}
     - Class: 114
-      Script: {instanceID: 8036}
+      Script: {instanceID: 2976}
     - Class: 114
-      Script: {instanceID: 27978}
+      Script: {instanceID: 3218}
     - Class: 114
-      Script: {instanceID: 29794}
+      Script: {instanceID: 4356}
+    - Class: 114
+      Script: {instanceID: 4784}
+    - Class: 114
+      Script: {instanceID: 5254}
+    - Class: 114
+      Script: {instanceID: 6060}
+    - Class: 114
+      Script: {instanceID: 6434}
+    - Class: 114
+      Script: {instanceID: 6748}
+    - Class: 114
+      Script: {instanceID: 6934}
+    - Class: 114
+      Script: {instanceID: 7840}
+    - Class: 114
+      Script: {instanceID: 8050}
+    - Class: 114
+      Script: {instanceID: 8708}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/VRRoom.unity:
     - Class: 1
@@ -319,34 +320,36 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2250}
     - Class: 114
-      Script: {instanceID: 2958}
+      Script: {instanceID: 2962}
     - Class: 114
-      Script: {instanceID: 3212}
+      Script: {instanceID: 3218}
     - Class: 114
-      Script: {instanceID: 4346}
+      Script: {instanceID: 4356}
     - Class: 114
-      Script: {instanceID: 5240}
+      Script: {instanceID: 5254}
     - Class: 114
-      Script: {instanceID: 6046}
+      Script: {instanceID: 6060}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 6434}
     - Class: 114
-      Script: {instanceID: 6734}
+      Script: {instanceID: 6748}
     - Class: 114
-      Script: {instanceID: 6920}
+      Script: {instanceID: 6934}
     - Class: 114
-      Script: {instanceID: 7826}
+      Script: {instanceID: 7840}
     - Class: 114
-      Script: {instanceID: 8036}
+      Script: {instanceID: 8050}
     - Class: 114
-      Script: {instanceID: 8656}
+      Script: {instanceID: 8672}
     - Class: 114
-      Script: {instanceID: 8692}
+      Script: {instanceID: 8708}
     - Class: 114
-      Script: {instanceID: 8844}
+      Script: {instanceID: 8862}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -405,10 +408,10 @@ ScriptsOnlyBuild:
     className: Hand
   - hash:
       serializedVersion: 2
-      Hash: 35dfd3f7c3bf08ea1d04700e054c6927
+      Hash: 1ac7449fe3e75543eee3090616e751e6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: roomReset
+    className: RoomManager
   - hash:
       serializedVersion: 2
       Hash: fe11190a10f126cd0b4de245ec416842
@@ -591,6 +594,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 344d921358ceecd800f2a728034ade3e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TurnTheGameOn.ArrowWaypointer
+    className: WaypointController
+  - hash:
+      serializedVersion: 2
       Hash: eade5a5efd53b0e50dfe8fb48b76f0f7
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR.InteractionSystem
@@ -649,6 +658,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 60f970ea22524d4e2e1086ddc8b0dd66
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MiniCollision
   - hash:
       serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
@@ -849,6 +864,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseDownMessageListener
   - hash:
       serializedVersion: 2
+      Hash: b18f1f5690ed802d58cd7ead5c7fae0a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TurnTheGameOn.ArrowWaypointer
+    className: Waypoint
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -969,6 +990,12 @@ ScriptsOnlyBuild:
     className: UnityOnControllerColliderHitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: dea33384aabbc7c775038eb871e7db4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoxManager
+  - hash:
+      serializedVersion: 2
       Hash: 636a77f3228481f2b67ba1c4242ac5b9
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR
@@ -1077,6 +1104,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 22b1b42938d62e8d8139a73f4659b0ea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tutorial_2
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR
@@ -1153,6 +1186,12 @@ ScriptsOnlyBuild:
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR.InteractionSystem
     className: DontDestroyOnLoad
+  - hash:
+      serializedVersion: 2
+      Hash: 5f4bea35bd878c0f9e0a51e92a695bc9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoxMultiManager
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -2025,7 +2064,7 @@ ScriptsOnlyBuild:
     className: ButtonExample
   - hash:
       serializedVersion: 2
-      Hash: 7f7cf9e2eed251cb250ad79a7639c24a
+      Hash: 5108ad402933b4fc4de7f4424f6fdfe6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BoxCollision
@@ -2065,6 +2104,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: dea33384aabbc7c775038eb871e7db4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoxMiniManager
   - hash:
       serializedVersion: 2
       Hash: 269abfe738ad95bd77db64f7ee2f86b2
@@ -2257,28 +2302,9 @@ ScriptsOnlyBuild:
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR
     className: SteamVR_Behaviour_Single
-  - hash:
-      serializedVersion: 2
-      Hash: 60f970ea22524d4e2e1086ddc8b0dd66
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MiniCollision
-  - hash:
-      serializedVersion: 2
-      Hash: c60a9212b922d01dafebd067c3992352
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BoxManager
-  - hash:
-      serializedVersion: 2
-      Hash: 22b1b42938d62e8d8139a73f4659b0ea
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Tutorial_2
   platform: 19
   scenePathNames:
   - Assets/Scenes/VRPrep[1].unity
   - Assets/Scenes/VRPrep[2].unity
-  - Assets/Scenes/VRPrep[3].unity
   - Assets/Scenes/VRRoom.unity
-  playerPath: C:/Users/RMS VR/Desktop/VRBuilds/1.2/TesisVR.exe
+  playerPath: C:/Users/RMS VR/Desktop/VRBuilds/1.3/TesisVR.exe
