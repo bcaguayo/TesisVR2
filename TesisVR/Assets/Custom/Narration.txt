@@ -1,0 +1,16 @@
+(1) Toca las cajas para revelarlas.
+No necesitas presionar botones.
+
+(2) Ahora encuentra las 5 cajas verdes.
+
+(3) Bien hecho, el cuarto ha dado vuelta,
+pero las cajas han mantenido su posición.
+¿Recuerdas dónde estaban las cajas verdes?
+
+(4) Esta es tu interfaz, aqui puedes ver:
+Rondas de un total de 10, el Tiempo transcurrido,
+tus Aciertos y Errores esta ronda.
+
+(5) Al terminar espera en la misma posición
+a que llegue el encargado a retirarte el equipo.
+Buena suerte!

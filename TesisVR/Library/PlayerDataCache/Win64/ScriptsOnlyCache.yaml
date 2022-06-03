@@ -120,51 +120,51 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1690}
+      Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1954}
+      Script: {instanceID: 1956}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2252}
     - Class: 114
-      Script: {instanceID: 2424}
+      Script: {instanceID: 2426}
     - Class: 114
-      Script: {instanceID: 2590}
+      Script: {instanceID: 2592}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2624}
     - Class: 114
-      Script: {instanceID: 2976}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 3092}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 3218}
+      Script: {instanceID: 3220}
     - Class: 114
-      Script: {instanceID: 3670}
+      Script: {instanceID: 3672}
     - Class: 114
-      Script: {instanceID: 3834}
+      Script: {instanceID: 3836}
     - Class: 114
-      Script: {instanceID: 4374}
+      Script: {instanceID: 4376}
     - Class: 114
-      Script: {instanceID: 4852}
+      Script: {instanceID: 4854}
     - Class: 114
-      Script: {instanceID: 5176}
+      Script: {instanceID: 5178}
     - Class: 114
-      Script: {instanceID: 5254}
+      Script: {instanceID: 5256}
     - Class: 114
-      Script: {instanceID: 5340}
+      Script: {instanceID: 5342}
     - Class: 114
-      Script: {instanceID: 6060}
+      Script: {instanceID: 6062}
     - Class: 114
-      Script: {instanceID: 6434}
+      Script: {instanceID: 6436}
     - Class: 114
-      Script: {instanceID: 6748}
+      Script: {instanceID: 6750}
     - Class: 114
-      Script: {instanceID: 6934}
+      Script: {instanceID: 6936}
     - Class: 114
-      Script: {instanceID: 8050}
+      Script: {instanceID: 8052}
     - Class: 114
-      Script: {instanceID: 8384}
+      Script: {instanceID: 8386}
     - Class: 114
-      Script: {instanceID: 8798}
+      Script: {instanceID: 8800}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -223,39 +223,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1690}
+      Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1954}
+      Script: {instanceID: 1956}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2252}
     - Class: 114
-      Script: {instanceID: 2590}
+      Script: {instanceID: 2592}
     - Class: 114
-      Script: {instanceID: 2962}
+      Script: {instanceID: 2964}
     - Class: 114
-      Script: {instanceID: 2976}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 3218}
+      Script: {instanceID: 3220}
     - Class: 114
-      Script: {instanceID: 4356}
+      Script: {instanceID: 4358}
     - Class: 114
-      Script: {instanceID: 4784}
+      Script: {instanceID: 4786}
     - Class: 114
-      Script: {instanceID: 5254}
+      Script: {instanceID: 5256}
     - Class: 114
-      Script: {instanceID: 6060}
+      Script: {instanceID: 6062}
     - Class: 114
-      Script: {instanceID: 6434}
+      Script: {instanceID: 6436}
     - Class: 114
-      Script: {instanceID: 6748}
+      Script: {instanceID: 6750}
     - Class: 114
-      Script: {instanceID: 6934}
+      Script: {instanceID: 6936}
     - Class: 114
-      Script: {instanceID: 7840}
+      Script: {instanceID: 7842}
     - Class: 114
-      Script: {instanceID: 8050}
+      Script: {instanceID: 8052}
     - Class: 114
-      Script: {instanceID: 8708}
+      Script: {instanceID: 8710}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -312,39 +312,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1690}
+      Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1728}
+      Script: {instanceID: 1730}
     - Class: 114
-      Script: {instanceID: 1954}
+      Script: {instanceID: 1956}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2252}
     - Class: 114
-      Script: {instanceID: 2962}
+      Script: {instanceID: 2964}
     - Class: 114
-      Script: {instanceID: 3218}
+      Script: {instanceID: 3220}
     - Class: 114
-      Script: {instanceID: 4356}
+      Script: {instanceID: 4358}
     - Class: 114
-      Script: {instanceID: 5254}
+      Script: {instanceID: 5256}
     - Class: 114
-      Script: {instanceID: 6060}
+      Script: {instanceID: 6062}
     - Class: 114
-      Script: {instanceID: 6434}
+      Script: {instanceID: 6436}
     - Class: 114
-      Script: {instanceID: 6748}
+      Script: {instanceID: 6750}
     - Class: 114
-      Script: {instanceID: 6934}
+      Script: {instanceID: 6936}
     - Class: 114
-      Script: {instanceID: 7840}
+      Script: {instanceID: 7842}
     - Class: 114
-      Script: {instanceID: 8050}
+      Script: {instanceID: 8052}
     - Class: 114
-      Script: {instanceID: 8672}
+      Script: {instanceID: 8674}
     - Class: 114
-      Script: {instanceID: 8708}
+      Script: {instanceID: 8710}
     - Class: 114
-      Script: {instanceID: 8862}
+      Script: {instanceID: 8864}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1188,7 +1188,7 @@ ScriptsOnlyBuild:
     className: DontDestroyOnLoad
   - hash:
       serializedVersion: 2
-      Hash: 5f4bea35bd878c0f9e0a51e92a695bc9
+      Hash: 630b0f12017e8db940e69d8410ae67eb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BoxMultiManager
@@ -2106,7 +2106,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: dea33384aabbc7c775038eb871e7db4f
+      Hash: 0f66a8dac8690a1e17a546e61241e353
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BoxMiniManager
@@ -2307,4 +2307,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/VRPrep[1].unity
   - Assets/Scenes/VRPrep[2].unity
   - Assets/Scenes/VRRoom.unity
-  playerPath: C:/Users/RMS VR/Desktop/VRBuilds/1.3/TesisVR.exe
+  playerPath: C:/Users/RMS VR/Desktop/VRBuilds/1.6/TesisVR.exe

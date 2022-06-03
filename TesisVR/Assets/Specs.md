@@ -32,14 +32,15 @@
 
 16. Test Round Functionality
 	16.1 Discovering boxes (DONE)
-	16.2 25 Grid (DONE, arrows?)
-	16.3 Room Rotation (fix waiting)
-	16.4 Scoreboard
+	16.2 25 Grid (DONE)
+	16.3 Room Rotation (DONE)
+	16.4 Scoreboard (DONE)
 	16.5 End
+
 17. Test Round Tutorial
 	17.1 Additional Assets (DONE)
 	17.2 Narration 
-	17.3 Presentation
+	17.3 Presentation 
 
 18. Documentation (?ASK) 
 	18.1 Concept Art
@@ -50,14 +51,16 @@
 	18.6 Any extras required
 
 19. Fix Markers to display successes / errors (DONE)
-20. Fix very easy vs. very difficult configurations (?Ask)
+20. Fix very easy vs. very difficult configurations (DONE 47151821)
 
 21. Fix Rack (delete history) (DONE)
 22. Fix Room Texturing (symmetrical) (DONE)
 
-23. Are arrows really necessary?
-24. Fix waiting time
+23. Are arrows really necessary? (DONE)
+24. Fix waiting time (DONE)
 
+25. 3 2 1 After Tutorial
+26. Tutorial(1) Screen arrow pointing down to boxes
 
 # Interfaz:
 - Iniciar (play button): calls OnStart()

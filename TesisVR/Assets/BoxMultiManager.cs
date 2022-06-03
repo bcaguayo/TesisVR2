@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class BoxMultiManager : BoxManager
 {
     // Room Asset, to allow rotation. Helper arrows. 
     // Two tutorial panels. One UI panel. One End instructions panel
-    [SerializeField] private GameObject rig, arrows, panel1, panel2, panel3, panel4;
+    [SerializeField] private GameObject rig, arrows, 
+                                        panel1, panel2, panel3, panel4;
+    [SerializeField] private AudioSource tutorialTwo, tutorialThree, 
+                                         tutorialFour, tutorialFive;
 
     // Boxes (for Reset)
     [SerializeField] GameObject[] boxes;
+    [SerializeField] TextMeshProUGUI cdText;
 
     // Tutorial step
     private int part;
@@ -25,7 +30,9 @@ public class BoxMultiManager : BoxManager
         maxScore = 5;
         boxesTotal = 25;
 
+        // Tutorial Second Part
         ShowFirstPanel();
+        PlayTutorial(1);
     }
 
     private float timer, waitLimit;
@@ -37,9 +44,8 @@ public class BoxMultiManager : BoxManager
 
         if (score >= maxScore || discovered >= boxesTotal) {
 
-            // Wait a bit
+            // Wait a bit | First Waiter 
             if (waiting) {
-                Debug.Log("Waiting 1");
                 if (timer >= waitLimit) {
                     waitLimit = -1f;
                     waiting = false;
@@ -51,26 +57,36 @@ public class BoxMultiManager : BoxManager
                         ResetBoxes();
                         // Hide the Hint Arrows
                         HideArrows();
-                        // Show next tutorial
+                        // Play next tutorial
                         ShowSecondPanel();
+                        PlayTutorial(2);
                         // Rotate the Room
                         rig.transform.Rotate(0f, 90f, 0f, Space.Self);
                         part = 2;                    
                     } else {
-                        // Show the UI tutorial
+                        DisableBoxes();
+                        // Play the UI tutorial
                         ShowUI();
+                        PlayTutorial(3);
                         part = 3;
                         // Wait a bit more | Second Waiter 
                         uiwaiting = true;
-                        waitLimit = timer + 12f;                
+                        waitLimit = timer + 20f;                
                     }
                 }
             } else {
                 if (uiwaiting) {
                     if (timer >= waitLimit) {      
                         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                    } else if (timer >= waitLimit - 4) {
-                        ShowEndScreen();
+                    } else if (timer >= waitLimit - 1) {
+                        cdText.text = "1";   
+                    } else if (timer >= waitLimit - 2) {
+                        cdText.text = "2";   
+                    } else if (timer >= waitLimit - 3) {
+                        cdText.text = "3";
+                    } else if (timer >= waitLimit - 8) {
+                        // PlayTutorial(4);
+                        ShowEndScreen();  
                     } else {
                         return;
                     }
@@ -111,6 +127,16 @@ public class BoxMultiManager : BoxManager
     public void ShowEndScreen() {
         panel3.gameObject.SetActive(false);
         panel4.gameObject.SetActive(true);
+    }
+
+    public void PlayTutorial(int part) {
+        switch (part) {
+            case 1 : tutorialTwo.Play(); break;
+            case 2 : tutorialThree.Play(); break;
+            case 3 : tutorialFour.Play(); break;
+            case 4 : tutorialFive.Play(); break;
+            default : return;
+        }
     }
 
     public void ResetScene() {

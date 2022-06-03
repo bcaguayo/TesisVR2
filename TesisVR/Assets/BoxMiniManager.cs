@@ -5,12 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class BoxMiniManager : BoxManager
 {
+    [SerializeField] private AudioSource tutorialOne;
+
     // Maximum amount of green boxes, Total amount of boxes on scene
-    private int boxesTotal;  
+    private int boxesTotal;
 
     // Start is called before the first frame update
     void Start() {
         boxesTotal = 2;
+        tutorialOne.Play();
     }
 
     private float waitLimit, timer;
