@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour
 {
-    // [SerializeField] private GameObject room;
     [SerializeField] private Texture red, yellow, green;
     [SerializeField] private AudioSource correct, incorrect;
     [SerializeField] private GameObject box1, box2, box3, box4, box5,
@@ -83,7 +82,6 @@ public class RoomManager : MonoBehaviour
     }
 
     // Box Configuration on chosen boxes {4, 7, 15, 18, 21}
-    // Todo FLIP (4 config)
     void ChooseConfig() {
         int[] config = new int[]{4, 7, 15, 18, 21};
         boxConfig = config;
