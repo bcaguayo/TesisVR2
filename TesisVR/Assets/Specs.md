@@ -21,7 +21,7 @@
 	14.2 Distance
 	14.3 Tries (errors)
 
-# WORKING
+# March-April
 15. Add Furniture (DONE)
 	15.1 Ground Rack (DONE)
 	15.2 Painting (DONE)
@@ -35,14 +35,14 @@
 	16.2 25 Grid (DONE)
 	16.3 Room Rotation (DONE)
 	16.4 Scoreboard (DONE)
-	16.5 End
+	16.5 End (DONE)
 
 17. Test Round Tutorial
 	17.1 Additional Assets (DONE)
-	17.2 Narration 
-	17.3 Presentation 
+	17.2 Narration (DONE)
+	17.3 Presentation (DONE)
 
-18. Documentation (?ASK) 
+18. Documentation 
 	18.1 Concept Art
 	18.2 Classes Schema
 	18.3 Scenes Description
@@ -59,8 +59,17 @@
 23. Are arrows really necessary? (DONE)
 24. Fix waiting time (DONE)
 
-25. 3 2 1 After Tutorial
-26. Tutorial(1) Screen arrow pointing down to boxes
+25. 3 2 1 After Tutorial (DONE)
+26. Tutorial(1) Screen arrow pointing down to boxes (DONE)
+
+# August
+27. More Time 
+28. Bigger Boxes
+29. Tutorial Boxes Different Texture
+30. Menu:
+	- Config 5x5 (5 Green), 4x4 (4 Green), 3x3 (3 Green)
+	- Number of Green (Deprecate)
+	- Pick: Random vs Preset
 
 # Interfaz:
 - Iniciar (play button): calls OnStart()

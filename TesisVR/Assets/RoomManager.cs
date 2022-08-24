@@ -83,7 +83,7 @@ public class RoomManager : MonoBehaviour
 
     // Box Configuration on chosen boxes {4, 7, 15, 18, 21}
     void ChooseConfig() {
-        int[] config = new int[]{4, 7, 15, 18, 21};
+        int[] config = new int[]{3, 6, 15, 17, 24};
         boxConfig = config;
     }
 
@@ -120,7 +120,7 @@ public class RoomManager : MonoBehaviour
             else
             {
                 waiting = true;
-                waitLimit = roundTimer + 5f;
+                waitLimit = roundTimer + 8f;
             }            
         }
 
