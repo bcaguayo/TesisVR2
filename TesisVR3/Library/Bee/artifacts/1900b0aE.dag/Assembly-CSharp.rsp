@@ -374,7 +374,6 @@
 "Assets/BoxManager.cs"
 "Assets/BoxMiniManager.cs"
 "Assets/BoxMultiManager.cs"
-"Assets/ConfigMaster.cs"
 "Assets/MiniCollision.cs"
 "Assets/Organizer.cs"
 "Assets/RoomManager.cs"

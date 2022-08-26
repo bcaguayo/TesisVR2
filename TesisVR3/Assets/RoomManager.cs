@@ -26,10 +26,9 @@ public class RoomManager : MonoBehaviour
     */
     private int roundLimit;
     private int boxesCount;
-    // Picked boxes with config.Length = Number of boxes picked.
-    private int[] menuConfig = new int[]{4, 7, 15, 18, 21}; 
 
-    // BoxConfig contains the picked boxes for this round
+    // BoxConfig contains the picked boxes
+    // config.Length = Number of boxes picked
     private int[] boxConfig;
 
     /* roundTimer measures seconds passed

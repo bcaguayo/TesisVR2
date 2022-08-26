@@ -45,7 +45,6 @@
      <Compile Include="Assets\BoxMultiManager.cs" />
      <Compile Include="Assets\Typewriter.cs" />
      <Compile Include="Assets\Screenwriter.cs" />
-     <Compile Include="Assets\ConfigMaster.cs" />
      <Compile Include="Assets\BoxCollision.cs" />
      <Compile Include="Assets\BoxMiniManager.cs" />
      <Compile Include="Assets\Organizer.cs" />
