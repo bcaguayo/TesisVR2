@@ -66,9 +66,10 @@
 27. More Time (OK)
 28. Bigger Boxes (OK)
 29. Tutorial Boxes Different Texture (ASK)
-30. Menu: 
-	- Config 5x5 (5 Green), 4x4 (4 Green), 3x3 (3 Green)
+30. Menu (Singleton Pattern): 
+	- Config 5x5 (5 Green), 4x4 (3 Green), 3x3 (1 Green)
 	- Pick: Random vs Preset
+	- Adjust N° Rounds + N° Boxes
 
 * Randomizing and Arr functionality (DONE)
 

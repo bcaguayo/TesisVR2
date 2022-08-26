@@ -2,93 +2,106 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class BoxConfig {
-    private static List<Vector2> list;
+public class BoxConfig : MonoBehaviour {
 
-    public static void Init() {
-        list = new List<Vector2>();
-        for (int i = 2 ; i >= -2 ; i--)
-        {
-            for (int j = 2 ; j >= -2 ; j--)
-            {
-                list.Add(new Vector2(i, j));
-            }
+    // Singleton Instance for Box Config class
+    public static BoxConfig Instance;
+    /* Array containins config
+    Default {4, 7, 15, 18, 21} for 5x5
+            {2, 8, 11, 13} for 4x4
+            {1, 6, 8} for 3x3
+    */
+    private int[] config;
+    // 25 for 5x5 boxes, 16 for 4x4 boxes, 9 for 3x3 boxes
+    // Default 25
+    private int boxesCount;
+    // Number of Rounds. Default 10
+    private int rounds;
+
+    private void Awake() {
+
+        if (Instance != null) {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start() {
+        // Default values
+        if (Instance != null) {
+            boxesCount = 25;
+            // 5X5 Preset
+            int[] preset = new int[]{4, 7, 15, 18, 21};
+            config = preset;
+            rounds = 10;
         }
     }
 
-    /* Box number = List Index + 1
-    (01)[2, 2]  (02)[1, 2]  (03)[0, 2]  (04)[-1, 2]  (05)[-2, 2]
-	(06)[2, 1]  (07)[1, 1]  (08)[0, 1]  (09)[-1, 1]  (10)[-2, 1]
-	(11)[2, 0]  (12)[1, 0]  (13)[0, 0]  (14)[-1, 0]  (15)[-2, 0]
-	(16)[2, -1] (17)[1, -1] (18)[0, -1] (19)[-1, -1] (20)[-2, -1]
-	(21)[2, -2] (22)[1, -2] (23)[0, -2] (24)[-1, -2] (25)[-2, -2]
+    // Setter for Config
+    public void SetConfig(int[] arr) {
+        config = new int[arr.Length];
+        foreach (int i in arr) {
+            config[i] = arr[i];
+        }
+    }
+
+    // Getter for Config
+    public int[] GetConfig() {
+        return config;
+    }
+
+    // Setter for Rounds
+    public void SetRounds(int roundLimit) {
+        rounds = roundLimit;
+    }
+
+    // Getter for Rounds
+    public int GetRounds() {
+        return rounds;
+    }
+
+    // Setter for BoxCount
+    public void SetCount(int count) {
+        boxesCount = count;
+    }
+
+    // Getter for BoxCount
+    public int GetCount() {
+        return boxesCount;
+    }
+
+    /* Based on RoomManager.ChooseRandom
+    Creates a random config and assigns it locally.
+    Dependent on configSize to decide how many numbers
+    go in the config array.
     */
 
-    static Vector2 IndexToCoor(int index) {
-        if (index > 0 && index < 26) {
-            return list[index - 1]; 
-        }      
-        return new Vector2(-10f, -10f);
-    }
+    public void RandomizeConfig() {
 
-    static int CoorToIndex(Vector2 coor){
-        if (list.Contains(coor)) {
-            return list.IndexOf(coor) + 1;
+        // Number of picked boxes is sqrt of total no boxes
+        int pickedBoxes = (int) Mathf.Sqrt(boxesCount);
+
+        // New Config
+        int[] randomConfig = new int[pickedBoxes];
+
+        // Add boxes till full array
+        int added = 0;
+        while (added <= pickedBoxes) {
+            // Create random between 1 and the limit of boxes.
+            int r = Random.Range(1, pickedBoxes + 1);
+            // If seen, pick another
+            foreach (int i in randomConfig) {
+                if (r == i) continue;
+            }
+            // If not seen, add
+            randomConfig[added] = r;
+            added++;
         }
-        return -1;
-    }
 
-    public static Vector2 rotateClockwise(Vector2 v) {        
-        return new Vector2(-v.y, v.x);
-    }
-
-    public static Vector2 flip(Vector2 v) {        
-        return new Vector2(-v.x, -v.y);
-    }
-
-    public static Vector2 rotateCounterClockwise(Vector2 v) {
-        return new Vector2(v.y, -v.x);
-    }
-
-    public static int rotateClockwise(int i) {
-        Vector2 v = IndexToCoor(i);
-        return CoorToIndex(rotateClockwise(v));
-    }
-
-    public static int flip(int i) {
-        Vector2 v = IndexToCoor(i);
-        return CoorToIndex(flip(v));
-    }
-
-    public static int rotateCounterClockwise(int i) {
-        Vector2 v = IndexToCoor(i);
-        return CoorToIndex(rotateCounterClockwise(v));
-    }
-
-    public static int[] rotateClockwise(int[] list) {
-        int[] r = new int[list.Length];
-        for (int i = 0; i < list.Length; i++) {
-            Vector2 v = IndexToCoor(list[i]);
-            r[i] = CoorToIndex(rotateClockwise(v));
-        }        
-        return r;
-    }
-    
-    public static int[] flip(int[] list) {
-        int[] r = new int[list.Length];
-        for (int i = 0; i < list.Length; i++) {
-            Vector2 v = IndexToCoor(list[i]);
-            r[i] = CoorToIndex(flip(v));
-        }        
-        return r;
-    }
-    
-    public static int[] rotateCounterClockwise(int[] list) {
-        int[] r = new int[list.Length];
-        for (int i = 0; i < list.Length; i++) {
-            Vector2 v = IndexToCoor(list[i]);
-            r[i] = CoorToIndex(rotateCounterClockwise(v));
-        }        
-        return r;
+        // set to property
+        config = randomConfig;
     }
 }

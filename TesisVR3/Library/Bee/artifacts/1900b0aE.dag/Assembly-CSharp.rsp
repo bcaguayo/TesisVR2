@@ -371,7 +371,6 @@
 "Assets/Arrow/Scripts/WaypointController.cs"
 "Assets/BoxCollision.cs"
 "Assets/BoxConfig.cs"
-"Assets/BoxInstance.cs"
 "Assets/BoxManager.cs"
 "Assets/BoxMiniManager.cs"
 "Assets/BoxMultiManager.cs"
@@ -380,7 +379,6 @@
 "Assets/Organizer.cs"
 "Assets/RoomManager.cs"
 "Assets/Screenwriter.cs"
-"Assets/Tutorial_2.cs"
 "Assets/Typewriter.cs"
 -langversion:9.0
 

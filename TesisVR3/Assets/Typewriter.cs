@@ -26,6 +26,7 @@ public static class Typewriter
         ROUND = 1;
         if (!File.Exists(FILENAME)) {
             TextWriter tw = File.CreateText(FILENAME);
+            // WIP: Write Configuration
             tw.WriteLine("Round; Time; Distance; Errors");
             tw.Close();
         }

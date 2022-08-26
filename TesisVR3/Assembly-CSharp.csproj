@@ -39,14 +39,12 @@
      <Compile Include="Assets\RoomManager.cs" />
      <Compile Include="Assets\Arrow\Scripts\WaypointController.cs" />
      <Compile Include="Assets\MiniCollision.cs" />
-     <Compile Include="Assets\BoxInstance.cs" />
+     <Compile Include="Assets\BoxConfig.cs" />
      <Compile Include="Assets\Arrow\Scripts\Waypoint.cs" />
      <Compile Include="Assets\BoxManager.cs" />
-     <Compile Include="Assets\Tutorial_2.cs" />
      <Compile Include="Assets\BoxMultiManager.cs" />
      <Compile Include="Assets\Typewriter.cs" />
      <Compile Include="Assets\Screenwriter.cs" />
-     <Compile Include="Assets\BoxConfig.cs" />
      <Compile Include="Assets\ConfigMaster.cs" />
      <Compile Include="Assets\BoxCollision.cs" />
      <Compile Include="Assets\BoxMiniManager.cs" />
