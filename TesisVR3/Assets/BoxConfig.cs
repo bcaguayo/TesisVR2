@@ -12,30 +12,36 @@ public class BoxConfig : MonoBehaviour {
             {1, 6, 8} for 3x3
     */
     private int[] config;
+
+    // Presets 
+    private int[] PRESET25 = new int[]{4, 7, 15, 18, 21};
+    private int[] PRESET16 = new int[]{2, 8, 11, 13};
+    private int[] PRESET9 = new int[]{1, 6, 8};
+
     // 25 for 5x5 boxes, 16 for 4x4 boxes, 9 for 3x3 boxes
     // Default 25
     private int boxesCount;
     // Number of Rounds. Default 10
     private int rounds;
 
+    
+
     private void Awake() {
 
         if (Instance != null) {
-            Destroy(gameObject);
+            Debug.Log("Recognized");
+            Destroy(gameObject);            
             return;
         }
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-    }
 
-    private void Start() {
         // Default values
         if (Instance != null) {
-            boxesCount = 25;
             // 5X5 Preset
-            int[] preset = new int[]{4, 7, 15, 18, 21};
-            config = preset;
+            boxesCount = 25;            
+            Preset();
             rounds = 10;
         }
     }
@@ -78,6 +84,20 @@ public class BoxConfig : MonoBehaviour {
     Dependent on configSize to decide how many numbers
     go in the config array.
     */
+
+    public void Preset() {
+        switch (boxesCount) {
+            case 9 :
+                config = PRESET9;
+                break;
+            case 16 :
+                config = PRESET16;
+                break;
+            case 25 :
+                config = PRESET25;
+                break;
+        }
+    }
 
     public void RandomizeConfig() {
 
