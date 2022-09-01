@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RoomManager : MonoBehaviour
 {
@@ -55,6 +56,8 @@ public class RoomManager : MonoBehaviour
         boxesCount = BoxConfig.Instance.GetCount();
         // Get box configuration from the menu settings
         boxConfig = BoxConfig.Instance.GetConfig(); 
+        // FIX: Non consistent Length | Check for Duplicates
+        Debug.Log(boxConfig.Length);
 
         // Spawn Boxes
         boxes = new GameObject[boxesCount];
@@ -116,7 +119,7 @@ public class RoomManager : MonoBehaviour
         float endX = startX + steps * difX;
         float endZ = startZ + steps * difZ;
         for (float x = startX; x < endX; x += difX) { // X Loop
-            for (float z = startZ; z < endZ; z += difZ) {
+            for (float z = startZ; z < endZ; z += difZ) { // Z Loop
                 GameObject box = Instantiate(prefab, 
                                  new Vector3(x, stdY, z), Quaternion.identity);
                 box.GetComponent<BoxCollision>().Manager = this;
@@ -150,8 +153,9 @@ public class RoomManager : MonoBehaviour
 
             if (waiting) {
                 if (roundTimer >= waitLimit) {
-                    /// WAIT OVER, QUIT          
-                    Application.Quit(); // Quit
+                    /// Quit to Menu
+                    SceneManager.LoadScene(0);      
+                    // Application.Quit();
                 }
             }
             // Not waiting, set to wait and the limit to 2
@@ -164,7 +168,7 @@ public class RoomManager : MonoBehaviour
             }            
         }
 
-        // When 3/4/5 boxes are found
+        // When picked boxes are found
         if (roundScore >= boxConfig.Length) {
             // Wait 2 seconds before reset
             if (waiting) {

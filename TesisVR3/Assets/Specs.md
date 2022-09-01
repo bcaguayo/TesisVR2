@@ -67,19 +67,20 @@
 28. Bigger Boxes (OK)
 29. Tutorial Boxes Different Texture (Deprecated)
 30. Menu (Singleton Pattern): (DONE)
-	- Config 5x5 (5 Green), 4x4 (3 Green), 3x3 (1 Green)
-	- Pick: Random vs Preset
-	- Adjust N° Rounds
-
-todo 
-better checkmarks
-connect buttons to script
-spawn boxes
+	- Config 5x5 (5 Green), 4x4 (3 Green), 3x3 (1 Green) (DONE)
+	- Pick: Random vs Preset (DONE)
+	- Interactable Boxes (DONE)
+31. Spawn Boxes (DONE)
 
 * Randomizing and Arr functionality (DONE)
 
-31. Fix 0 rotation (DONE)
-32. First round more time (DONE)
+32. Fix 0 rotation (DONE)
+33. First round more time (DONE)
+34. Excell Save Config, Name
+35. Go Back to Menu (DONE)
+36. Name Bar
+37. N° Rounds Button
+38. Fix inconsistent array length
 
 # Interfaz:
 - Iniciar (play button): calls OnStart()

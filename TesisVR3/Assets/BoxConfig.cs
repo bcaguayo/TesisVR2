@@ -14,14 +14,11 @@ public class BoxConfig : MonoBehaviour {
     private List<int> config;
 
     // Presets 
-    /*
-    private int[] PRESET25 = new int[]{4, 7, 15, 18, 21};
-    private int[] PRESET16 = new int[]{2, 8, 11, 13};
-    private int[] PRESET9 = new int[]{1, 6, 8}; */
-
     private List<int> PRESET25 = new List<int>(new int[]{4, 7, 15, 18, 21});
     private List<int> PRESET16 = new List<int>(new int[]{2, 8, 11, 13});
     private List<int> PRESET9 = new List<int>(new int[]{1, 6, 8});
+
+
 
 
     // [2] 25 for 5x5 boxes (Default), 16 for 4x4 boxes, 9 for 3x3 boxes
@@ -52,9 +49,18 @@ public class BoxConfig : MonoBehaviour {
         config = new List<int>(arr);
     }
 
+    // Setter for Config
+    public void SetConfig(List<int> list) {
+        config = new List<int>();
+        foreach (int i in list) {
+            config.Add(i);
+        }
+        config.Sort();
+    }
+
     public void Add(int box) {
         config.Add(box);
-        config.Sort();
+        config.Sort();      
     }
 
     public void Remove(int box) {
@@ -79,7 +85,6 @@ public class BoxConfig : MonoBehaviour {
     // Setter for BoxCount
     public void SetCount(int count) {
         boxesCount = count;
-        Preset();
     }
 
     // Getter for BoxCount
@@ -92,22 +97,23 @@ public class BoxConfig : MonoBehaviour {
     Dependent on configSize to decide how many numbers
     go in the config array.
     */
-
-    public void Preset() {
+    // FIX
+    public int[] Preset() {
         switch (boxesCount) {
-            case 9 :
-                config = PRESET9;
+            case 9 : 
+                SetConfig(PRESET9);
                 break;
             case 16 :
-                config = PRESET16;
+                SetConfig(PRESET16);
                 break;
-            case 25 :
-                config = PRESET25;
+            case 25 : // Case 25
+                SetConfig(PRESET25);
                 break;
         }
+        return config.ToArray();
     }
 
-    public void RandomizeConfig() {
+    public int[] RandomizeConfig() {
 
         // Number of picked boxes is sqrt of total no boxes
         int pickedBoxes = (int) Mathf.Sqrt(boxesCount);
@@ -116,20 +122,30 @@ public class BoxConfig : MonoBehaviour {
         List<int> randomConfig = new List<int>(pickedBoxes);
 
         // Add boxes till full array
-        while (randomConfig.Count <= pickedBoxes) {
+        while (randomConfig.Count < pickedBoxes) {
             // Create random between 1 and the limit of boxes.
-            int r = Random.Range(1, pickedBoxes + 1);
+            int r = Random.Range(1, boxesCount + 1);
             // If seen, pick another
             if (randomConfig.Contains(r)) {
-                continue;
+                continue; 
+            } else {
+                // If not seen, add
+                randomConfig.Add(r);
             }
-            // If not seen, add
-            randomConfig.Add(r);
         }
 
         // Sort
         randomConfig.Sort();
+
         // Set to property
-        config = randomConfig;        
+        SetConfig(randomConfig);
+        return config.ToArray();   
+    }
+
+    private void Print() {
+        Debug.Log("Config: ");
+        foreach (int i in config) {
+            Debug.Log(i + " ");
+        }
     }
 }
