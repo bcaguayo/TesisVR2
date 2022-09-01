@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BoxCollision : MonoBehaviour {
-    private bool pick, discovered;
+    public bool pick;
+    private bool discovered;
     public RoomManager Manager;
 	private Renderer boxRenderer;
 

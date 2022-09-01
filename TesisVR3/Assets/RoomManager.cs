@@ -4,21 +4,18 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour
 {
-    [SerializeField] private Texture red, yellow, green;
-    [SerializeField] private AudioSource correct, incorrect;
-    [SerializeField] private GameObject box1, box2, box3, box4, box5,
-                                    box6, box7, box8, box9, box10,
-                                    box11, box12, box13, box14, box15,
-                                    box16, box17, box18, box19, box20,
-                                    box21, box22, box23, box24, box25;
-    [SerializeField] private GameObject playerTracker, rig;
+    public Texture red, yellow, green;
+    public AudioSource correct, incorrect;
+    public GameObject playerTracker, rig, prefab;
 
     /* Rounds measures how many loops completed
     roundScore measures the amount of green boxes touched
     roundErrors measures the amount of green boxes touched
     prevDegree is used to rotate the room
     */
-    private int rounds, roundScore, roundErrors, prevDegree;
+    private int roundScore, roundErrors, prevDegree;
+    // Start at Round 1
+    private int rounds = 1;
 
     /*  Items picked from Menu
         roundLimit is Number of Rounds from Slider
@@ -44,32 +41,89 @@ public class RoomManager : MonoBehaviour
     // Discovered stores which boxes have been discovered
     private HashSet<string> discovered = new HashSet<string>();
 
-    void Awake()
-    {
-        // WIP: Spawn Boxes
-        // Add box objects to array for Resets
-        boxes = new GameObject[] {box1, box2, box3, box4, box5,
-                                  box6, box7, box8, box9, box10,
-                                  box11, box12, box13, box14, box15,
-                                  box16, box17, box18, box19, box20,
-                                  box21, box22, box23, box24, box25};
-                                  // Add to list in order
-        // Start at Round 1
-        rounds = 1;
-    }
-
     void Start() {
+        // BOX SETUP
+        if (BoxConfig.Instance == null) {
+            Debug.Log("Null Config");
+            roundLimit = 10;
+            boxesCount = 25;
+            boxConfig = new int[]{4, 7, 15, 18, 21};
+        }
+
         // Set Defaults from Menu
         roundLimit = BoxConfig.Instance.GetRounds();
         boxesCount = BoxConfig.Instance.GetCount();
         // Get box configuration from the menu settings
-        boxConfig = BoxConfig.Instance.GetConfig();       
-        
-        // Set up Box Configuration
+        boxConfig = BoxConfig.Instance.GetConfig(); 
+
+        // Spawn Boxes
+        boxes = new GameObject[boxesCount];
+        spawnBoxes();       
+
+        // Set up Picked Boxes
         foreach (int i in boxConfig) {
             // Index in List is box number - 1
             boxes[i - 1].GetComponent<BoxCollision>().Pick();
         }
+    }
+
+
+
+    private void spawnBoxes() {
+        /* Locations. Standard Y: 0.18
+        
+        5 X 5 
+        X: 1, 0.25, -0.5, -1.25, -2 | 1 -2
+        Z: -1, -1.75, -2.5, -3.25, -4 | -1 -4
+        
+        4 X 4
+        X: 1, 0, -1, -2
+        Z: -1, -2, -3, -4
+        
+        3 X 3
+        X: 0.5, -0.5, -1.5
+        z: -1.5, -2.5, -3.5
+        */
+
+        float startX, difX, stdY, startZ, difZ, steps;
+        startX = difX = startZ = difZ = steps = 0f;
+        stdY = 0.18f;
+
+        switch (boxesCount) {
+            case 9 : 
+                startX = -1.5f;              
+                startZ = -3.5f;
+                difX = difZ = 1f;  
+                steps = 3f;
+                break;
+                
+            case 16 : 
+                startX = -2f;              
+                startZ = -4f;
+                difX = difZ = 1f;  
+                steps = 4f;
+                break;
+
+            default :  // CASE 25
+                startX = -2f;                
+                startZ = -4f;
+                difX = difZ = 0.75f;
+                steps = 5f;
+                break;
+        }
+
+        int index = 0;
+        float endX = startX + steps * difX;
+        float endZ = startZ + steps * difZ;
+        for (float x = startX; x < endX; x += difX) { // X Loop
+            for (float z = startZ; z < endZ; z += difZ) {
+                GameObject box = Instantiate(prefab, 
+                                 new Vector3(x, stdY, z), Quaternion.identity);
+                box.GetComponent<BoxCollision>().Manager = this;
+                boxes[index] = box;
+                index++;
+            }            
+        }         
     }
 
     // For spacing rounds
@@ -110,8 +164,8 @@ public class RoomManager : MonoBehaviour
             }            
         }
 
-        // When 5 boxes are found
-        if (roundScore >= 5) {
+        // When 3/4/5 boxes are found
+        if (roundScore >= boxConfig.Length) {
             // Wait 2 seconds before reset
             if (waiting) {
                 if (roundTimer >= waitLimit) {
@@ -136,7 +190,7 @@ public class RoomManager : MonoBehaviour
                     // Less time for later rounds
                     waitLimit = roundTimer + 3f;
                 } else {
-                    // Standard time (Rounds 2 to 4)
+                    // Standard time (Rounds 2 to 5)
                     waitLimit = roundTimer + 7f;
                 }
             }

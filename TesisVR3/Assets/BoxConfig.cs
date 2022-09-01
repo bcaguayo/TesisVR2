@@ -6,30 +6,31 @@ public class BoxConfig : MonoBehaviour {
 
     // Singleton Instance for Box Config class
     public static BoxConfig Instance;
-    /* Array containins config
+    /* [1] Array containins config
     Default {4, 7, 15, 18, 21} for 5x5
             {2, 8, 11, 13} for 4x4
             {1, 6, 8} for 3x3
     */
-    private int[] config;
+    private List<int> config;
 
     // Presets 
+    /*
     private int[] PRESET25 = new int[]{4, 7, 15, 18, 21};
     private int[] PRESET16 = new int[]{2, 8, 11, 13};
-    private int[] PRESET9 = new int[]{1, 6, 8};
+    private int[] PRESET9 = new int[]{1, 6, 8}; */
 
-    // 25 for 5x5 boxes, 16 for 4x4 boxes, 9 for 3x3 boxes
-    // Default 25
+    private List<int> PRESET25 = new List<int>(new int[]{4, 7, 15, 18, 21});
+    private List<int> PRESET16 = new List<int>(new int[]{2, 8, 11, 13});
+    private List<int> PRESET9 = new List<int>(new int[]{1, 6, 8});
+
+
+    // [2] 25 for 5x5 boxes (Default), 16 for 4x4 boxes, 9 for 3x3 boxes
     private int boxesCount;
-    // Number of Rounds. Default 10
-    private int rounds;
-
-    
+    // [3] Number of Rounds. Default 10
+    private int rounds;    
 
     private void Awake() {
-
         if (Instance != null) {
-            Debug.Log("Recognized");
             Destroy(gameObject);            
             return;
         }
@@ -48,15 +49,21 @@ public class BoxConfig : MonoBehaviour {
 
     // Setter for Config
     public void SetConfig(int[] arr) {
-        config = new int[arr.Length];
-        foreach (int i in arr) {
-            config[i] = arr[i];
-        }
+        config = new List<int>(arr);
+    }
+
+    public void Add(int box) {
+        config.Add(box);
+        config.Sort();
+    }
+
+    public void Remove(int box) {
+        config.Remove(box);
     }
 
     // Getter for Config
     public int[] GetConfig() {
-        return config;
+        return config.ToArray();
     }
 
     // Setter for Rounds
@@ -72,6 +79,7 @@ public class BoxConfig : MonoBehaviour {
     // Setter for BoxCount
     public void SetCount(int count) {
         boxesCount = count;
+        Preset();
     }
 
     // Getter for BoxCount
@@ -105,23 +113,23 @@ public class BoxConfig : MonoBehaviour {
         int pickedBoxes = (int) Mathf.Sqrt(boxesCount);
 
         // New Config
-        int[] randomConfig = new int[pickedBoxes];
+        List<int> randomConfig = new List<int>(pickedBoxes);
 
         // Add boxes till full array
-        int added = 0;
-        while (added <= pickedBoxes) {
+        while (randomConfig.Count <= pickedBoxes) {
             // Create random between 1 and the limit of boxes.
             int r = Random.Range(1, pickedBoxes + 1);
             // If seen, pick another
-            foreach (int i in randomConfig) {
-                if (r == i) continue;
+            if (randomConfig.Contains(r)) {
+                continue;
             }
             // If not seen, add
-            randomConfig[added] = r;
-            added++;
+            randomConfig.Add(r);
         }
 
-        // set to property
-        config = randomConfig;
+        // Sort
+        randomConfig.Sort();
+        // Set to property
+        config = randomConfig;        
     }
 }
