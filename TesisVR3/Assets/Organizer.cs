@@ -27,6 +27,10 @@ public class Organizer : MonoBehaviour
         Screenwriter.Loop();
     }
 
+    public static void Set(int[] config, string name) {
+        Typewriter.Set(config, name);
+    }
+
     public static void Write(float roundTimer, float roundDistance, int roundErrors) {
         Typewriter.Write(roundTimer, roundDistance, roundErrors);
     }

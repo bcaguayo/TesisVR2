@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour {
@@ -26,21 +28,8 @@ public class ButtonController : MonoBehaviour {
         Preset();
     }
 
-    /*
     public void Preset() {
-        // Change Config Value
-
-        BoxConfig.Instance.Preset();        
-        int[] preset = BoxConfig.Instance.GetConfig();
-
-        // Toggles
-        BoxToggle.ClearToggle(); 
-        BoxToggle.ToggleAll(preset, true);
-    }
-    */
-
-    public void Preset() {
-        // Use Instance Assigning
+        // Use Instance Assigning at BoxConfig
         int[] config = BoxConfig.Instance.Preset();
 
         // Rearrange Toggles
@@ -49,9 +38,20 @@ public class ButtonController : MonoBehaviour {
     }
 
     public void Randomize() {
+        // Use Instance Assigning at BoxConfig
         int[] config = BoxConfig.Instance.RandomizeConfig();
+        
+        // Toggles
         BoxToggle.ClearToggle();      
         BoxToggle.ToggleAll(config, true);  
+    }
+
+    public void Rounds(float f) {
+        BoxConfig.Instance.SetRounds((int) f);
+    }
+
+    public void Name(string s) {
+        BoxConfig.Instance.SetName(s);
     }
 
     public void Play() {

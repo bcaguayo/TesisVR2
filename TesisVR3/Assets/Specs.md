@@ -79,8 +79,8 @@
 34. Excell Save Config, Name
 35. Go Back to Menu (DONE)
 36. Name Bar
-37. N° Rounds Button
-38. Fix inconsistent array length
+37. N° Rounds Button (DONE)
+38. Fix inconsistent array length (DONE)
 
 # Interfaz:
 - Iniciar (play button): calls OnStart()

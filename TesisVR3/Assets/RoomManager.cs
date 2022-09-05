@@ -21,11 +21,10 @@ public class RoomManager : MonoBehaviour
     /*  Items picked from Menu
         roundLimit is Number of Rounds from Slider
         boxesCount is 3x3, 4x4, 5x5
+        boxConfig contains the picked boxes
     */
     private int roundLimit;
     private int boxesCount;
-
-    // BoxConfig contains the picked boxes
     // config.Length = Number of boxes picked
     private int[] boxConfig;
 
@@ -55,9 +54,9 @@ public class RoomManager : MonoBehaviour
         roundLimit = BoxConfig.Instance.GetRounds();
         boxesCount = BoxConfig.Instance.GetCount();
         // Get box configuration from the menu settings
-        boxConfig = BoxConfig.Instance.GetConfig(); 
-        // FIX: Non consistent Length | Check for Duplicates
-        Debug.Log(boxConfig.Length);
+        boxConfig = BoxConfig.Instance.GetConfig();
+        // Get name of subject to pass onto Excell
+        string name = BoxConfig.Instance.GetName();
 
         // Spawn Boxes
         boxes = new GameObject[boxesCount];
@@ -68,10 +67,13 @@ public class RoomManager : MonoBehaviour
             // Index in List is box number - 1
             boxes[i - 1].GetComponent<BoxCollision>().Pick();
         }
+
+        // Pass to Excell
+        Organizer.Set(boxConfig, name);
     }
 
 
-
+    // Coordinate Mayhem
     private void spawnBoxes() {
         /* Locations. Standard Y: 0.18
         

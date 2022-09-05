@@ -18,13 +18,12 @@ public class BoxConfig : MonoBehaviour {
     private List<int> PRESET16 = new List<int>(new int[]{2, 8, 11, 13});
     private List<int> PRESET9 = new List<int>(new int[]{1, 6, 8});
 
-
-
-
     // [2] 25 for 5x5 boxes (Default), 16 for 4x4 boxes, 9 for 3x3 boxes
     private int boxesCount;
     // [3] Number of Rounds. Default 10
-    private int rounds;    
+    private int rounds;
+    // [4] Name of the test Subject
+    private string subjectName;
 
     private void Awake() {
         if (Instance != null) {
@@ -41,6 +40,7 @@ public class BoxConfig : MonoBehaviour {
             boxesCount = 25;            
             Preset();
             rounds = 10;
+            subjectName = "";
         }
     }
 
@@ -64,12 +64,34 @@ public class BoxConfig : MonoBehaviour {
     }
 
     public void Remove(int box) {
-        config.Remove(box);
+        config.RemoveAll(x => x == box);
     }
 
     // Getter for Config
     public int[] GetConfig() {
-        return config.ToArray();
+        // Sometimes, duplicate elements will remain
+        int[] noDupes = Distinct(config).ToArray();
+        return noDupes;
+    }
+
+    // Helper for Duplicates
+    public List<int> Distinct(List<int> l) {
+        l.Sort();
+        List<int> distinct = new List<int>();
+        foreach (int i in l) {
+            if (!distinct.Contains(i)) distinct.Add(i);
+        }
+        return distinct;
+    }    
+
+    // Setter for BoxCount
+    public void SetCount(int count) {
+        boxesCount = count;
+    }
+
+    // Getter for BoxCount
+    public int GetCount() {
+        return boxesCount;
     }
 
     // Setter for Rounds
@@ -82,14 +104,14 @@ public class BoxConfig : MonoBehaviour {
         return rounds;
     }
 
-    // Setter for BoxCount
-    public void SetCount(int count) {
-        boxesCount = count;
+    // Setter for Name
+    public void SetName(string name) {
+        subjectName = name;
     }
 
-    // Getter for BoxCount
-    public int GetCount() {
-        return boxesCount;
+    // Getter for Rounds
+    public string GetName() {
+        return subjectName;
     }
 
     /* Based on RoomManager.ChooseRandom
