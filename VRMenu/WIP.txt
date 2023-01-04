@@ -1,0 +1,18 @@
+Fix NUllRefException on Boxes           FIXED
+Config 3, 4 dont work correctly yet     THEY WORK SOMEHOW I DIDNT DO ANYTHING
+Data Survivability to Game              JSON FILE
+Call Game from Menu                     just Build
+
+
+Rewrite JSON
+
+Import Json Manager to VRRoom
+Delete VRMenu Version 1 from VR3
+Implement JSON in VR3:
+(Read from persistentDP in RoomManager instead of BoxConfig Object)
+    Check that PDT is reading:
+        C:\Users\RMS VR\AppData\LocalLow\UACh\VRMenu\Config.json
+    Load Utils into Organizer class
+    Make RoomManager call Organizer.JsonRead()
+    Get locals from Json file
+    

@@ -376,6 +376,7 @@
 "Assets/BoxMultiManager.cs"
 "Assets/BoxToggle.cs"
 "Assets/ButtonController.cs"
+"Assets/JsonManager.cs"
 "Assets/MiniCollision.cs"
 "Assets/Organizer.cs"
 "Assets/RoomManager.cs"

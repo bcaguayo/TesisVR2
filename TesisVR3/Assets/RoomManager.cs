@@ -18,7 +18,7 @@ public class RoomManager : MonoBehaviour
     // Start at Round 1
     private int rounds = 1;
 
-    /*  Items picked from Menu
+    /*  ITEMS PICKED FROM MENU
         roundLimit is Number of Rounds from Slider
         boxesCount is 3x3, 4x4, 5x5
         boxConfig contains the picked boxes
@@ -27,6 +27,7 @@ public class RoomManager : MonoBehaviour
     private int boxesCount;
     // config.Length = Number of boxes picked
     private int[] boxConfig;
+    private string subjectName;
 
     /* roundTimer measures seconds passed
     roundDistance measures distance traveled in meters 
@@ -42,21 +43,25 @@ public class RoomManager : MonoBehaviour
     private HashSet<string> discovered = new HashSet<string>();
 
     void Start() {
+        JsonManager.Read();
         // BOX SETUP
-        if (BoxConfig.Instance == null) {
-            Debug.Log("Null Config");
+        if (JsonManager.Instance == null) {
+            // Default Values
+            // Debug.Log("Null Config");
             roundLimit = 10;
             boxesCount = 25;
             boxConfig = new int[]{4, 7, 15, 18, 21};
-        }
-
-        // Set Defaults from Menu
-        roundLimit = BoxConfig.Instance.GetRounds();
-        boxesCount = BoxConfig.Instance.GetCount();
-        // Get box configuration from the menu settings
-        boxConfig = BoxConfig.Instance.GetConfig();
-        // Get name of subject to pass onto Excell
-        string name = BoxConfig.Instance.GetName();
+            subjectName = "";
+        } else {
+            // Debug.Log("Config: " + subjectName);
+            // Values from Menu
+            roundLimit = JsonManager.GetRounds();
+            boxesCount = JsonManager.GetCount();
+            // Get box configuration from the menu settings
+            boxConfig = JsonManager.GetConfig();
+            // Get name of subject to pass onto Excell
+            subjectName = JsonManager.GetName();
+        }           
 
         // Spawn Boxes
         boxes = new GameObject[boxesCount];
@@ -69,7 +74,7 @@ public class RoomManager : MonoBehaviour
         }
 
         // Pass to Excell
-        Organizer.Set(boxConfig, name);
+        Organizer.Set(boxConfig, subjectName);
     }
 
 
@@ -251,18 +256,21 @@ public class RoomManager : MonoBehaviour
         }
     }
 
+    // Toggle Color and Sounds for Green
     public void Correct() {
         roundScore++;
         Organizer.Success(); 
         correct.Play(); 
     }    
 
+    // Toggle Color and Sounds for Red
     public void Error(){
         roundErrors++;
         Organizer.Error();
         incorrect.Play();
     }
 
+    // Helper for Texture
     public Texture getTexture(string color) {
         switch (color)
         {

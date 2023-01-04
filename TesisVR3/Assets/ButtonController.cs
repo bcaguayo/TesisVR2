@@ -7,11 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour {
 
-    // Presets 
-    private int[] PRESET25 = new int[]{4, 7, 15, 18, 21};
-    private int[] PRESET16 = new int[]{2, 8, 11, 13};
-    private int[] PRESET9 = new int[]{1, 6, 8};
-
     /*
     public void SwitchMe(Toggle t) {
         BoxToggle.Listener(t);
@@ -56,6 +51,10 @@ public class ButtonController : MonoBehaviour {
 
     public void Play() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void RunTest() {
+        // insert process
     }
 
     public void Quit() {

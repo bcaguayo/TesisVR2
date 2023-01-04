@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/*
+This class manages Screenwriter and Typewriter and mantains modularity.
+*/
 public class Organizer : MonoBehaviour
 {
     // Start is called before the first frame update
