@@ -65,7 +65,7 @@ public class RoomManager : MonoBehaviour
 
         // Spawn Boxes
         boxes = new GameObject[boxesCount];
-        spawnBoxes();       
+        spawnBoxes();
 
         // Set up Picked Boxes
         foreach (int i in boxConfig) {
@@ -136,9 +136,11 @@ public class RoomManager : MonoBehaviour
         }         
     }
 
-    // For spacing rounds
+    // For spacing rounds and patch
+    private bool controlEnable = false;
     private bool waiting;
     private float waitLimit = -1f;
+
     // Update is called once per frame
     void Update() {
         // Timer
@@ -173,6 +175,23 @@ public class RoomManager : MonoBehaviour
                 // Time between END screen and Quit
                 waitLimit = roundTimer + 5f;
             }            
+        }
+
+        // Disable Boxes for two seconds
+        if (rounds == 1 && !controlEnable) {
+            DisableBoxes();
+            if (waiting) {
+                if (roundTimer >= waitLimit) {
+                    ResetBoxes();      
+                }
+            }
+            // Not waiting, set to wait and the limit to 3
+            // Using float Timer (ftimer) as base
+            else
+            {
+                waiting = true;
+                waitLimit = roundTimer + 5f;
+            } 
         }
 
         // When picked boxes are found
