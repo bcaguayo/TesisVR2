@@ -163,8 +163,8 @@ public class RoomManager : MonoBehaviour
             if (waiting) {
                 if (roundTimer >= waitLimit) {
                     /// Quit to Menu
-                    SceneManager.LoadScene(0);      
-                    // Application.Quit();
+                    // SceneManager.LoadScene(0);      
+                    Application.Quit();
                 }
             }
             // Not waiting, set to wait and the limit to 2
