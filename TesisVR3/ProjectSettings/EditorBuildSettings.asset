@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/VRMenu.unity
     guid: a6357c5e69c6eb148b6ce8f7874111ce
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VRPrep[1].unity
     guid: eaff970649289fc499cdce048e05a6f8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VRPrep[2].unity
     guid: 5b7abf0bd28b6d34c8237ba945f383b9
   - enabled: 1

@@ -177,12 +177,18 @@ public class RoomManager : MonoBehaviour
             }            
         }
 
-        // Disable Boxes for two seconds
+        // Reset boxes at round 1 seconds
         if (rounds == 1 && !controlEnable) {
-            DisableBoxes();
+            ResetBoxes();    
+            controlEnable = true;
+            waiting = false;
+            // DisableBoxes();
+            /*
             if (waiting) {
                 if (roundTimer >= waitLimit) {
-                    ResetBoxes();      
+                    ResetBoxes();    
+                    controlEnable = true;
+                    waiting = false;
                 }
             }
             // Not waiting, set to wait and the limit to 3
@@ -190,8 +196,9 @@ public class RoomManager : MonoBehaviour
             else
             {
                 waiting = true;
-                waitLimit = roundTimer + 5f;
+                waitLimit = roundTimer + 1f;
             } 
+            */
         }
 
         // When picked boxes are found
