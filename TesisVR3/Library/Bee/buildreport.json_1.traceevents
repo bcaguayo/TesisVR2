@@ -1,626 +1,473 @@
 ﻿{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1672846465021956, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846465023609, "dur": 60505, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846465084398, "dur": 94118, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846465178545, "dur": 937270, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846466115819, "dur": 593631, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846466709471, "dur": 20762, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846473358007, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846473358385, "dur": 14833, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846473373225, "dur": 32608, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846473405837, "dur": 587203, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846473993043, "dur": 1085709, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846475078754, "dur": 12186, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846512909952, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846512909979, "dur": 51866, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846512961850, "dur": 81958, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846513043811, "dur": 13739, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846518897109, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846518897139, "dur": 7304, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846518904447, "dur": 31594, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846518936044, "dur": 236452, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846519172499, "dur": 959681, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846520132183, "dur": 11944, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846520144965, "dur": 134, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
-{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 35942, "tid": 1, "ts": 1672846519039090, "dur": 115726, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1672846519040098, "dur": 46432, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1672846519137282, "dur": 5129, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1672846519142414, "dur": 12393, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1672846519143130, "dur": 9761, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1672846519159663, "dur": 1287, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1672846519158875, "dur": 2098, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846520145206, "dur": 310, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849361360289, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849361361970, "dur": 64363, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849361426636, "dur": 375940, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849361802599, "dur": 16787, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849368390834, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849368391083, "dur": 8112, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849368399198, "dur": 241660, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849368640861, "dur": 12182, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849381947773, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849381947797, "dur": 47017, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849381994819, "dur": 120017, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849382114839, "dur": 22528, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849388072439, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849388072468, "dur": 4093, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849388076565, "dur": 269086, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849388345653, "dur": 12138, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849388358568, "dur": 85, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1672846519216260, "dur":1804, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846519218071, "dur":108, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1672846519218223, "dur":26, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1672846519218251, "dur":526, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1672846519218809, "dur":631, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846519219440, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115393, "dur":462, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115855, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115869, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115872, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115880, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115882, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115889, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115891, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115899, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115901, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115907, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115909, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115916, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115918, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115924, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115926, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115932, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115934, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115940, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115942, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115948, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115950, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115955, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115957, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115964, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520115979, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520116043, "dur":2842, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1672846519219131, "dur":403, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519219534, "dur":6784, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519226319, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1672846519226431, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519245394, "dur":2818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1672846519248289, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519248364, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519248372, "dur":43738, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519292180, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519292260, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519292271, "dur":64591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519356920, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519356988, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519356994, "dur":45894, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519402956, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519403017, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519403024, "dur":29205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519432292, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519432354, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519432362, "dur":35328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519467765, "dur":3238, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519471007, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519471017, "dur":25563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519496647, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519496732, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519496739, "dur":30175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519527048, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519527141, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519527152, "dur":31697, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519558914, "dur":724, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.OculusQuestSupport.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519559642, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519559652, "dur":2527, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.OculusQuestSupport.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519562247, "dur":906, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.ConformanceAutomation.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519563156, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519563165, "dur":2058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.ConformanceAutomation.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519565296, "dur":42226, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519607526, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519607536, "dur":1814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519609465, "dur":979, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.Subsystem.Registration.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519610450, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519610461, "dur":4745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.Subsystem.Registration.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519615268, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519615332, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519615341, "dur":106554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519721967, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519722042, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519722087, "dur":101011, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519823162, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519823226, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1672846519823235, "dur":111101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":1, "ts":1672846519934403, "dur":180991, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519219269, "dur":310, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519219579, "dur":6672, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519226260, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1672846519226365, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519247592, "dur":1278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1672846519248946, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519249018, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519249027, "dur":46322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519295412, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519295474, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519295481, "dur":77857, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519373403, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519373463, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519373471, "dur":123237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519496790, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519496852, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519496858, "dur":25783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519522698, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519522755, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519522761, "dur":36082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519558909, "dur":740, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.RuntimeDebugger.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519559652, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519559659, "dur":2760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.RuntimeDebugger.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519562493, "dur":107890, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenXR.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519670389, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519670401, "dur":1553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenXR.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519672015, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519672076, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519672084, "dur":194902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519867213, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846519867293, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1672846519867304, "dur":248007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":2, "ts":1672846520115357, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":2, "ts":1672846520115359, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519219785, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519219785, "dur":6465, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519226260, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":3, "ts":1672846519226360, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519246525, "dur":1712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":3, "ts":1672846519248310, "dur":166, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519248479, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519248485, "dur":45031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519293580, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519293646, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519293654, "dur":62973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519356689, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519356754, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519356763, "dur":88154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519445000, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519445076, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519445085, "dur":73747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519518905, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519518988, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519518996, "dur":25954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519545074, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519545147, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519545155, "dur":142094, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519687326, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519687392, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519687402, "dur":108279, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519795750, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519795822, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519795831, "dur":119271, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":3, "ts":1672846519915167, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_vive_cosmos_controller.json" }}
-,{ "pid":12345, "tid":3, "ts":1672846519915228, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519915237, "dur":1408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_vive_cosmos_controller.json" }}
-,{ "pid":12345, "tid":3, "ts":1672846519916708, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_logitech_stylus.json" }}
-,{ "pid":12345, "tid":3, "ts":1672846519916773, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519916781, "dur":1737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_logitech_stylus.json" }}
-,{ "pid":12345, "tid":3, "ts":1672846519918584, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":3, "ts":1672846519918650, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519918656, "dur":1513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":3, "ts":1672846519920312, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1672846519920407, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1672846519920415, "dur":4767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1672846519925247, "dur":190145, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519219092, "dur":404, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519219497, "dur":6748, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519226260, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":4, "ts":1672846519226264, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519226339, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/app.info" }}
-,{ "pid":12345, "tid":4, "ts":1672846519226347, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519227666, "dur":2281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/app.info" }}
-,{ "pid":12345, "tid":4, "ts":1672846519229949, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1672846519229999, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519230662, "dur":1242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1672846519231971, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1672846519232025, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519232030, "dur":1713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1672846519233812, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519233882, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519234163, "dur":8341, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519242578, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519242648, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519242656, "dur":69707, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519312423, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519312486, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519312494, "dur":19303, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519331862, "dur":136191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519468057, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519468066, "dur":2115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519470251, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519470318, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519470326, "dur":25918, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519496311, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519496376, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519496384, "dur":22834, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519519277, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519519347, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519519353, "dur":20041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519539470, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519539543, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519539555, "dur":20741, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519560362, "dur":780, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.MockRuntime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519561146, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519561156, "dur":1772, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.MockRuntime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519563013, "dur":89752, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenVR.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519652770, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519652780, "dur":1895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.OpenVR.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519654738, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519654804, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519654812, "dur":98663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519753538, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519753601, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519753609, "dur":56018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519809695, "dur":3255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/SteamVR_Actions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519812955, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519812966, "dur":9864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/SteamVR_Actions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519822897, "dur":88670, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/SteamVR.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519911573, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519911581, "dur":2169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/SteamVR.dll" }}
-,{ "pid":12345, "tid":4, "ts":1672846519913807, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_index_hmd.json" }}
-,{ "pid":12345, "tid":4, "ts":1672846519913875, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519913884, "dur":1565, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_index_hmd.json" }}
-,{ "pid":12345, "tid":4, "ts":1672846519915524, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_vive_controller.json" }}
-,{ "pid":12345, "tid":4, "ts":1672846519915592, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519915600, "dur":1610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_vive_controller.json" }}
-,{ "pid":12345, "tid":4, "ts":1672846519917278, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/actions.json" }}
-,{ "pid":12345, "tid":4, "ts":1672846519917349, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519917356, "dur":1695, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/actions.json" }}
-,{ "pid":12345, "tid":4, "ts":1672846519919122, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":4, "ts":1672846519919188, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519919197, "dur":2125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":4, "ts":1672846519921382, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/level0.resS" }}
-,{ "pid":12345, "tid":4, "ts":1672846519921444, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519921450, "dur":1676, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/level0.resS" }}
-,{ "pid":12345, "tid":4, "ts":1672846519923190, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":4, "ts":1672846519923253, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1672846519923261, "dur":1972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":4, "ts":1672846519925292, "dur":190113, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1672846519219534, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1672846519219535, "dur":6785, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1672846519226320, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1672846519226429, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1672846519234519, "dur":2168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1672846519236764, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Valve.Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519236838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1672846519237669, "dur":227951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Valve.Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519465696, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519465786, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1672846519465797, "dur":63350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519529206, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519529263, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1672846519529271, "dur":60398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519589732, "dur":104978, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519694716, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1672846519694726, "dur":2129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519696917, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519696985, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1672846519696994, "dur":32891, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519729953, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519730015, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1672846519730022, "dur":226309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":5, "ts":1672846519956392, "dur":159010, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519219407, "dur":203, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519219610, "dur":6677, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519226288, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1672846519226392, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519247698, "dur":19875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1672846519267640, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519267706, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519267714, "dur":26892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519294670, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519294733, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519294741, "dur":28048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519322854, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519322916, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519322924, "dur":222021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519545039, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519545114, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519545124, "dur":67043, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519612229, "dur":97948, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.InputSystem.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519710182, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519710192, "dur":12578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.InputSystem.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519722834, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519722902, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519722910, "dur":35969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519758942, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519759047, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519759056, "dur":133251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519892370, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Plugins/x86_64/XRSDKOpenVR.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519892443, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519896327, "dur":1782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Plugins/x86_64/XRSDKOpenVR.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519898175, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Plugins/x86_64/openvr_api.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519898238, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519898385, "dur":2401, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Plugins/x86_64/openvr_api.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519900887, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Plugins/x86_64/ucrtbased.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519900970, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519900988, "dur":2765, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Plugins/x86_64/ucrtbased.dll" }}
-,{ "pid":12345, "tid":6, "ts":1672846519903832, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/UnitySubsystems/XRSDKOpenVR/UnitySubsystemsManifest.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519903938, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519904924, "dur":2189, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/UnitySubsystems/XRSDKOpenVR/UnitySubsystemsManifest.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519907175, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_vive_tracker_camera.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519907245, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519907831, "dur":1962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_vive_tracker_camera.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519909858, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_vive_pro.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519909929, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519910101, "dur":2496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_vive_pro.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519912660, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_vive.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519912718, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519912727, "dur":1348, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_vive.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519914147, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_holographic_hmd.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519914222, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519914231, "dur":1387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_holographic_hmd.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519915677, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_oculus_touch.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519915736, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519915743, "dur":1430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_oculus_touch.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519917240, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_holographic_controller.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519917314, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519917353, "dur":1756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_holographic_controller.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519919167, "dur":201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519919370, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519919376, "dur":1790, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":6, "ts":1672846519921227, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/resources.assets" }}
-,{ "pid":12345, "tid":6, "ts":1672846519921295, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1672846519921301, "dur":4415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/resources.assets" }}
-,{ "pid":12345, "tid":6, "ts":1672846519925815, "dur":189573, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519219650, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519219651, "dur":6666, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519226317, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":7, "ts":1672846519226413, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519237485, "dur":2135, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":7, "ts":1672846519239870, "dur":50950, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519290826, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519290836, "dur":4054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519294973, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519295040, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519295048, "dur":76195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519371307, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519371370, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519371441, "dur":42387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519413893, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519413976, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519413984, "dur":23444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519437491, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519437557, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519437565, "dur":19663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519457298, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519457370, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519457381, "dur":49436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519506894, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519506982, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519506991, "dur":31614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519538713, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519538778, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519538787, "dur":52483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519591355, "dur":622, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519591982, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519591994, "dur":86253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519678320, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519678390, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519678400, "dur":174270, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519852754, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519852817, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519852826, "dur":48660, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519901547, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Plugins/x86_64/UnityOpenXR.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519901617, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519901626, "dur":2033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Plugins/x86_64/UnityOpenXR.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519903728, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Plugins/x86_64/openxr_loader.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519903794, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519903803, "dur":3070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Plugins/x86_64/openxr_loader.dll" }}
-,{ "pid":12345, "tid":7, "ts":1672846519906947, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json" }}
-,{ "pid":12345, "tid":7, "ts":1672846519907021, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519907451, "dur":2708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json" }}
-,{ "pid":12345, "tid":7, "ts":1672846519910218, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_vive_cosmos.json" }}
-,{ "pid":12345, "tid":7, "ts":1672846519910285, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519910327, "dur":2644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_vive_cosmos.json" }}
-,{ "pid":12345, "tid":7, "ts":1672846519913039, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_rift.json" }}
-,{ "pid":12345, "tid":7, "ts":1672846519913099, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519913105, "dur":4196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/binding_rift.json" }}
-,{ "pid":12345, "tid":7, "ts":1672846519917368, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":7, "ts":1672846519917443, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519917536, "dur":1737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":7, "ts":1672846519919334, "dur":830, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":7, "ts":1672846519920201, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519920209, "dur":1613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":7, "ts":1672846519921889, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/level0" }}
-,{ "pid":12345, "tid":7, "ts":1672846519921960, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519921968, "dur":1416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/level0" }}
-,{ "pid":12345, "tid":7, "ts":1672846519923439, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":7, "ts":1672846519923493, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519923498, "dur":1651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":7, "ts":1672846519925207, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/boot.config" }}
-,{ "pid":12345, "tid":7, "ts":1672846519925392, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1672846519925399, "dur":1247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/boot.config" }}
-,{ "pid":12345, "tid":7, "ts":1672846519926698, "dur":188692, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519219838, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519219838, "dur":6416, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519226261, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1672846519226366, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519233739, "dur":2463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1672846519236270, "dur":1043, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR.exe" }}
-,{ "pid":12345, "tid":8, "ts":1672846519237316, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519237321, "dur":4043, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR.exe" }}
-,{ "pid":12345, "tid":8, "ts":1672846519241437, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519241524, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519241535, "dur":21921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519263516, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519263585, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519263621, "dur":176528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519440216, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519440284, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519440292, "dur":55102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519495486, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519495554, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519495563, "dur":101443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519597067, "dur":90808, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519687878, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519687885, "dur":1537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519689481, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519689544, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519689552, "dur":104150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519793770, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519793857, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519793866, "dur":123073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":8, "ts":1672846519917080, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_knuckles.json" }}
-,{ "pid":12345, "tid":8, "ts":1672846519917158, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519917167, "dur":1810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/StreamingAssets/SteamVR/bindings_knuckles.json" }}
-,{ "pid":12345, "tid":8, "ts":1672846519919047, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1672846519919152, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1672846519919158, "dur":13026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1672846519932245, "dur":183144, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519219953, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519219953, "dur":6363, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519226317, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":9, "ts":1672846519226413, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519228992, "dur":1425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":9, "ts":1672846519230483, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1672846519230570, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519230649, "dur":1298, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1672846519231994, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":9, "ts":1672846519232043, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519232048, "dur":1310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":9, "ts":1672846519233436, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":9, "ts":1672846519233506, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519233513, "dur":2317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":9, "ts":1672846519235908, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":9, "ts":1672846519236008, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519236013, "dur":8007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":9, "ts":1672846519244097, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519244224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519244236, "dur":112302, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519356604, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519356674, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519356685, "dur":38274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519395056, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519395123, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519395131, "dur":102371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519497582, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519497657, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519497940, "dur":26902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519524914, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519524997, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519525006, "dur":29806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519554891, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519554963, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519554971, "dur":25818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519580860, "dur":144937, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519725802, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519725812, "dur":3591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519729469, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519729532, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1672846519729541, "dur":222866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":9, "ts":1672846519952468, "dur":162925, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519220081, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519220082, "dur":6238, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519226320, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":10, "ts":1672846519226431, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519236104, "dur":2324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":10, "ts":1672846519238546, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519238626, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519238701, "dur":73817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519312584, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519312661, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519312668, "dur":56659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519369402, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519369477, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519369488, "dur":97796, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519467353, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519467422, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519467430, "dur":51318, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519518823, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519518988, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519518996, "dur":35503, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519554578, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519554653, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519554663, "dur":60549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519615280, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519615359, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519615367, "dur":259916, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519875342, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846519875401, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1672846519875410, "dur":180817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":10, "ts":1672846520056306, "dur":59097, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519220144, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519220145, "dur":6174, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519226319, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":11, "ts":1672846519226412, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519229014, "dur":1412, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":11, "ts":1672846519230488, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":11, "ts":1672846519230538, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519230609, "dur":1313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":11, "ts":1672846519231970, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":11, "ts":1672846519232018, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519232024, "dur":1577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":11, "ts":1672846519233670, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519233747, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519234143, "dur":2214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519236518, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":11, "ts":1672846519236592, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519237225, "dur":12530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":11, "ts":1672846519249829, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519249902, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519249910, "dur":106705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519356687, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519356754, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519356760, "dur":49494, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519406314, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519406407, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519406493, "dur":25202, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519432039, "dur":51322, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SpatialTracking.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519483366, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519483376, "dur":1524, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SpatialTracking.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519484984, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519485050, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519485059, "dur":37182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519522312, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519522379, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519522388, "dur":116594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519639063, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519639123, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519639131, "dur":105325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519744520, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519744584, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1672846519744593, "dur":222295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":11, "ts":1672846519966934, "dur":148473, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519220173, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519220173, "dur":6114, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519226287, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":12, "ts":1672846519226385, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519233087, "dur":1989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":12, "ts":1672846519235168, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519235251, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519235259, "dur":23097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519258451, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519258525, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519258534, "dur":22032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519280623, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519280678, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519280687, "dur":32804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519313556, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519313619, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519313627, "dur":57815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519371507, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519371577, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519371584, "dur":30158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519401812, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519401882, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519401892, "dur":30855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519432809, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519432878, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519432886, "dur":25794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519458745, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519458820, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519458829, "dur":19263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519478152, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519478210, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519478218, "dur":24313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519502596, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519502660, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519502671, "dur":61403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519564137, "dur":40653, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.Management.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519604795, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519604805, "dur":1969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.XR.Management.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519606840, "dur":278303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519885148, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519885157, "dur":4603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519889832, "dur":69185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519959021, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1672846519959029, "dur":1284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0 No Tutorial/TesisVR_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":12, "ts":1672846519960380, "dur":155017, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1672846520121013, "dur":2308, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1672846520145684, "dur": 1234, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1672846520144941, "dur": 2010, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1672849388108017, "dur":1688, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388109717, "dur":194, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1672849388109967, "dur":28, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1672849388109996, "dur":632, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1672849388110670, "dur":681, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388111351, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388313942, "dur":233, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314176, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314189, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314193, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314203, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314204, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314220, "dur":11, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314231, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314240, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314242, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314249, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314252, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314259, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314261, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314268, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314270, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314276, "dur":56, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314332, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314339, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314341, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314348, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314350, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314357, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314359, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314366, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314380, "dur":3, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388314415, "dur":2171, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1672849388111533, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388111533, "dur":6871, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388118405, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1672849388118523, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388118628, "dur":1489, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR.exe" }}
+,{ "pid":12345, "tid":1, "ts":1672849388120117, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388120191, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1672849388120262, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388120364, "dur":37091, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.XR.Management.dll" }}
+,{ "pid":12345, "tid":1, "ts":1672849388157456, "dur":148, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388157605, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1672849388157683, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388157795, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1672849388157866, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388157997, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1672849388158072, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388158183, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1672849388158250, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388158356, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1672849388158432, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388158536, "dur":102810, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/SteamVR.dll" }}
+,{ "pid":12345, "tid":1, "ts":1672849388261346, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1672849388261463, "dur":52492, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388110695, "dur":664, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388111361, "dur":6964, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388118336, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1672849388118339, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388118409, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1672849388118412, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388118490, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1672849388118579, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388118683, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1672849388118795, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388118923, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1672849388118998, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388119101, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1672849388119171, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388119269, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1672849388119364, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388119469, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1672849388119542, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388119682, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1672849388119748, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388119843, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1672849388119907, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388120098, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1672849388120165, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388120267, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1672849388120334, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388120429, "dur":105811, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1672849388226241, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1672849388226380, "dur":87572, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1672849388111048, "dur":383, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1672849388111431, "dur":6938, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1672849388118369, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1672849388118470, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1672849388118573, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1672849388118648, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1672849388118753, "dur":79260, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll" }}
+,{ "pid":12345, "tid":3, "ts":1672849388198014, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1672849388198164, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1672849388198247, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1672849388198257, "dur":12246, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1672849388210610, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1672849388210804, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1672849388210861, "dur":103082, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388110893, "dur":499, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388111392, "dur":7011, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388118403, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1672849388118491, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388118600, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1672849388118690, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388118798, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1672849388118891, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388118998, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1672849388119073, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388119176, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1672849388119238, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388119332, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1672849388119392, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388119488, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1672849388119581, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388119695, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1672849388119774, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388119890, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1672849388119961, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388120122, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1672849388120199, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388120310, "dur":739, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.MockRuntime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1672849388121049, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388121171, "dur":86595, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1672849388207767, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388207909, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level1" }}
+,{ "pid":12345, "tid":4, "ts":1672849388207975, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388207981, "dur":1570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level1" }}
+,{ "pid":12345, "tid":4, "ts":1672849388209614, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":4, "ts":1672849388209683, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1672849388209689, "dur":1578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":4, "ts":1672849388211323, "dur":102647, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388110981, "dur":417, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388111398, "dur":7008, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388118406, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1672849388118511, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388118625, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1672849388118715, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388118839, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1672849388118928, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119054, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119119, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119216, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119284, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119383, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119449, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119534, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119600, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119697, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119778, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119891, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1672849388119956, "dur":180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388120137, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1672849388120217, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388120333, "dur":103262, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.XR.OpenXR.dll" }}
+,{ "pid":12345, "tid":5, "ts":1672849388223596, "dur":189, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1672849388223788, "dur":90153, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388111087, "dur":376, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388111463, "dur":6939, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388118402, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1672849388118519, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388118617, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1672849388118700, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388118810, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1672849388118891, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388118996, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1672849388119079, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388119180, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1672849388119244, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388119354, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1672849388119420, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388119517, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1672849388119581, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388119703, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1672849388119767, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388119878, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1672849388119945, "dur":170, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388120116, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1672849388120188, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388120292, "dur":776, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.RuntimeDebugger.dll" }}
+,{ "pid":12345, "tid":6, "ts":1672849388121068, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388121182, "dur":76789, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1672849388197972, "dur":194, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388198168, "dur":254, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1672849388198422, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388198488, "dur":838, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1672849388199326, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388199395, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1672849388199462, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388199469, "dur":3233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1672849388202762, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1672849388202837, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388202845, "dur":2612, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1672849388205518, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level2.resS" }}
+,{ "pid":12345, "tid":6, "ts":1672849388205585, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388205595, "dur":1879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level2.resS" }}
+,{ "pid":12345, "tid":6, "ts":1672849388207554, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1672849388207621, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388207630, "dur":1371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1672849388209063, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level0" }}
+,{ "pid":12345, "tid":6, "ts":1672849388209139, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1672849388209147, "dur":1514, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level0" }}
+,{ "pid":12345, "tid":6, "ts":1672849388210714, "dur":103228, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388111125, "dur":369, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388111494, "dur":6912, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388118406, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1672849388118515, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388118625, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1672849388118702, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388118801, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1672849388118882, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388118980, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1672849388119053, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388119152, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1672849388119215, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388119313, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1672849388119375, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388119484, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1672849388119553, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388119700, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1672849388119769, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388119887, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":7, "ts":1672849388119955, "dur":169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388120125, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1672849388120199, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388120316, "dur":776, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.ConformanceAutomation.dll" }}
+,{ "pid":12345, "tid":7, "ts":1672849388121093, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388121203, "dur":192601, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":7, "ts":1672849388313804, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1672849388313912, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":7, "ts":1672849388313913, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388111162, "dur":371, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388111533, "dur":6869, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388118402, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1672849388118500, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388118607, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1672849388118683, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388118813, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1672849388118896, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388118999, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1672849388119074, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388119173, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1672849388119234, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388119324, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1672849388119379, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388119473, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1672849388119582, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388119694, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1672849388119765, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388119868, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1672849388119933, "dur":204, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388120137, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1672849388120217, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388120333, "dur":115921, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.XR.OpenVR.dll" }}
+,{ "pid":12345, "tid":8, "ts":1672849388236255, "dur":196, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1672849388236453, "dur":77490, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1672849388111289, "dur":251, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1672849388111541, "dur":6828, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1672849388118370, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1672849388118474, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1672849388118573, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1672849388118642, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1672849388118753, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1672849388118832, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1672849388118938, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1672849388119010, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1672849388119164, "dur":133652, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":9, "ts":1672849388252817, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1672849388252937, "dur":61033, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388111387, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388111388, "dur":7017, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388118405, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1672849388118502, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388118618, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388118700, "dur":148, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388118848, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388118922, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388119038, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388119106, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388119201, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388119261, "dur":177, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388119439, "dur":33402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.SpatialTracking.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388152842, "dur":521, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388153365, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388153463, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388153601, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388153662, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388153750, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388153806, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388153891, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388153966, "dur":2080, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156048, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156114, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156214, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156274, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156362, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156417, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156499, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156554, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156640, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156703, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156788, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388156843, "dur":873, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388157718, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388157804, "dur":263, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388158068, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388158153, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388158273, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388158342, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388158471, "dur":912, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/SteamVR_Actions.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388159383, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388159489, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388159573, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388159665, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388159722, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388159805, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388159860, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388159944, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388159998, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388160080, "dur":68548, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388228635, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1672849388228724, "dur":1680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":10, "ts":1672849388230483, "dur":83455, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388111469, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388111470, "dur":6860, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388118336, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":11, "ts":1672849388118420, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388118540, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1672849388118613, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388118708, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Valve.Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388118808, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388118933, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388119010, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388119137, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388119201, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388119297, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388119371, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388119472, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388119543, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388119693, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388119766, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388119879, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388119947, "dur":179, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388120127, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388120198, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388120301, "dur":750, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.XR.OpenXR.Features.OculusQuestSupport.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388121051, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388121171, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388121241, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388121340, "dur":4386, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.Subsystem.Registration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388125727, "dur":712, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388126442, "dur":104223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1672849388230665, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1672849388230842, "dur":83107, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388111494, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388111495, "dur":6908, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388118404, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1672849388118491, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388118601, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":12, "ts":1672849388118685, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388118846, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388118929, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388119039, "dur":209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388119248, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388119360, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388119430, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388119536, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388119619, "dur":192, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388119812, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388119875, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388119971, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388120108, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388120206, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388120276, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388120371, "dur":50118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388170490, "dur":196, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388170688, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Plugins/x86_64/XRSDKOpenVR.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388170758, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388170861, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Plugins/x86_64/openvr_api.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388170963, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171058, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Plugins/x86_64/ucrtbased.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171118, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171201, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Plugins/x86_64/UnityOpenXR.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171265, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171345, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Plugins/x86_64/openxr_loader.dll" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171402, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171484, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/UnitySubsystems/XRSDKOpenVR/UnitySubsystemsManifest.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171541, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171593, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171649, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171703, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/binding_vive_tracker_camera.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171756, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171806, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/binding_vive_pro.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171858, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388171981, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/binding_vive_cosmos.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388172038, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388172122, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/binding_vive.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388172237, "dur":441, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388172678, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/binding_rift.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388172745, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388172835, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/binding_index_hmd.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388172924, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388172985, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/binding_holographic_hmd.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173043, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173141, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/bindings_vive_cosmos_controller.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173199, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173292, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/bindings_vive_controller.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173351, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173436, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/bindings_oculus_touch.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173490, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173603, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/bindings_logitech_stylus.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173674, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173773, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/bindings_knuckles.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173838, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388173955, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/bindings_holographic_controller.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388174031, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388174134, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/StreamingAssets/SteamVR/actions.json" }}
+,{ "pid":12345, "tid":12, "ts":1672849388174201, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388174305, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":12, "ts":1672849388174387, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388175398, "dur":3010, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":12, "ts":1672849388178464, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":12, "ts":1672849388178520, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388178528, "dur":1273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":12, "ts":1672849388179891, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":12, "ts":1672849388179964, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388179971, "dur":1544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":12, "ts":1672849388181569, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1672849388181623, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388181630, "dur":2114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1672849388183801, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":12, "ts":1672849388183881, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388183888, "dur":1209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":12, "ts":1672849388185154, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":12, "ts":1672849388185210, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388185216, "dur":1491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":12, "ts":1672849388186760, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1672849388186812, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388186819, "dur":18811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1672849388205840, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level2" }}
+,{ "pid":12345, "tid":12, "ts":1672849388205949, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388205957, "dur":1930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level2" }}
+,{ "pid":12345, "tid":12, "ts":1672849388207946, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level0.resS" }}
+,{ "pid":12345, "tid":12, "ts":1672849388208007, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388208011, "dur":1401, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/level0.resS" }}
+,{ "pid":12345, "tid":12, "ts":1672849388209490, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":12, "ts":1672849388209566, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1672849388209572, "dur":6418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/RMS VR/Desktop/VRBuilds/3.0/TesisVR_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":12, "ts":1672849388216059, "dur":97896, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1672849388318202, "dur":1676, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1672849388358733, "dur": 1039, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1672849388358548, "dur": 1256, "ph": "X", "name": "Write chrome-trace events", "args": {} },
