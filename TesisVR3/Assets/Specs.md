@@ -9,7 +9,7 @@
 6. Delay after 5 box found (DONE)
 7. Config 2, 3, 4, 5 (DONE)
 8. Display Score and Rounds (DONE)
-9. Display White Screen after game end / with data 
+9. Display White Screen after game end / with data (DEPRECATED)
 10. Test Round -moved-
 11. Write puntero (DONE)
 
@@ -27,8 +27,8 @@
 	15.2 Painting (DONE)
 	15.3 Different Wall Texture (DONE)
 	15.5 Door and Window Frame (DONE)
-	15.6 Shelf with Ball and Plushie (DONE)
-	OSO PARDO
+	15.6 Shelf with Ball and OSO PARDO Plushie (DONE)
+	
 
 16. Test Round Functionality
 	16.1 Discovering boxes (DONE)
