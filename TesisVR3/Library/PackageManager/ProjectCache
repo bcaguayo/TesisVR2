@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638863979200177225
-    m_Hash: 945177808
+      ticks: 638954770378509033
+    m_Hash: 3121306071
   m_LockFileStatus:
     m_FilePath: C:/Users/emili/Documents/Work/TesisVR2/TesisVR3/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638863979200177225
-    m_Hash: 279535975
+      ticks: 638954770884065756
+    m_Hash: 1104833904
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -36,12 +36,12 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/emili/Documents/Work/TesisVR2/TesisVR3/Packages
 m_EditorVersion: 2021.2.5f1 (4ec9a5e799f5)
 m_ResolvedPackages:
-- packageId: com.unity.collab-proxy@1.15.4
+- packageId: com.unity.collab-proxy@2.1.0
   testable: 0
   isDirectDependency: 1
-  version: 1.15.4
+  version: 2.1.0
   source: 1
-  resolvedPath: C:\Users\emili\Documents\Work\TesisVR2\TesisVR3\Library\PackageCache\com.unity.collab-proxy@1.15.4
+  resolvedPath: C:\Users\emili\Documents\Work\TesisVR2\TesisVR3\Library\PackageCache\com.unity.collab-proxy@2.1.0
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -50,11 +50,10 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
-  description: The Version Control package gives you the ability to use either Collaborate
-    or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic SCM for Unity
-    (beta), a Plastic SCM subscription is required. Learn more about how you can
-    get started for free by visiting plasticscm.com.
+  type: assets
+  description: The package gives you the ability to use Unity Version Control in
+    the Unity editor. To use Unity Version Control, a subscription is required. Learn
+    more about how you can get started for free by visiting plasticscm.com.
   status: 4
   errors: []
   versions:
@@ -175,18 +174,8 @@ m_ResolvedPackages:
     - 2.5.1
     - 2.5.2
     verified: 1.15.18
-  dependencies:
-  - name: com.unity.services.core
-    version: 1.0.1
-  - name: com.unity.nuget.newtonsoft-json
-    version: 2.0.0
-  resolvedDependencies:
-  - name: com.unity.services.core
-    version: 1.0.1
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  - name: com.unity.nuget.newtonsoft-json
-    version: 2.0.0
+  dependencies: []
+  resolvedDependencies: []
   keywords:
   - backup
   - cloud
@@ -194,6 +183,7 @@ m_ResolvedPackages:
   - collaborate
   - collaboration
   - control
+  - devops
   - plastic
   - plasticscm
   - source
@@ -210,13 +200,13 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637726568460000000
-  documentationUrl: 
+  datePublishedTicks: 638301329890000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.1/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 1275603954ad33bee601fe2c9a3c787b3d4e4c6b
+    revision: 179e96acc2f95fcb9dcc91b5fb2ee5f3e85d48aa
     path: 
   unityLifecycle:
     version: 1.15.4
@@ -3719,117 +3709,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.0.1
-    nextVersion: 
-- packageId: com.unity.services.core@1.0.1
-  testable: 0
-  isDirectDependency: 0
-  version: 1.0.1
-  source: 1
-  resolvedPath: C:\Users\emili\Documents\Work\TesisVR2\TesisVR3\Library\PackageCache\com.unity.services.core@1.0.1
-  assetPath: Packages/com.unity.services.core
-  name: com.unity.services.core
-  displayName: Services Core
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: 'This package defines common components used by multiple Game Service
-    packages.
-
-    These are standardized and aim to unify the overall experience
-    of working with Game Services packages.'
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 1.0.1
-    compatible:
-    - 1.0.1
-    verified: 1.0.1
-  dependencies:
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
-    path: 
-  unityLifecycle:
-    version: 1.0.1
-    nextVersion: 1.1.0-pre.8
-- packageId: com.unity.nuget.newtonsoft-json@2.0.0
-  testable: 0
-  isDirectDependency: 0
-  version: 2.0.0
-  source: 1
-  resolvedPath: C:\Users\emili\Documents\Work\TesisVR2\TesisVR3\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
-  assetPath: Packages/com.unity.nuget.newtonsoft-json
-  name: com.unity.nuget.newtonsoft-json
-  displayName: Newtonsoft Json
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: library
-  description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
-    synced to version 12.0.2.
-
-
-    This package is used for advanced json serialization
-    and deserialization. Most Unity users will be better suited using the existing
-    json tools built into Unity.
-
-    To avoid assembly clashes, please use this
-    package if you intend to use Newtonsoft Json.'
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 2.0.0
-    compatible:
-    - 2.0.0
-    verified: 2.0.0
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
-    revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
-    path: 
-  unityLifecycle:
-    version: 2.0.0
     nextVersion: 
 - packageId: com.unity.subsystemregistration@1.1.0
   testable: 0

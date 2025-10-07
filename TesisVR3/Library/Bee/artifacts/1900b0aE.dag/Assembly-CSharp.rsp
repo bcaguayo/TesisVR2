@@ -117,7 +117,6 @@
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll"
--r:"C:/Users/emili/Documents/Work/TesisVR2/TesisVR3/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
 -r:"C:/Users/emili/Documents/Work/TesisVR2/TesisVR3/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"C:/Users/emili/Documents/Work/TesisVR2/TesisVR3/Library/PackageCache/com.unity.visualscripting@1.7.5/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"D:/UnityHub/Unity Hub/2021.2.5f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -377,6 +376,7 @@
 "Assets/BoxMultiManager.cs"
 "Assets/ConfigMaster.cs"
 "Assets/MiniCollision.cs"
+"Assets/Move3DBase.cs"
 "Assets/Organizer.cs"
 "Assets/RoomManager.cs"
 "Assets/Screenwriter.cs"

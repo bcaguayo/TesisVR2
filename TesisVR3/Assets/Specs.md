@@ -28,7 +28,6 @@
 	15.3 Different Wall Texture (DONE)
 	15.5 Door and Window Frame (DONE)
 	15.6 Shelf with Ball and OSO PARDO Plushie (DONE)
-	
 
 16. Test Round Functionality
 	16.1 Discovering boxes (DONE)
