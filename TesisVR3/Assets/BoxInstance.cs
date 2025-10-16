@@ -34,10 +34,13 @@ public class BoxInstance : MonoBehaviour {
         configSize = 5;
     }
 
+    // GET FROM CONFIG FILE
     // Setter for Config
-    public void SetConfig(int[] arr) {
+    public void SetConfig(int[] arr)
+    {
         config = new int[arr.Length];
-        foreach (int i in arr) {
+        foreach (int i in arr)
+        {
             config[i] = arr[i];
         }
     }

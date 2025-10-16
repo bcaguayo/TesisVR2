@@ -63,24 +63,30 @@ public class RoomManager : MonoBehaviour
     }
 
     // Box Configuration based on Randomness
-    void ChooseRandom() {
+    void ChooseRandom()
+    {
         int added = 0;
-        while (added < 5) {
+        while (added < 5)
+        {
             int r = Random.Range(1, 25);
             bool repeat = false;
-            foreach (int i in boxConfig) {
-                if (r == i) {
+            foreach (int i in boxConfig)
+            {
+                if (r == i)
+                {
                     repeat = true;
                 }
             }
             if (repeat) continue;
-            else {
+            else
+            {
                 boxConfig[added] = r;
                 added++;
             }
         }
     }
 
+    // CONNECT WITH MENU HERE
     // Box Configuration on chosen boxes {4, 7, 15, 18, 21}
     void ChooseConfig() {
         // BoxInstance.GetConfig();

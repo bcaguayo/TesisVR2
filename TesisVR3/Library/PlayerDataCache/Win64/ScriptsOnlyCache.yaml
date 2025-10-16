@@ -4,6 +4,9 @@ ScriptsOnlyBuild:
     - BoxCollision
     - BoxMiniManager
     - BoxMultiManager
+    - BoxStandalone
+    - BoxToggle
+    - ButtonController
     - MiniCollision
     - Organizer
     - RoomManager
@@ -11,7 +14,6 @@ ScriptsOnlyBuild:
     - TurnTheGameOn.ArrowWaypointer.WaypointController
     SteamVR.dll:
     - Valve.VR.SteamVR_Behaviour_Pose
-    - Valve.VR.SteamVR_Behaviour_Skeleton
     - Valve.VR.SteamVR_CameraHelper
     - Valve.VR.SteamVR_ExternalCamera
     - Valve.VR.SteamVR_PlayArea
@@ -19,7 +21,6 @@ ScriptsOnlyBuild:
     - Valve.VR.SteamVR_RenderModel
     - Valve.VR.SteamVR_Settings
     - Valve.VR.SteamVR_Skeleton_Pose
-    - Valve.VR.SteamVR_Skeleton_Poser
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
@@ -27,10 +28,13 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
+    Unity.PlasticSCM.Editor.dll:
+    - Unity.PlasticSCM.Editor.PlasticWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
@@ -67,12 +71,18 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.Slider
+    - UnityEngine.UI.Toggle
   sceneClasses:
-    Assets/Scenes/VRPrep[1].unity:
+    Assets/Scenes/VRMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -93,13 +103,104 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1638}
+    - Class: 114
+      Script: {instanceID: 1692}
+    - Class: 114
+      Script: {instanceID: 1830}
+    - Class: 114
+      Script: {instanceID: 2390}
+    - Class: 114
+      Script: {instanceID: 2582}
+    - Class: 114
+      Script: {instanceID: 2882}
+    - Class: 114
+      Script: {instanceID: 2904}
+    - Class: 114
+      Script: {instanceID: 3024}
+    - Class: 114
+      Script: {instanceID: 3144}
+    - Class: 114
+      Script: {instanceID: 3488}
+    - Class: 114
+      Script: {instanceID: 3590}
+    - Class: 114
+      Script: {instanceID: 4262}
+    - Class: 114
+      Script: {instanceID: 4692}
+    - Class: 114
+      Script: {instanceID: 4710}
+    - Class: 114
+      Script: {instanceID: 5020}
+    - Class: 114
+      Script: {instanceID: 5396}
+    - Class: 114
+      Script: {instanceID: 5642}
+    - Class: 114
+      Script: {instanceID: 5786}
+    - Class: 114
+      Script: {instanceID: 5862}
+    - Class: 114
+      Script: {instanceID: 6512}
+    - Class: 114
+      Script: {instanceID: 6694}
+    - Class: 114
+      Script: {instanceID: 7064}
+    - Class: 114
+      Script: {instanceID: 7118}
+    - Class: 114
+      Script: {instanceID: 8090}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/VRPrep[1].unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
-      Script: {instanceID: 0}
-    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -109,12 +210,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -122,56 +217,34 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1956}
+      Script: {instanceID: 1944}
     - Class: 114
-      Script: {instanceID: 2252}
+      Script: {instanceID: 2224}
     - Class: 114
-      Script: {instanceID: 2426}
+      Script: {instanceID: 2550}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 2916}
     - Class: 114
-      Script: {instanceID: 2624}
+      Script: {instanceID: 3144}
     - Class: 114
-      Script: {instanceID: 2978}
+      Script: {instanceID: 5096}
     - Class: 114
-      Script: {instanceID: 3094}
+      Script: {instanceID: 5862}
     - Class: 114
-      Script: {instanceID: 3220}
+      Script: {instanceID: 6208}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 6512}
     - Class: 114
-      Script: {instanceID: 3836}
+      Script: {instanceID: 6694}
     - Class: 114
-      Script: {instanceID: 4376}
+      Script: {instanceID: 7772}
     - Class: 114
-      Script: {instanceID: 4854}
-    - Class: 114
-      Script: {instanceID: 5178}
-    - Class: 114
-      Script: {instanceID: 5256}
-    - Class: 114
-      Script: {instanceID: 5342}
-    - Class: 114
-      Script: {instanceID: 6062}
-    - Class: 114
-      Script: {instanceID: 6436}
-    - Class: 114
-      Script: {instanceID: 6750}
-    - Class: 114
-      Script: {instanceID: 6936}
-    - Class: 114
-      Script: {instanceID: 8052}
-    - Class: 114
-      Script: {instanceID: 8386}
-    - Class: 114
-      Script: {instanceID: 8800}
+      Script: {instanceID: 8488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 135
-      Script: {instanceID: 0}
-    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -225,37 +298,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1956}
+      Script: {instanceID: 1944}
     - Class: 114
-      Script: {instanceID: 2252}
+      Script: {instanceID: 2224}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 2550}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2904}
     - Class: 114
-      Script: {instanceID: 2978}
+      Script: {instanceID: 2916}
     - Class: 114
-      Script: {instanceID: 3220}
+      Script: {instanceID: 3144}
     - Class: 114
-      Script: {instanceID: 4358}
+      Script: {instanceID: 4244}
     - Class: 114
-      Script: {instanceID: 4786}
+      Script: {instanceID: 4642}
     - Class: 114
-      Script: {instanceID: 5256}
+      Script: {instanceID: 5096}
     - Class: 114
-      Script: {instanceID: 6062}
+      Script: {instanceID: 5862}
     - Class: 114
-      Script: {instanceID: 6436}
+      Script: {instanceID: 6208}
     - Class: 114
-      Script: {instanceID: 6750}
+      Script: {instanceID: 6512}
     - Class: 114
-      Script: {instanceID: 6936}
+      Script: {instanceID: 6694}
     - Class: 114
-      Script: {instanceID: 7842}
+      Script: {instanceID: 7568}
     - Class: 114
-      Script: {instanceID: 8052}
+      Script: {instanceID: 7772}
     - Class: 114
-      Script: {instanceID: 8710}
+      Script: {instanceID: 8402}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -314,37 +387,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1730}
+      Script: {instanceID: 1728}
     - Class: 114
-      Script: {instanceID: 1956}
+      Script: {instanceID: 1944}
     - Class: 114
-      Script: {instanceID: 2252}
+      Script: {instanceID: 2224}
     - Class: 114
-      Script: {instanceID: 2964}
+      Script: {instanceID: 2904}
     - Class: 114
-      Script: {instanceID: 3220}
+      Script: {instanceID: 3144}
     - Class: 114
-      Script: {instanceID: 4358}
+      Script: {instanceID: 4244}
     - Class: 114
-      Script: {instanceID: 5256}
+      Script: {instanceID: 5096}
     - Class: 114
-      Script: {instanceID: 6062}
+      Script: {instanceID: 5862}
     - Class: 114
-      Script: {instanceID: 6436}
+      Script: {instanceID: 6208}
     - Class: 114
-      Script: {instanceID: 6750}
+      Script: {instanceID: 6512}
     - Class: 114
-      Script: {instanceID: 6936}
+      Script: {instanceID: 6694}
     - Class: 114
-      Script: {instanceID: 7842}
+      Script: {instanceID: 7568}
     - Class: 114
-      Script: {instanceID: 8052}
+      Script: {instanceID: 7772}
     - Class: 114
-      Script: {instanceID: 8674}
+      Script: {instanceID: 8364}
     - Class: 114
-      Script: {instanceID: 8710}
+      Script: {instanceID: 8402}
     - Class: 114
-      Script: {instanceID: 8864}
+      Script: {instanceID: 8548}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -364,6 +437,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: bcaee4c2a83047257b5f47d6ed264b75
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
   - hash:
       serializedVersion: 2
       Hash: 699619b86d9359741a4f58540298c80b
@@ -636,6 +715,12 @@ ScriptsOnlyBuild:
     className: trackObj
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoxStandalone
+  - hash:
+      serializedVersion: 2
       Hash: b03d1c51938aa5acf14208025059c8af
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR.InteractionSystem.Sample
@@ -781,21 +866,27 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.VisualScripting.Core.dll
-    namespaceName: Unity.VisualScripting
-    className: UnityOnInputFieldEndEditMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR.InteractionSystem
     className: Unparent
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualScripting.Core.dll
+    namespaceName: Unity.VisualScripting
+    className: UnityOnInputFieldEndEditMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoxInstance
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -850,6 +941,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 78769dd265146c248e9d5c81ad6559a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoxMove
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -972,6 +1069,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: dea33384aabbc7c775038eb871e7db4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoxManager
+  - hash:
+      serializedVersion: 2
       Hash: 9e94169de5115e14cd584c7465cae2ed
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR
@@ -988,12 +1091,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnControllerColliderHitMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: dea33384aabbc7c775038eb871e7db4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BoxManager
   - hash:
       serializedVersion: 2
       Hash: 636a77f3228481f2b67ba1c4242ac5b9
@@ -1044,6 +1141,12 @@ ScriptsOnlyBuild:
     className: XRManagerSettings
   - hash:
       serializedVersion: 2
+      Hash: b237c7c42824741d3be34f987893e0eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ToggleChanged
+  - hash:
+      serializedVersion: 2
       Hash: e860a95284af40074bb7dc5ed54952f8
     assemblyName: Unity.XR.OpenXR.Features.RuntimeDebugger.dll
     namespaceName: UnityEngine.XR.OpenXR.Features.RuntimeDebugger
@@ -1056,16 +1159,16 @@ ScriptsOnlyBuild:
     className: TeleportArc
   - hash:
       serializedVersion: 2
-      Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
-    assemblyName: Unity.VisualScripting.Flow.dll
-    namespaceName: Unity.VisualScripting
-    className: ScriptGraphAsset
-  - hash:
-      serializedVersion: 2
       Hash: dcc114a5a54569e9d74f9017ab2384c5
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR.InteractionSystem
     className: IgnoreHovering
+  - hash:
+      serializedVersion: 2
+      Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
+    assemblyName: Unity.VisualScripting.Flow.dll
+    namespaceName: Unity.VisualScripting
+    className: ScriptGraphAsset
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1132,6 +1235,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputDebuggerWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JsonManager
   - hash:
       serializedVersion: 2
       Hash: 012f217471efcdaa545a3cc27f756975
@@ -1254,6 +1363,12 @@ ScriptsOnlyBuild:
     className: HandPhysics
   - hash:
       serializedVersion: 2
+      Hash: 5907ea4a3eb90eebef7b54477e3b5ca3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Move3DBase
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR.InteractionSystem
@@ -1342,6 +1457,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.OpenXR.dll
     namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
     className: KHRSimpleControllerProfile
+  - hash:
+      serializedVersion: 2
+      Hash: ed7758a246990d6f33e6f1e2277aeb11
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoxToggle
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1450,12 +1571,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
     className: TransitionArmModel
-  - hash:
-      serializedVersion: 2
-      Hash: bcaee4c2a83047257b5f47d6ed264b75
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Toggle
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1744,6 +1859,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonController
   - hash:
       serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
@@ -2304,7 +2425,8 @@ ScriptsOnlyBuild:
     className: SteamVR_Behaviour_Single
   platform: 19
   scenePathNames:
+  - Assets/Scenes/VRMenu.unity
   - Assets/Scenes/VRPrep[1].unity
   - Assets/Scenes/VRPrep[2].unity
   - Assets/Scenes/VRRoom.unity
-  playerPath: C:/Users/RMS VR/Desktop/VRBuilds/1.6/TesisVR.exe
+  playerPath: C:/Users/emili/Documents/Work/TesisVR2/Builds/5.0.3/TesisVR.exe
