@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,10 +23,10 @@ public class BoxToggle : MonoBehaviour {
         sManager = boxManager;
 
         // Preset
-        int noBoxes = BoxConfig.Instance.GetCount(); // number of boxes
+        int noBoxes = BoxStandalone.Instance.GetCount(); // number of boxes
         SpawnToggles(noBoxes);
         // Config
-        int[] config = BoxConfig.Instance.GetConfig();
+        int[] config = BoxStandalone.Instance.GetConfig();
         ToggleAll(config, true);
     }
 
@@ -46,9 +47,9 @@ public class BoxToggle : MonoBehaviour {
     public static void Switch(Toggle t) {
         int index = GetIndex(t);
         if (t.isOn) {
-            BoxConfig.Instance.Add(index);
+            BoxStandalone.Instance.Add(index);
         } else {
-            BoxConfig.Instance.Remove(index);
+            BoxStandalone.Instance.Remove(index);
         }
     }
 
@@ -97,10 +98,10 @@ public class BoxToggle : MonoBehaviour {
         // 3 for 3x3, 4 for 4x4, 5 for 5x5
         int steps = (int) Mathf.Sqrt(count);
         
-        int index = 0; // Deprecated
-        int dif = 70;
-        int xMin = 170;
-        int yMin = -110;
+        int dif = 75;
+        int xMin = -150;
+        int yMin = 130;
+        int index = 0;
 
         for (int i = 0; i < steps; i++) {
             for (int j = 0; j < steps; j++)
@@ -111,8 +112,9 @@ public class BoxToggle : MonoBehaviour {
                 int y = yMin - dif * j;
                 // Move it (doesn't work another way)
                 box.transform.Translate(x, y, 0);
-                // Add to Array
-                boxes[index] = box;
+                // Add to Array                
+                boxes[i * steps + j] = box;
+                // boxes[index] = box;
                 index++;
             }
         }

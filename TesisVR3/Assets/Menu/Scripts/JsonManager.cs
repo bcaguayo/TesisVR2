@@ -27,7 +27,7 @@ public class JsonManager : MonoBehaviour {
     }
 
     // Datapath
-    private static string DATAPATH, PDATAPATH, FILENAME;
+    private static string DATAPATH, FILENAME;
     // Singleton
     public static Config Instance;
 
@@ -35,9 +35,9 @@ public class JsonManager : MonoBehaviour {
             // Datapath
         DATAPATH = Application.dataPath;
         // Filename is: "C:/Users/RMS VR/AppData/LocalLow/UACh/VRMenu/Config.json"
-        PDATAPATH = "C:/Users/RMS VR/AppData/LocalLow/UACh/VRMenu";
+        // PDATAPATH = "C:/Users/RMS VR/AppData/LocalLow/UACh/VRMenu";
         // Switch to persistent DP on Release
-        FILENAME = Path.Combine(PDATAPATH, "Config.json");
+        FILENAME = Path.Combine(DATAPATH, "Config.json");
         // Single static Instance
         Instance = new Config(new int[0], 25, 10, "");
     }

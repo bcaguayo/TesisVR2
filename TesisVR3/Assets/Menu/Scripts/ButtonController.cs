@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 /*
-This script uses a Parent object to pass the Methods in BoxConfig
+This script uses a Parent object to pass the Methods in BoxStandalone
 and BoxToggle to their respective Buttons
 */
 public class ButtonController : MonoBehaviour {
@@ -20,7 +20,7 @@ public class ButtonController : MonoBehaviour {
     // Change the Configuration Size and Spawn new Toggles
     public void Size(int size) {
         // Change Config Values
-        BoxConfig.Instance.SetCount(size);
+        BoxStandalone.Instance.SetCount(size);
         
         // Visuals: Checkmarks
         BoxToggle.SpawnToggles(size);
@@ -30,8 +30,8 @@ public class ButtonController : MonoBehaviour {
 
     // Premade arrangement given size
     public void Preset() {
-        // Use Instance Assigning at BoxConfig
-        int[] config = BoxConfig.Instance.Preset();
+        // Use Instance Assigning at BoxStandalone
+        int[] config = BoxStandalone.Instance.Preset();
 
         // Rearrange Toggles
         BoxToggle.ClearToggle(); 
@@ -40,8 +40,8 @@ public class ButtonController : MonoBehaviour {
 
     // Give a Random Configuration
     public void Randomize() {
-        // Use Instance Assigning at BoxConfig
-        int[] config = BoxConfig.Instance.RandomizeConfig();
+        // Use Instance Assigning at BoxStandalone
+        int[] config = BoxStandalone.Instance.RandomizeConfig();
         
         // Toggles
         BoxToggle.ClearToggle();      
@@ -50,19 +50,19 @@ public class ButtonController : MonoBehaviour {
 
     // Change the number of Rounds
     public void Rounds(float f) {
-        BoxConfig.Instance.SetRounds((int) f);
+        BoxStandalone.Instance.SetRounds((int) f);
     }
 
     // Change test subject Name (to excel)
     public void Name(string s) {
-        BoxConfig.Instance.SetName(s);
+        BoxStandalone.Instance.SetName(s);
     }
 
     // Load Next Scene
     public void Play() {
-        BoxConfig.Instance.toFile();
-        Application.Quit();
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // BoxStandalone.Instance.toFile();
+        // Application.Quit();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     // Quit the Game
