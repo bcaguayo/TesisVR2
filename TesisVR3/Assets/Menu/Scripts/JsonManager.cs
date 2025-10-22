@@ -106,18 +106,24 @@ public class JsonManager : MonoBehaviour {
         File.Delete(FILENAME);
         using(StreamWriter w = new StreamWriter(FILENAME, true)){
             w.WriteLine(json);            
-            // Debug.Log("Printed to: " + FILENAME);
-            // Debug.Log(json);
+            Debug.Log("Printed to: " + FILENAME);
+            Debug.Log(json);
         }
     }
 
     // Read needs to be used before Getters
-    public static void Read() {
+    public static void Read()
+    {
         string json;
-        using (StreamReader r = new StreamReader(FILENAME)) {
+        using (StreamReader r = new StreamReader(FILENAME))
+        {
             json = r.ReadToEnd();
             //Debug.Log(json);
         }
         Instance = JsonUtility.FromJson<Config>(json);
+    }
+
+    public static void WriteB(int[] arr, int c, int r, string n) {
+        // WIP, write from input only, we dont need a whole object        
     }
 }

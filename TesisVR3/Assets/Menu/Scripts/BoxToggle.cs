@@ -23,10 +23,10 @@ public class BoxToggle : MonoBehaviour {
         sManager = boxManager;
 
         // Preset
-        int noBoxes = BoxStandalone.Instance.GetCount(); // number of boxes
+        int noBoxes = BoxInstance.Instance.GetCount(); // number of boxes
         SpawnToggles(noBoxes);
         // Config
-        int[] config = BoxStandalone.Instance.GetConfig();
+        int[] config = BoxInstance.Instance.GetConfig();
         ToggleAll(config, true);
     }
 
@@ -47,9 +47,9 @@ public class BoxToggle : MonoBehaviour {
     public static void Switch(Toggle t) {
         int index = GetIndex(t);
         if (t.isOn) {
-            BoxStandalone.Instance.Add(index);
+            BoxInstance.Instance.Add(index);
         } else {
-            BoxStandalone.Instance.Remove(index);
+            BoxInstance.Instance.Remove(index);
         }
     }
 

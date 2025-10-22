@@ -376,7 +376,6 @@
 "Assets/BoxMultiManager.cs"
 "Assets/ConfigMaster.cs"
 "Assets/Menu/Scripts/BoxMove.cs"
-"Assets/Menu/Scripts/BoxStandalone.cs"
 "Assets/Menu/Scripts/BoxToggle.cs"
 "Assets/Menu/Scripts/ButtonController.cs"
 "Assets/Menu/Scripts/JsonManager.cs"

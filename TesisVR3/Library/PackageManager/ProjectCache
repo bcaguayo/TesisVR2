@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638954770378509033
+      ticks: 638962388730683007
     m_Hash: 3121306071
   m_LockFileStatus:
     m_FilePath: C:/Users/emili/Documents/Work/TesisVR2/TesisVR3/Packages/packages-lock.json
@@ -13,8 +13,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638954770884065756
-    m_Hash: 1104833904
+      ticks: 638962388730853281
+    m_Hash: 3444792478
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

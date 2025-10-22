@@ -38,7 +38,6 @@
   <ItemGroup>
      <Compile Include="Assets\RoomManager.cs" />
      <Compile Include="Assets\Arrow\Scripts\WaypointController.cs" />
-     <Compile Include="Assets\Menu\Scripts\BoxStandalone.cs" />
      <Compile Include="Assets\MiniCollision.cs" />
      <Compile Include="Assets\BoxInstance.cs" />
      <Compile Include="Assets\Menu\Scripts\BoxMove.cs" />

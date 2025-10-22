@@ -286,3 +286,16 @@ Excel Spreadsheet:
 	[25] [20] [15] [10] [05]
 
     Marked: 11, 22, 03, 19, 10
+
+# ______________________________________________________ 2025
+
+WIP:
+- Fix 3x3 4x4: Disable extra boxes
+- Fix csv output
+- Fix arr length
+
+- 5x5 preset, random, choose
+
+- no giro habitacion
+- configuracion no funciona
+- excel name config (persistence)

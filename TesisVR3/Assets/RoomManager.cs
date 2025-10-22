@@ -29,10 +29,11 @@ public class RoomManager : MonoBehaviour
     // Boxes stores the GameObjects
     private GameObject[] boxes;
 
-    
-
+    // Inherited from BoxInstance
     // BoxConfig contains the picked boxes for this round
     private int[] boxConfig;
+    private int roundLimit;
+    private int boxCount;
 
     // Discovered stores which boxes have been discovered
     private HashSet<string> discovered = new HashSet<string>();
@@ -89,9 +90,14 @@ public class RoomManager : MonoBehaviour
     // CONNECT WITH MENU HERE
     // Box Configuration on chosen boxes {4, 7, 15, 18, 21}
     void ChooseConfig() {
-        // BoxInstance.GetConfig();
-        int[] config = new int[]{4, 7, 15, 18, 21};
-        boxConfig = config;
+        boxConfig = BoxInstance.Instance.GetConfig();
+        // If no config chosen, choose random
+        roundLimit = BoxInstance.Instance.GetRounds();
+        boxCount = boxConfig.Length;
+        if (boxCount > 25)
+        {
+            ChooseRandom();
+        }
     }
 
     // For spacing rounds
@@ -111,7 +117,8 @@ public class RoomManager : MonoBehaviour
         prevPos = currPos;
 
         // Round limit is reached
-        if (rounds > 10) {
+        // Default at 10
+        if (rounds > roundLimit) {
             // Black end screen
             Organizer.End();
             DisableBoxes();
